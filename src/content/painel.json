@@ -1,12 +1,16 @@
 {
   "version": 1,
   "iterations": 250000,
-  "salt": "W96c8CCW7NvNFsjW/SOQPw==",
-  "hash": "pZ443nCydP73IbI/KNhnih8GUraoqkw4kre07ynL6B0=",
+  "salt": "z4N+9CTLsu7huLOVvzbgyQ==",
+  "hash": "ZnaJbUWXAxoxII9GgtI4gUzzF1NxqAD1iYnl8pv2ZdI=",
   "repo": {
     "owner": "daavisaotg",
     "repo": "pym",
     "branch": "main"
   },
-  "token": null
+  "token": {
+    "salt": "LaYMcAmWsg9pC2lp38fH4w==",
+    "iv": "nTNnT9xQBU5HL7ub",
+    "data": "uJDGP5ypjbYh55i4ggYcZ2OlD8o5OlHzsSUdip9Mz+FyM6oSm+TjAT/me9bVZrXc53X0PgKI4b4dd8ZdluEfCxodxfTd4Pr6iYz5UVKLxwCvYOiXdDJwNTnjBZJWKp/h4xQD8UCYdiMKkJGANg=="
+  }
 }
