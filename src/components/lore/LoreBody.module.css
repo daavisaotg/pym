@@ -1,0 +1,35 @@
+.lore {
+  display: grid;
+  gap: var(--s-3);
+  line-height: 1.65;
+  color: var(--bege);
+  max-width: 44em;
+}
+
+.heading {
+  margin-top: var(--s-2);
+  font-size: var(--text-md);
+  font-weight: 500;
+  color: var(--white);
+}
+
+.speech {
+  margin: 0;
+  padding: var(--s-2) var(--s-3);
+  border-left: 2px solid var(--red-signal);
+  background: rgba(138, 3, 3, 0.08);
+}
+
+.speech p {
+  font-style: italic;
+  color: var(--white);
+}
+
+.speaker {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--red-signal);
+}

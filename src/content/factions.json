@@ -1,0 +1,140 @@
+[
+  {
+    "id": "shield",
+    "slug": "shield",
+    "name": "S.H.I.E.L.D.",
+    "acronym": "SHIELD",
+    "classification": "Agência internacional de inteligência",
+    "color": "#3d5a73",
+    "summary": "Agência internacional de inteligência e contraterrorismo, dirigida por Nick Fury. Guarda o Tesseract e as prisões de segurança máxima da Terra.",
+    "body": [
+      "A S.H.I.E.L.D. é a agência internacional responsável por proteger a Terra de ameaças sobre-humanas, terroristas e extradimensionais. Sob o comando do Diretor Nick Fury, coordena heróis, cientistas e soldados nas crises que governos comuns não conseguem enfrentar.",
+      "Desde a Segunda Guerra Mundial, a agência guarda o Tesseract, o artefato cobiçado pelo Caveira Vermelha. Também administra as prisões de segurança máxima do planeta: A Balsa, A Gruta, O Cubo e A Grande Casa, interligadas a pedido de Hank Pym.",
+      "Na Temporada 11, foi a S.H.I.E.L.D. que investigou a fenda entre a Terra-001 e o Universo Ultimate. O Departamento de Pesquisas Extrauniversais acompanhou o caso, e Fury reuniu os Ultimatos para atravessá-la."
+    ],
+    "goals": [
+      "Proteger a Terra de ameaças sobre-humanas, terroristas e extradimensionais.",
+      "Custodiar artefatos perigosos, como o Tesseract.",
+      "Manter as prisões de segurança máxima e seus detentos.",
+      "Coordenar heróis e governos durante crises globais."
+    ],
+    "leaders": ["Nick Fury"],
+    "bases": [
+      "A Balsa, prisão submarina",
+      "A Gruta",
+      "O Cubo",
+      "A Grande Casa",
+      "Departamento de Pesquisas Extrauniversais"
+    ],
+    "earth": "terra-001",
+    "enemies": ["hydra", "aim"],
+    "events": ["historico-tesseract", "historico-ultron", "arco-o-arauto", "temporada-11-a-fenda"],
+    "facts": [
+      {
+        "label": "Diretor",
+        "value": "Nick Fury"
+      },
+      {
+        "label": "Prisão mais segura",
+        "value": "A Balsa, de Matthew Stark e Reed Richards"
+      },
+      {
+        "label": "Equipe especial",
+        "value": "Os Ultimatos (Temporada 11)"
+      }
+    ]
+  },
+  {
+    "id": "aim",
+    "slug": "aim",
+    "name": "A.I.M.",
+    "acronym": "AIM",
+    "classification": "Organização científica criminosa",
+    "color": "#b08a2a",
+    "summary": "Mecânica de Ideias Avançadas: cientistas brilhantes que vendem armas e tecnologia de ponta a quem pagar mais e sonham em dominar o mundo pela ciência.",
+    "body": [
+      "A A.I.M. (Mecânica de Ideias Avançadas) reúne alguns dos cientistas mais brilhantes e menos escrupulosos do mundo. Sem bandeira nem ideologia, desenvolve armas, biotecnologia e artefatos de poder e os vende a quem pagar mais, sejam governos, terroristas ou supervilões.",
+      "Seus agentes são reconhecíveis pelos trajes amarelos de contenção. Nos quadrinhos, a organização nasceu como um braço científico da HYDRA e é comandada pelo M.O.D.O.K., seu Cientista Supremo."
+    ],
+    "goals": [
+      "Desenvolver e vender armas e tecnologias avançadas.",
+      "Obter artefatos de poder para estudo e uso próprio.",
+      "Derrubar governos e dominar o mundo pela ciência."
+    ],
+    "leaders": ["M.O.D.O.K., o Cientista Supremo"],
+    "bases": [
+      "Ilha A.I.M.",
+      "Laboratórios secretos espalhados pelo mundo"
+    ],
+    "earth": "terra-001",
+    "allies": ["hydra"],
+    "enemies": ["shield"],
+    "facts": [
+      {
+        "label": "Uniforme",
+        "value": "Trajes amarelos de contenção"
+      }
+    ]
+  },
+  {
+    "id": "hydra",
+    "slug": "hydra",
+    "name": "HYDRA",
+    "acronym": "HYDRA",
+    "classification": "Organização terrorista",
+    "color": "#7a1a12",
+    "motto": "Corte uma cabeça e duas tomarão o seu lugar.",
+    "summary": "Organização terrorista nascida na Segunda Guerra, com células infiltradas em governos e agências. Na guerra, o Caveira Vermelha cobiçou o Tesseract.",
+    "body": [
+      "A HYDRA é uma organização terrorista que busca a dominação global através do medo, da infiltração e da força. Funciona em células independentes: quando uma cai, outras continuam, como as cabeças da criatura que lhe dá nome.",
+      "Durante a Segunda Guerra Mundial, o Caveira Vermelha comandou a HYDRA e cobiçou o Tesseract acima de qualquer outro artefato. Depois que o Capitão América e seu esquadrão o detiveram, o Tesseract passou à guarda da S.H.I.E.L.D., a maior inimiga da organização."
+    ],
+    "goals": [
+      "Dominar o mundo pelo medo e pela ordem imposta.",
+      "Infiltrar governos, exércitos e a própria S.H.I.E.L.D.",
+      "Recuperar artefatos de poder, como o Tesseract."
+    ],
+    "leaders": ["Caveira Vermelha", "Barão Wolfgang von Strucker"],
+    "bases": ["Células secretas em vários países"],
+    "earth": "terra-001",
+    "allies": ["aim"],
+    "enemies": ["shield", "Capitão América"],
+    "events": ["historico-tesseract"],
+    "facts": [
+      {
+        "label": "Origem",
+        "value": "Segunda Guerra Mundial"
+      }
+    ]
+  },
+  {
+    "id": "liga-dos-assassinos",
+    "slug": "liga-dos-assassinos",
+    "name": "Liga dos Assassinos",
+    "acronym": "LIGA",
+    "classification": "Ordem secreta de assassinos",
+    "color": "#3a4a2a",
+    "summary": "Ordem milenar de assassinos liderada por Ra's al Ghul, que usa o Poço de Lázaro para atravessar os séculos.",
+    "body": [
+      "A Liga dos Assassinos é uma ordem secreta que existe há séculos, treinando os guerreiros mais letais do mundo. É liderada por Ra's al Ghul, o Cabeça do Demônio, que se mantém vivo e jovem graças aos Poços de Lázaro.",
+      "Ra's acredita que a humanidade está destruindo o planeta e que o equilíbrio só será restaurado com a eliminação da corrupção, mesmo que isso exija sacrificar boa parte do mundo. A Liga é o instrumento dessa visão."
+    ],
+    "goals": [
+      "Restaurar o equilíbrio do mundo segundo a visão de Ra's al Ghul.",
+      "Eliminar governos e pessoas considerados corruptos.",
+      "Treinar e manter os assassinos mais letais do planeta.",
+      "Proteger o segredo dos Poços de Lázaro."
+    ],
+    "leaders": ["Ra's al Ghul"],
+    "figures": ["Talia al Ghul"],
+    "bases": ["Nanda Parbat, nas montanhas do Himalaia"],
+    "earth": "terra-001",
+    "related": ["poco-de-lazaro"],
+    "facts": [
+      {
+        "label": "Líder",
+        "value": "Ra's al Ghul, o Cabeça do Demônio"
+      }
+    ]
+  }
+]

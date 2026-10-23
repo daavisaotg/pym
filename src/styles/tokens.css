@@ -1,0 +1,101 @@
+/*
+ * Design tokens do Arquivo PYM.
+ * Vermelho tirado do logo oficial (#8A0303), bege de pergaminho de arquivo,
+ * preto quente de sala escura. Branco só em detalhes mínimos.
+ */
+:root {
+  color-scheme: dark;
+
+  /* Fundos */
+  --ink-0: #070504;   /* página */
+  --ink-1: #0f0b09;   /* superfícies */
+  --ink-2: #19120f;   /* elevado / hover */
+  --ink-glass: rgba(10, 7, 6, 0.72);
+
+  /* Linhas */
+  --line: #2b211b;
+  --line-strong: #4a3a30;
+
+  /* Vermelho PYM */
+  --red: #8a0303;
+  --red-deep: #5c0202;
+  --red-signal: #c8261d;   /* estados ativos, foco */
+  --red-glow: rgba(200, 38, 29, 0.35);
+
+  /* Bege */
+  --bege: #e6d8bc;
+  --bege-2: #b9a98b;
+  --bege-3: #7f725e;
+  --bege-glow: rgba(230, 216, 188, 0.12);
+
+  /* Branco do selo */
+  --white: #fbf8f3;
+
+  /* Ouro do Hall da Fama e brasa das Artes Místicas (só nessas áreas) */
+  --gold: #e2bd62;
+  --gold-deep: #9c7a2c;
+  --gold-glow: rgba(226, 189, 98, 0.45);
+  --ember: #e0873a;
+  --ember-glow: rgba(224, 135, 58, 0.45);
+
+  /* Papel dos livros */
+  --paper: #eadfc4;
+  --paper-2: #dccdab;
+  --ink: #2a1a10;
+
+  /* Tipografia */
+  --font-display: 'Antonio', 'Arial Narrow', 'Roboto Condensed', sans-serif;
+  --font-body: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --font-code: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  /* Só dentro dos livros de Kamar-Taj */
+  --font-grimoire: 'Grenze Gotisch', 'UnifrakturMaguntia', 'Old English Text MT', Georgia, serif;
+  --font-oldprint: 'IM Fell English', 'Iowan Old Style', Georgia, serif;
+
+  /* Escala tipográfica — quarta justa (1.333) sobre 18px */
+  --text-xs: 0.75rem;     /* 13.5px */
+  --text-sm: 0.889rem;    /* 16px   */
+  --text-base: 1rem;      /* 18px   */
+  --text-md: 1.333rem;    /* 24px   */
+  --text-lg: 1.777rem;    /* 32px   */
+  --text-xl: 2.369rem;    /* 42.6px */
+  --text-2xl: 3.157rem;   /* 56.8px */
+  --text-3xl: 4.209rem;   /* 75.8px */
+
+  /* Espaço — base 6px */
+  --s-1: 0.333rem;
+  --s-2: 0.667rem;
+  --s-3: 1rem;
+  --s-4: 1.333rem;
+  --s-5: 2rem;
+  --s-6: 2.667rem;
+  --s-7: 4rem;
+  --s-8: 5.333rem;
+  --s-9: 8rem;
+
+  /* Layout */
+  --page-max: 76rem;
+  --measure: 34em;
+  --gutter: clamp(1rem, 4vw, 3rem);
+  --nav-h: 4rem;
+
+  /* Movimento */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 320ms;
+  --dur-slow: 700ms;
+
+  /* Canto chanfrado — eco das dobras do logo */
+  --chamfer: 10px;
+
+  --z-stars: 0;
+  --z-content: 1;
+  --z-nav: 50;
+  --z-overlay: 100;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --nav-h: 3.5rem;
+  }
+}

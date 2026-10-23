@@ -1,0 +1,64 @@
+{
+  "name": "PYM",
+  "title": "Arquivo do Multiverso",
+  "description": "Um universo de Roleplay de super-heróis no Discord, onde Marvel, DC e personagens originais sempre dividiram a mesma realidade.",
+  "genre": "Roleplay de super-heróis",
+  "platform": "Discord",
+  "foundedYear": 2022,
+  "discordUrl": "https://discord.gg/xNjWzHdmvT",
+  "welcome": "Seja bem-vindo ao PYM, um universo de Roleplay baseado nas maiores histórias da cultura dos quadrinhos. Antes de iniciar sua jornada, recomendamos que leia este guia para compreender a proposta do servidor e como funciona nosso universo.",
+  "about": [
+    {
+      "id": "origem",
+      "title": "Origem",
+      "paragraphs": [
+        "Fundado em 2022, o PYM nasceu como uma franquia de servidores de Roleplay dedicada à criação de experiências narrativas inspiradas no universo dos quadrinhos. Ao longo dos anos, o projeto evoluiu constantemente, reunindo diferentes comunidades, sistemas e propostas até chegar à sua versão mais ambiciosa: o PYM: Discord, desenvolvido para oferecer uma experiência completa de Roleplay dentro da plataforma.",
+        "Mais do que um simples servidor, o PYM é um universo compartilhado onde personagens da Marvel, DC Comics e Personagens Originais coexistem na mesma realidade. Nosso principal objetivo é construir histórias marcantes através da interpretação, da evolução constante dos personagens e da participação ativa dos jogadores na construção desse mundo.",
+        "Diferentemente de comunidades focadas exclusivamente em disputas de poder ou comparações entre personagens, o PYM prioriza aquilo que consideramos a essência do Roleplay: desenvolvimento narrativo, coerência, progressão e construção de personagem. Aqui, um bom arco de evolução vale muito mais do que simplesmente possuir o maior nível de poder. Sistemas, treinamentos, relações, eventos e consequências foram desenvolvidos para recompensar jogadores que investem em suas histórias, e não apenas em sua força."
+      ]
+    },
+    {
+      "id": "realidade",
+      "title": "Uma só realidade",
+      "paragraphs": [
+        "No PYM, Marvel e DC nunca estiveram separados. Diferentemente das histórias publicadas pelas editoras, nosso universo sempre existiu como uma única realidade compartilhada.",
+        "Isso significa que não houve fusões de universos, colisões dimensionais, multiversos unificados ou qualquer evento responsável por juntar ambas as franquias. Desde os primeiros registros da história, Krypton, Asgard, Wakanda, Themyscira, Atlantis, Latveria, Gotham, Metrópolis, Nova York e todas as demais nações, reinos e civilizações sempre coexistiram naturalmente.",
+        "Da mesma forma, heróis, vilões, organizações e entidades cósmicas sempre compartilharam o mesmo planeta, a mesma linha temporal e a mesma história. Para os habitantes desse mundo, ver o Superman sobrevoando Metrópolis enquanto os Vingadores defendem Nova York é tão comum quanto qualquer outro acontecimento histórico."
+      ]
+    },
+    {
+      "id": "continuidade",
+      "title": "Continuidade",
+      "paragraphs": [
+        "Embora compartilhem o mesmo universo, cada personagem continua respeitando sua própria história, origem, poderes e desenvolvimento. Nosso objetivo não é substituir ou reescrever as obras originais, mas permitir que elas coexistam de forma consistente dentro de uma única continuidade.",
+        "Quando existirem diferenças entre versões, cronologias ou interpretações, prevalecerá aquilo que melhor se adequar à proposta narrativa do servidor e aos sistemas oficiais desenvolvidos pela equipe."
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "title": "Narrativa acima do poder",
+      "text": "Um bom arco de evolução vale mais do que possuir o maior nível de poder."
+    },
+    {
+      "title": "Coerência",
+      "text": "Cada personagem respeita a própria origem, poderes e história dentro de uma continuidade única."
+    },
+    {
+      "title": "Progressão",
+      "text": "Sistemas, treinamentos, relações e consequências recompensam quem investe na própria história."
+    },
+    {
+      "title": "Construção coletiva",
+      "text": "O mundo é construído pela participação ativa dos jogadores, uma história de cada vez."
+    }
+  ],
+  "anthony": {
+    "name": "Anthony, The Ant",
+    "paragraphs": [
+      "Todo grande universo possui um símbolo que representa sua identidade. No PYM, esse papel pertence a Anthony, The Ant, a formiga que acompanha nossa comunidade desde os primeiros anos do projeto. O Anthony não faz parte da narrativa oficial do servidor: sua função é representar a comunidade, estando presente em anúncios, eventos, sistemas, artes, emojis e diversas outras áreas do PYM. Ao longo dos anos, ele acabou se tornando um dos maiores símbolos da identidade visual da franquia. Sempre descontraído, Anthony representa exatamente aquilo que buscamos construir: uma comunidade unida, criativa e apaixonada por contar histórias.",
+      "Assim como uma colônia de formigas é construída pelo trabalho coletivo de milhares de indivíduos, o PYM também cresce graças à colaboração de cada membro da comunidade. Cada Roleplay, personagem, evento, sistema e ideia compartilhada contribui para fortalecer esse universo que vem sendo desenvolvido desde 2022."
+    ],
+    "closing": "Antes de qualquer herói, vilão ou entidade cósmica, o verdadeiro protagonista do PYM sempre será sua própria comunidade."
+  }
+}

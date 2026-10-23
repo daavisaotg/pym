@@ -1,0 +1,175 @@
+[
+  {
+    "id": "terra-001",
+    "slug": "terra-001",
+    "name": "Terra-001",
+    "code": "TERRA-001",
+    "aliases": ["Terra 1", "Nossa Terra"],
+    "status": "ameaçada",
+    "statusNote": "Temporada 12 em andamento: Darkseid busca a Equação Anti-Vida.",
+    "summary": "A realidade principal do PYM, onde Marvel, DC e personagens originais sempre coexistiram. Casa de PYM-City.",
+    "lore": [
+      "A realidade principal do PYM. Aqui, Marvel e DC nunca estiveram separados: Krypton, Asgard, Wakanda, Themyscira, Atlantis, Latveria, Gotham, Metrópolis e Nova York sempre dividiram a mesma história.",
+      "Seu centro é PYM-City, o coração político e tecnológico da era moderna. A cidade sobreviveu à queda de Apocalypse, à invasão de Loki e dos Chitauri, ao Ragnarok, à Guerra Viltrumita e à Era de Ultron, sendo reconstruída mais de uma vez com doações de civis, heróis, empresas e países inteiros.",
+      "Na Temporada 11, uma fenda nos céus de PYM-City colidiu esta Terra com o Universo Ultimate. Com o chronovium, os Doutores Destino das duas realidades e o Criador unificaram os dois universos.",
+      "Hoje, desaparecimentos sem rastro e a sensação de estar sendo observado antecedem o retorno de Darkseid, que acredita que a Equação Anti-Vida está no subconsciente humano."
+    ],
+    "heroes": [
+      "kal-el",
+      "matthew-stark",
+      "Thor",
+      "Mulher-Maravilha",
+      "Batman",
+      "Mark Grayson",
+      "Hank Pym",
+      "Reed Richards",
+      "Superboy",
+      "Sombra"
+    ],
+    "villains": [
+      "Apocalypse",
+      "General Zod",
+      "Lex Luthor",
+      "Doomsday",
+      "Bane",
+      "Loki",
+      "Hela",
+      "Fenrir",
+      "Surtur",
+      "Omni-Man",
+      "Thragg",
+      "Ultron",
+      "Doutor Destino",
+      "O Criador",
+      "Darkseid"
+    ],
+    "organizations": [
+      "shield",
+      "M. Stark Industries",
+      "Planeta Diário",
+      "PCPD",
+      "Departamento de Pesquisas Extrauniversais",
+      "ANINA",
+      "Helix"
+    ],
+    "connections": [
+      {
+        "to": "terra-ultimate",
+        "label": "A Fenda e a unificação",
+        "event": "temporada-11-a-fenda"
+      }
+    ],
+    "visual": {
+      "theme": "arquivo",
+      "size": 78,
+      "position": [0, 0],
+      "seed": 7
+    },
+    "facts": [
+      {
+        "label": "Cidade principal",
+        "value": "PYM-City"
+      },
+      {
+        "label": "Outras cidades",
+        "value": "Ascent-City"
+      },
+      {
+        "label": "Temporada atual",
+        "value": "Temporada 12: A Busca pela Anti-Vida"
+      },
+      {
+        "label": "Prisões da S.H.I.E.L.D.",
+        "value": "A Balsa, A Gruta, A Grande Casa e O Cubo"
+      }
+    ],
+    "hasMap": true,
+    "mapName": "PYM-City"
+  },
+  {
+    "id": "terra-ultimate",
+    "slug": "terra-ultimate",
+    "name": "Terra Ultimate",
+    "code": "TERRA-1610",
+    "aliases": ["Terra 1610", "Universo Ultimate"],
+    "status": "unificada",
+    "statusNote": "Unificada à Terra-001 ao fim da Temporada 11.",
+    "summary": "O Universo Ultimate: versões diferentes, mas semelhantes, dos heróis da Terra-001.",
+    "lore": [
+      "O Universo Ultimate abriga versões diferentes, mas semelhantes, dos heróis da Terra-001. O Hank Pym daqui usa um traje de máscara totalmente fechada e sem antenas; o Capitão América não tem asas no capacete.",
+      "A fenda que ligou as duas realidades apareceu em uma floresta gélida ao norte da Latvéria. Victor von Doom cedeu espaço à S.H.I.E.L.D. para investigá-la, sem abrir mão de seu país. Por cerca de 340 dias a fenda só cresceu, fundindo objetos e lugares dos dois universos.",
+      "Nick Fury reuniu os Ultimatos para atravessar a fenda quando ela se abrisse, camuflar-se do outro lado e coletar dados para estabilizá-la. Ao mesmo tempo, os Doutores Destino das duas Terras e o Criador usaram a fenda para expandir seu domínio.",
+      "Ativado ao mesmo tempo nas duas Latvérias, o chronovium manipulou o espaço-tempo e unificou as duas realidades. Reed Richards e o Criador foram extintos, e o Criador foi apagado do multiverso."
+    ],
+    "heroes": [
+      "Nick Fury",
+      "Capitão América",
+      "Hank Pym",
+      "Stark",
+      "Batman",
+      "Mulher-Maravilha",
+      "Mulher-Aranha"
+    ],
+    "villains": ["Doutor Destino", "O Criador"],
+    "organizations": [
+      "Ultimatos",
+      "S.H.I.E.L.D.",
+      "Departamento de Pesquisas Extrauniversais"
+    ],
+    "connections": [
+      {
+        "to": "terra-001",
+        "label": "A Fenda e a unificação",
+        "event": "temporada-11-a-fenda"
+      }
+    ],
+    "visual": {
+      "theme": "ultimate",
+      "size": 60,
+      "position": [560, -150],
+      "seed": 31
+    },
+    "facts": [
+      {
+        "label": "Ponto da fenda",
+        "value": "Latvéria, numa floresta gélida ao norte"
+      },
+      {
+        "label": "Equipe",
+        "value": "Os Ultimatos, reunidos por Nick Fury"
+      },
+      {
+        "label": "Unificação",
+        "value": "Temporada 11, pelo chronovium"
+      }
+    ],
+    "hasMap": false
+  },
+  {
+    "id": "terceiro-universo",
+    "slug": "terceiro-universo",
+    "name": "Terceiro Universo",
+    "code": "TERRA-????",
+    "status": "desconhecido",
+    "statusNote": "Registro incompleto.",
+    "summary": "Realidade de onde vieram ameaças à Terra durante a Temporada 11. Quase nada se sabe sobre ela.",
+    "lore": [
+      "Enquanto os Doutores Destino preparavam a unificação, a Terra sofria ameaças de pessoas vindas de um terceiro universo.",
+      "O arquivo ainda não tem registros sobre esta realidade."
+    ],
+    "connections": [
+      {
+        "to": "terra-001",
+        "label": "Ameaças na Temporada 11",
+        "event": "temporada-11-a-fenda"
+      }
+    ],
+    "visual": {
+      "theme": "desconhecido",
+      "size": 40,
+      "position": [-560, 130],
+      "seed": 99
+    },
+    "hasMap": false
+  }
+]

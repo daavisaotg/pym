@@ -1,0 +1,45 @@
+.sigil {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ring {
+  fill: none;
+  stroke: var(--bege-3);
+  stroke-width: 0.8;
+}
+
+.ringThin {
+  fill: none;
+  stroke: var(--line-strong);
+  stroke-width: 0.5;
+}
+
+.tick {
+  stroke: var(--bege-3);
+  stroke-width: 0.6;
+}
+
+.line {
+  fill: none;
+  stroke: var(--bege-2);
+  stroke-width: 0.9;
+}
+
+.accent {
+  fill: rgba(138, 3, 3, 0.22);
+  stroke: var(--red-signal);
+  stroke-width: 1;
+}
+
+.dot {
+  fill: var(--bege);
+}
+
+.letter {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--white);
+}

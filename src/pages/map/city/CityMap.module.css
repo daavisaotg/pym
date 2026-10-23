@@ -1,0 +1,733 @@
+/* Mapa de PYM-City: prancheta de arquivo em bege sobre preto, com os níveis empilhados. */
+
+.stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.svg {
+  --k: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: var(--font-display);
+}
+
+.svg[data-dragging] {
+  cursor: grabbing;
+}
+
+.bgHit {
+  fill: transparent;
+}
+
+/* ── Cenas e níveis ─────────────────────────────── */
+
+.scene {
+  transition: opacity 600ms ease, visibility 0s;
+}
+
+.scene:not([data-on]) {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 400ms ease, visibility 0s 400ms;
+}
+
+.level {
+  transform-origin: 800px 500px;
+  transition:
+    opacity 700ms var(--ease-out),
+    transform 900ms var(--ease-out),
+    visibility 0s;
+}
+
+.level:not([data-state='active']) {
+  pointer-events: none;
+}
+
+.level[data-state='hidden'] {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 500ms ease,
+    transform 700ms ease,
+    visibility 0s 500ms;
+}
+
+.level[data-level='superior'][data-state='hidden'] {
+  transform: scale(1.05);
+}
+
+.level[data-level='inferioridade'][data-state='hidden'] {
+  transform: scale(0.95);
+}
+
+.level[data-state='ghost'] {
+  opacity: 0.16;
+}
+
+.level[data-state='ghost'] .pipe {
+  display: none;
+}
+
+.level[data-state='under'] {
+  opacity: 0.3;
+  transform: scale(0.985);
+}
+
+.level[data-state='over'] {
+  opacity: 0.55;
+}
+
+.level[data-state='ghost'] .areaLabel,
+.level[data-state='ghost'] .streetLabel,
+.level[data-state='ghost'] .place,
+.level[data-state='under'] .areaLabel,
+.level[data-state='under'] .streetLabel,
+.level[data-state='under'] .place,
+.level[data-state='over'] .areaLabel,
+.level[data-state='over'] .streetLabel,
+.level[data-state='over'] .place {
+  display: none;
+}
+
+.level[data-state='ghost'] .area {
+  fill: none;
+  stroke-dasharray: 3 5;
+}
+
+/* ── Base da cidade ─────────────────────────────── */
+
+.water {
+  fill: #0a0c0f;
+}
+
+.mainland {
+  fill: #0e0b09;
+  stroke: rgba(230, 216, 188, 0.14);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.island {
+  fill: #140f0c;
+  stroke: rgba(230, 216, 188, 0.5);
+  stroke-width: 1.4;
+  vector-effect: non-scaling-stroke;
+}
+
+.base {
+  transition: opacity 700ms ease;
+}
+
+.base[data-dim] {
+  opacity: 0.6;
+}
+
+.waterLabel {
+  font-size: 15px;
+  letter-spacing: 0.6em;
+  text-anchor: middle;
+  fill: rgba(230, 216, 188, 0.2);
+}
+
+/* ── Áreas ──────────────────────────────────────── */
+
+.area {
+  fill: rgba(230, 216, 188, 0.012);
+  stroke: rgba(230, 216, 188, 0.2);
+  stroke-width: 1;
+  stroke-dasharray: 5 4;
+  vector-effect: non-scaling-stroke;
+  transition: fill var(--dur) ease, stroke var(--dur) ease;
+}
+
+[data-interactive] > .area {
+  cursor: pointer;
+}
+
+.area[data-tone='vermelho'] {
+  fill: rgba(200, 38, 29, 0.08);
+  stroke: rgba(200, 38, 29, 0.6);
+}
+
+.area[data-tone='verde'] {
+  fill: rgba(110, 128, 80, 0.02);
+  stroke: rgba(150, 170, 110, 0.55);
+}
+
+.area[data-tone='tecnologia'] {
+  fill: rgba(251, 248, 243, 0.06);
+  stroke: rgba(251, 248, 243, 0.75);
+  stroke-dasharray: none;
+  stroke-width: 1.4;
+}
+
+.area[data-tone='sombra'] {
+  fill: rgba(0, 0, 0, 0.3);
+  stroke: rgba(200, 38, 29, 0.55);
+}
+
+.area[data-tone='areia'] {
+  fill: rgba(234, 223, 196, 0.42);
+  stroke: rgba(234, 223, 196, 0.75);
+  stroke-dasharray: none;
+}
+
+.area[data-tone='ouro'] {
+  fill: url(#pc-furrow);
+  stroke: rgba(226, 189, 98, 0.55);
+}
+
+.area[data-hover] {
+  fill: rgba(230, 216, 188, 0.06);
+  stroke: var(--bege);
+}
+
+.area[data-tone='vermelho'][data-hover] {
+  fill: rgba(200, 38, 29, 0.16);
+}
+
+.area[data-selected] {
+  stroke: var(--white);
+  stroke-width: 2;
+  stroke-dasharray: none;
+  fill: rgba(230, 216, 188, 0.08);
+}
+
+.area[data-tone='vermelho'][data-selected] {
+  fill: rgba(200, 38, 29, 0.2);
+}
+
+.area[data-tone='areia'][data-selected],
+.area[data-tone='areia'][data-hover] {
+  fill: rgba(234, 223, 196, 0.6);
+}
+
+.areaLabel {
+  font-size: calc(28px * var(--fs, 1) * min(1, 1.15 / var(--k)));
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  fill: rgba(230, 216, 188, 0.42);
+  pointer-events: none;
+}
+
+.areaLabel[data-tone='vermelho'] {
+  fill: rgba(232, 92, 80, 0.75);
+}
+
+.areaLabel[data-tone='tecnologia'] {
+  fill: rgba(251, 248, 243, 0.75);
+}
+
+.areaLabel[data-tone='sombra'] {
+  fill: rgba(232, 92, 80, 0.62);
+}
+
+.areaLabel[data-tone='areia'] {
+  fill: rgba(251, 248, 243, 0.8);
+}
+
+.areaLabel[data-tone='ouro'] {
+  fill: rgba(226, 189, 98, 0.85);
+}
+
+/* ── Quadras e parque ───────────────────────────── */
+
+.blocks {
+  pointer-events: none;
+}
+
+.grid {
+  fill: none;
+  stroke: rgba(230, 216, 188, 0.09);
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.block {
+  fill: rgba(230, 216, 188, 0.065);
+  stroke: rgba(230, 216, 188, 0.2);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+.block[data-tone='vermelho'] {
+  fill: rgba(200, 38, 29, 0.16);
+  stroke: rgba(200, 38, 29, 0.45);
+}
+
+.parkLawn {
+  fill: rgba(110, 128, 80, 0.16);
+  stroke: rgba(150, 170, 110, 0.4);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.parkPath {
+  fill: none;
+  stroke: rgba(226, 189, 98, 0.35);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.pond {
+  fill: #0b0c0e;
+  stroke: rgba(230, 216, 188, 0.3);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.parkTree {
+  fill: rgba(110, 128, 80, 0.35);
+  stroke: rgba(150, 170, 110, 0.4);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ── Ruas ───────────────────────────────────────── */
+
+.street path {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.streetCase {
+  stroke: #0b0807;
+  stroke-width: 9;
+}
+
+.streetLine {
+  stroke: rgba(230, 216, 188, 0.45);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  transition: stroke var(--dur-fast) ease;
+}
+
+.street[data-canonical] .streetCase {
+  stroke: #1b120e;
+  stroke-width: 10;
+}
+
+.street[data-canonical] .streetLine {
+  stroke: var(--red-signal);
+  stroke-width: 2.2;
+}
+
+.street[data-kind='via elevada'] .streetCase {
+  stroke: rgba(251, 248, 243, 0.12);
+  stroke-width: 14;
+}
+
+.street[data-kind='via elevada'] .streetLine {
+  stroke: rgba(251, 248, 243, 0.85);
+  stroke-width: 1.6;
+}
+
+.streetTies {
+  stroke: rgba(251, 248, 243, 0.4);
+  stroke-width: 11;
+  stroke-dasharray: 1.4 7;
+  stroke-linecap: butt !important;
+}
+
+.street[data-kind='galeria'] .streetCase {
+  stroke: rgba(224, 135, 58, 0.1);
+  stroke-width: 12;
+}
+
+.street[data-kind='galeria'] .streetLine {
+  stroke: var(--ember);
+  stroke-dasharray: 7 5;
+}
+
+.level[data-level='inferioridade'] .street:not([data-kind='galeria']) .streetCase {
+  stroke: #1a0705;
+  stroke-width: 11;
+}
+
+.level[data-level='inferioridade'] .street:not([data-kind='galeria']) .streetLine {
+  stroke: var(--red-signal);
+  stroke-width: 1.8;
+  filter: url(#pc-glow);
+}
+
+.street[data-kind='estrada'] .streetCase {
+  stroke: none;
+}
+
+.street[data-kind='estrada'] .streetLine {
+  stroke: rgba(230, 216, 188, 0.55);
+  stroke-dasharray: 10 8;
+}
+
+.street[data-kind='trilha'] .streetCase {
+  stroke: rgba(185, 169, 139, 0.12);
+  stroke-width: 7;
+}
+
+.street[data-kind='trilha'] .streetLine {
+  stroke: rgba(230, 216, 188, 0.5);
+  stroke-dasharray: 3 4;
+}
+
+.street[data-hover] .streetLine,
+.street[data-selected] .streetLine {
+  stroke: var(--white);
+  stroke-width: 3;
+  stroke-dasharray: none;
+}
+
+.street[data-selected] .streetCase {
+  stroke: rgba(251, 248, 243, 0.18);
+}
+
+.streetHit {
+  stroke: transparent;
+  stroke-width: 18;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+[data-interactive] .streetHit {
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+.dirtRoad {
+  fill: none;
+  stroke: rgba(185, 169, 139, 0.22);
+  stroke-width: var(--w, 16px);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.streetLabel {
+  font-size: calc(10.5px / max(var(--k), 0.55));
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  fill: var(--bege-2);
+  paint-order: stroke;
+  stroke: #0b0807;
+  stroke-width: calc(3.5px / max(var(--k), 0.55));
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.streetLabel[data-canonical] {
+  fill: var(--white);
+  font-weight: 500;
+}
+
+.streetLabel[data-kind='via elevada'] {
+  fill: rgba(251, 248, 243, 0.9);
+}
+
+.streetLabel[data-kind='galeria'] {
+  fill: var(--ember);
+}
+
+/* Na cidade, ruas sem destaque só ganham nome ao aproximar */
+.svg[data-zoom='far'] .level[data-level='cidade'] .streetLabel:not([data-canonical]) {
+  display: none;
+}
+
+/* ── Locais ─────────────────────────────────────── */
+
+.placeBody {
+  transform: scale(calc(1 / var(--k)));
+}
+
+[data-interactive] .placeBody {
+  cursor: pointer;
+}
+
+.placeHit {
+  fill: transparent;
+}
+
+.placeFrame {
+  fill: #0e0a08;
+  stroke: var(--bege);
+  stroke-width: 1.2;
+  transform: rotate(45deg);
+  transition: fill var(--dur-fast) ease, stroke var(--dur-fast) ease;
+}
+
+.place :global(.place-icon) {
+  fill: none;
+  stroke: var(--bege);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: scale(0.95);
+}
+
+.place[data-icon='ponto'] :global(.place-icon) {
+  fill: var(--bege);
+  stroke: none;
+}
+
+.placePulse {
+  fill: none;
+  stroke: var(--red-signal);
+  stroke-width: 1.2;
+  animation: pulse 2.4s ease-out infinite;
+  transform-origin: 0 0;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.9;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.7);
+  }
+}
+
+.level[data-level='inferioridade'] .placeFrame {
+  stroke: var(--red-signal);
+  fill: #160605;
+}
+
+.level[data-level='inferioridade'] .place :global(.place-icon) {
+  stroke: #f09080;
+}
+
+.level[data-level='superior'] .placeFrame {
+  stroke: var(--white);
+  fill: #15110e;
+}
+
+.place[data-hover] .placeFrame,
+.place[data-selected] .placeFrame {
+  fill: var(--bege);
+  stroke: var(--white);
+}
+
+.place[data-hover] :global(.place-icon),
+.place[data-selected] :global(.place-icon) {
+  stroke: var(--ink-0);
+}
+
+.place[data-hover][data-icon='ponto'] :global(.place-icon),
+.place[data-selected][data-icon='ponto'] :global(.place-icon) {
+  fill: var(--ink-0);
+}
+
+.place[data-selected] .placeFrame {
+  filter: url(#pc-glow);
+}
+
+.placeLabel {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--white);
+  paint-order: stroke;
+  stroke: rgba(7, 5, 4, 0.92);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.svg[data-zoom='far'] .placeLabel {
+  display: none;
+}
+
+.svg[data-zoom='far'] .place[data-hover] .placeLabel,
+.svg[data-zoom='far'] .place[data-selected] .placeLabel {
+  display: inline;
+}
+
+/* ── Cidade Superior ────────────────────────────── */
+
+.pipe {
+  fill: none;
+  stroke: rgba(224, 135, 58, 0.28);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.level[data-state='active'] .pipe {
+  stroke: rgba(224, 135, 58, 0.5);
+}
+
+/* ── Inferioridade ──────────────────────────────── */
+
+.underGround {
+  fill: rgba(5, 3, 3, 0.86);
+  stroke: rgba(200, 38, 29, 0.35);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.sewers {
+  fill: none;
+  stroke: rgba(200, 38, 29, 0.16);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── Campos ─────────────────────────────────────── */
+
+.land {
+  fill: #100e0a;
+}
+
+.contour {
+  fill: none;
+  stroke: rgba(230, 216, 188, 0.06);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.wave {
+  fill: none;
+  stroke: rgba(230, 216, 188, 0.14);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.cliff {
+  fill: #1e1712;
+  stroke: rgba(185, 169, 139, 0.4);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.hill {
+  fill: #18120e;
+  stroke: rgba(185, 169, 139, 0.35);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.tree {
+  fill: rgba(96, 116, 70, 0.28);
+  stroke: rgba(150, 170, 110, 0.42);
+  stroke-width: 0.7;
+  vector-effect: non-scaling-stroke;
+}
+
+.grave {
+  fill: none;
+  stroke: rgba(230, 216, 188, 0.55);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ── Etiqueta ao passar o mouse ─────────────────── */
+
+.tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  max-width: 16rem;
+  padding: 0.35rem 0.6rem;
+  background: rgba(7, 5, 4, 0.92);
+  border: 1px solid var(--line-strong);
+  border-left: 2px solid var(--red-signal);
+  pointer-events: none;
+}
+
+.tip[data-show] {
+  display: grid;
+}
+
+.tipKind {
+  font-size: 0.62rem;
+  color: var(--bege-3);
+  text-transform: uppercase;
+}
+
+.tipName {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+@media (hover: none) {
+  .tip {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .level,
+  .scene {
+    transition: none;
+  }
+
+  .placePulse {
+    animation: none;
+  }
+}
+
+/* ── Ascent City ────────────────────────────────── */
+
+.river {
+  fill: none;
+  stroke: #0a0c0f;
+  stroke-width: 22;
+  stroke-linecap: round;
+}
+
+.bridge {
+  fill: #1b1511;
+  stroke: rgba(230, 216, 188, 0.45);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.plaza {
+  fill: rgba(230, 216, 188, 0.08);
+  stroke: rgba(230, 216, 188, 0.3);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.plazaRing {
+  fill: none;
+  stroke: rgba(226, 189, 98, 0.45);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.wheel {
+  fill: none;
+  stroke: rgba(230, 216, 188, 0.6);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+}
+
+.block[data-tone='torre'] {
+  fill: rgba(251, 248, 243, 0.13);
+  stroke: rgba(251, 248, 243, 0.45);
+}
+
+.area[data-tone='agua'] {
+  fill: rgba(10, 12, 15, 0.01);
+  stroke: rgba(150, 175, 200, 0.4);
+}
+
+.areaLabel[data-tone='agua'] {
+  fill: rgba(170, 195, 215, 0.6);
+}

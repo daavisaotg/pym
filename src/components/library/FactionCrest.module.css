@@ -1,0 +1,47 @@
+.crest {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.5));
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.outer {
+  fill: var(--crest);
+  stroke: var(--bege-2);
+  stroke-width: 1.5;
+}
+
+.inner {
+  fill: rgba(0, 0, 0, 0.28);
+  stroke: rgba(230, 216, 188, 0.45);
+  stroke-width: 1;
+}
+
+.chevron {
+  fill: none;
+  stroke: var(--bege);
+  stroke-width: 2.4;
+  opacity: 0.75;
+}
+
+.rule {
+  stroke: rgba(230, 216, 188, 0.4);
+  stroke-width: 1;
+}
+
+.text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  fill: var(--white);
+}
+
+.star {
+  fill: var(--bege);
+}

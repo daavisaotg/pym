@@ -1,0 +1,181 @@
+{
+  "name": "Terra-001",
+  "earth": "terra-001",
+  "summary": "Países, reinos e lugares escondidos da Terra principal do PYM. Fichas marcadas como referência ainda usam o cânone dos quadrinhos e aguardam a lore própria do RP.",
+  "realms": [
+    {
+      "id": "pym-city",
+      "slug": "pym-city",
+      "name": "PYM-City",
+      "kind": "Cidade",
+      "region": "Costa leste da América do Norte",
+      "coords": [-74, 40.7],
+      "summary": "Capital da Terra-001 e palco da maior parte do RP. Três cidades empilhadas e um túnel para o interior.",
+      "facts": [
+        {
+          "label": "Camadas",
+          "value": "Superior, Cidade, Inferioridade e Campos"
+        },
+        {
+          "label": "Polícia",
+          "value": "PCPD"
+        }
+      ],
+      "related": ["terra-001"],
+      "link": {
+        "href": "/mapa",
+        "label": "Abrir o mapa da cidade"
+      },
+      "labelSide": "left"
+    },
+    {
+      "id": "ascent-city",
+      "slug": "ascent-city",
+      "name": "Ascent City",
+      "kind": "Cidade",
+      "region": "78 km de PYM-City",
+      "coords": [-73.6, 41.3],
+      "summary": "A primeira cidade dos super-heróis. Desde 2007, quando a ação de heróis foi proibida, é vigiada pela ANINA.",
+      "labelSide": "right",
+      "related": ["historico-ascent-2007"],
+      "link": {
+        "href": "/mapa/ascent",
+        "label": "Abrir o mapa de Ascent City"
+      }
+    },
+    {
+      "id": "wakanda",
+      "slug": "wakanda",
+      "name": "Wakanda",
+      "kind": "Nação",
+      "region": "África Oriental",
+      "coords": [33, 2],
+      "summary": "Nação africana isolada do mundo e a mais avançada do planeta, erguida sobre a maior jazida de vibranium da Terra. Protegida pelo Pantera Negra.",
+      "capital": "Birnin Zana",
+      "ruler": "O Pantera Negra",
+      "facts": [
+        {
+          "label": "Recurso",
+          "value": "Vibranium"
+        }
+      ],
+      "reference": true
+    },
+    {
+      "id": "latveria",
+      "slug": "latveria",
+      "name": "Latvéria",
+      "kind": "Nação",
+      "region": "Europa Oriental",
+      "coords": [21.5, 45.6],
+      "summary": "Pequena nação governada com mão de ferro por Victor von Doom. Na Temporada 11, foi um dos pontos onde a fenda entre os universos se abriu.",
+      "body": [
+        "Durante a Fenda, a S.H.I.E.L.D. investigou a ruptura numa floresta gélida ao norte da Latvéria, com a permissão contrariada de Doom.",
+        {
+          "speaker": "Doom",
+          "text": "Não vou ceder a Latvéria a ninguém, muito menos a um universo invasor."
+        }
+      ],
+      "capital": "Doomstadt",
+      "ruler": "Victor von Doom",
+      "related": ["temporada-11-a-fenda", "shield"],
+      "labelSide": "right"
+    },
+    {
+      "id": "themyscira",
+      "slug": "themyscira",
+      "name": "Themyscira",
+      "kind": "Ilha",
+      "region": "Mar Egeu (posição oculta)",
+      "coords": [25.5, 35.6],
+      "summary": "Ilha escondida das Amazonas, protegida pelos deuses do Olimpo e fechada aos homens. Terra natal da Mulher-Maravilha.",
+      "ruler": "Rainha Hipólita",
+      "related": ["amazonas", "laco-da-verdade"],
+      "reference": true,
+      "labelSide": "below"
+    },
+    {
+      "id": "atlantida",
+      "slug": "atlantida",
+      "name": "Atlântida",
+      "kind": "Reino submarino",
+      "region": "Oceano Atlântico",
+      "coords": [-32, 31],
+      "summary": "Reino submerso no fundo do Atlântico, lar dos atlantes. Raramente se mostra à superfície, e quase nunca em paz.",
+      "related": ["atlantes", "tridente-de-netuno"],
+      "reference": true
+    },
+    {
+      "id": "talokan",
+      "slug": "talokan",
+      "name": "Talokan",
+      "kind": "Reino submarino",
+      "region": "Golfo do México",
+      "coords": [-88, 21],
+      "summary": "Reino submarino de origem mesoamericana, escondido sob as águas da península de Yucatán.",
+      "related": ["talokanils"],
+      "reference": true
+    },
+    {
+      "id": "genosha",
+      "slug": "genosha",
+      "name": "Genosha",
+      "kind": "Ilha-nação",
+      "region": "Oceano Índico",
+      "coords": [53, -7],
+      "summary": "A ilha que se tornou o Lar dos Mutantes. No PYM, Genosha foi fragmentada por Loki.",
+      "related": ["mutantes"],
+      "reference": true
+    },
+    {
+      "id": "kamar-taj",
+      "slug": "kamar-taj",
+      "name": "Kamar-Taj",
+      "kind": "Templo",
+      "region": "Katmandu, Nepal",
+      "coords": [85.3, 27.7],
+      "summary": "Templo dos Mestres das Artes Místicas e sede da Ordem. Guarda a biblioteca que sofreu a raid.",
+      "related": ["kamar-taj", "olho-de-agamotto"],
+      "link": {
+        "href": "/biblioteca/kamar-taj",
+        "label": "Entrar na Biblioteca de Kamar-Taj"
+      },
+      "labelSide": "below"
+    },
+    {
+      "id": "nanda-parbat",
+      "slug": "nanda-parbat",
+      "name": "Nanda Parbat",
+      "kind": "Cidade oculta",
+      "region": "Himalaia",
+      "coords": [80.5, 31.5],
+      "summary": "Cidade escondida nas montanhas e fortaleza da Liga dos Assassinos, onde Ra's al Ghul guarda um Poço de Lázaro.",
+      "ruler": "Ra's al Ghul",
+      "related": ["liga-dos-assassinos", "poco-de-lazaro"],
+      "reference": true,
+      "labelSide": "left"
+    },
+    {
+      "id": "attilan",
+      "slug": "attilan",
+      "name": "Attilan",
+      "kind": "Cidade",
+      "region": "Himalaia",
+      "coords": [90, 33.5],
+      "summary": "Cidade isolada dos Inumanos, que vivem longe dos humanos e passam pela Névoa Terrígena.",
+      "related": ["inumanos"],
+      "reference": true
+    },
+    {
+      "id": "ilha-aim",
+      "slug": "ilha-aim",
+      "name": "Ilha A.I.M.",
+      "kind": "Ilha",
+      "region": "Atlântico Norte",
+      "coords": [-64, 27],
+      "summary": "Ilha artificial que serve de base e laboratório para a A.I.M.",
+      "related": ["aim"],
+      "reference": true
+    }
+  ]
+}

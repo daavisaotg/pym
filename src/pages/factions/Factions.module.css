@@ -1,0 +1,137 @@
+.page {
+  padding-top: calc(var(--nav-h) + var(--s-7));
+  padding-bottom: var(--s-8);
+}
+
+.header {
+  display: grid;
+  gap: var(--s-2);
+  padding-bottom: var(--s-6);
+}
+
+.kicker {
+  color: var(--red-signal);
+}
+
+.h1 {
+  font-size: clamp(3rem, 8vw, 5.8rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.intro {
+  max-width: 34em;
+  margin-top: var(--s-2);
+  color: var(--bege-2);
+}
+
+.grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-4);
+}
+
+.grid > li {
+  display: grid;
+}
+
+.card {
+  --c: 16px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: var(--s-5);
+  align-items: start;
+  padding: var(--s-5);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--tone);
+  background:
+    radial-gradient(70% 90% at 0% 0%, color-mix(in srgb, var(--tone) 22%, transparent), transparent 70%),
+    rgba(15, 11, 9, 0.85);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 0 100%);
+  text-decoration: none;
+  transition:
+    border-color var(--dur) ease,
+    transform var(--dur) var(--ease-out);
+}
+
+.card:hover {
+  border-color: var(--bege-3);
+  border-top-color: var(--tone);
+  transform: translateY(-3px);
+}
+
+.cardCrest {
+  display: block;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.card:hover .cardCrest {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+.cardBody {
+  display: grid;
+  gap: var(--s-1);
+  min-width: 0;
+}
+
+.cardNo {
+  color: var(--bege-3);
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.4vw, var(--text-2xl));
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--white);
+}
+
+.cardClass {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bege-2);
+}
+
+.cardText {
+  margin-top: var(--s-2);
+  color: var(--bege-2);
+  line-height: 1.5;
+}
+
+.cardLeader {
+  margin-top: var(--s-2);
+  padding-top: var(--s-2);
+  border-top: 1px dashed var(--line-strong);
+  font-size: var(--text-sm);
+  color: var(--bege);
+}
+
+.cardLeader span {
+  color: var(--bege-3);
+  margin-right: var(--s-2);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: var(--s-4);
+  }
+
+  .cardCrest {
+    width: 6rem;
+  }
+}

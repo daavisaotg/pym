@@ -1,0 +1,758 @@
+{
+  "id": "pym-city",
+  "slug": "",
+  "layout": "pym",
+  "name": "PYM-City",
+  "code": "PC-001",
+  "earth": "terra-001",
+  "tagline": "Três cidades empilhadas e um túnel para o interior.",
+  "summary": "Capital da Terra-001, inspirada na Manhattan dos quadrinhos. Em cima, a Cidade Superior tecnológica; no meio, a cidade principal; embaixo, a Inferioridade. Do outro lado do túnel, os Campos.",
+  "layers": [
+    {
+      "id": "superior",
+      "name": "Cidade Superior",
+      "short": "Superior",
+      "level": "NÍVEL +1",
+      "tagline": "A PYM-City que olha de cima.",
+      "summary": "A camada tecnológica de PYM-City: vias elevadas, dutos e plataformas suspensas sobre os prédios da cidade principal. Concentra laboratórios, hangares e as sedes das grandes empresas de tecnologia.",
+      "body": [
+        "Cada reconstrução deixou PYM-City um pouco mais alta. Depois da Guerra Viltrumita, as doações de empresas e países não ergueram só prédios novos: ergueram uma segunda cidade, presa por vigas verdes e dutos de cobre acima das ruas antigas.",
+        "Quem mora embaixo vê a Cidade Superior como um teto. Quem trabalha em cima quase não desce."
+      ],
+      "images": ["uploads/mapa/superior-vista-aerea.webp", "uploads/mapa/vias-elevadas.webp"],
+      "facts": [
+        {
+          "label": "Acesso",
+          "value": "Vias elevadas e plataformas"
+        },
+        {
+          "label": "Destaque",
+          "value": "M. Stark Industries"
+        }
+      ]
+    },
+    {
+      "id": "cidade",
+      "name": "Cidade Principal",
+      "short": "Cidade",
+      "level": "NÍVEL 0",
+      "tagline": "As ruas de sempre, sob um céu de aço.",
+      "summary": "Os bairros, as avenidas e o povo de PYM-City. A malha de ruas segue a Manhattan dos quadrinhos, com o Parque Central no meio e Chinatown no canto nordeste.",
+      "images": [
+        "uploads/mapa/centro.webp",
+        "uploads/mapa/parque-central.webp",
+        "uploads/mapa/prefeitura.webp"
+      ],
+      "facts": [
+        {
+          "label": "Polícia",
+          "value": "PCPD"
+        },
+        {
+          "label": "Ruas canônicas",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "id": "inferioridade",
+      "name": "Inferioridade",
+      "short": "Inferior.",
+      "level": "NÍVEL −1",
+      "tagline": "Onde a cidade guarda o que não quer ver.",
+      "summary": "Um bairro que começou nos canos de esgoto e virou uma cidade tomada pelo crime, por mafiosos e pela corrupção. Quem manda em tudo é o dono do Bar Helheim.",
+      "body": [
+        {
+          "heading": "Dos canos para as ruas"
+        },
+        "A Inferioridade começou com quem não tinha para onde ir. A cada reconstrução de PYM-City, os aluguéis subiam e uma parte da cidade descia: primeiro para as galerias de esgoto, depois para os reservatórios abandonados, por fim para os vãos sob as fundações dos prédios.",
+        "Onde há gente escondida, há quem lucre com isso. Contrabandistas abriram passagens, agiotas emprestaram, e as famílias mafiosas transformaram o labirinto em território. Policiais e políticos de cima aprenderam o caminho e passaram a descer para receber a sua parte.",
+        {
+          "heading": "O Bar Helheim"
+        },
+        "Todo acordo da Inferioridade passa pelo Bar Helheim. Seu dono não tem cargo, não tem título e raramente sai de trás do balcão, mas nenhuma família faz negócio, nenhum carregamento passa e nenhuma dívida é perdoada sem a bênção dele.",
+        "Na onda de desaparecimentos de 2030, a Inferioridade perdeu mais gente do que qualquer bairro de cima. A polícia nunca desceu para procurar."
+      ],
+      "ruler": "O dono do Bar Helheim",
+      "rulerLabel": "Quem manda",
+      "images": [
+        "uploads/mapa/inferioridade-viaduto.webp",
+        "uploads/mapa/inferioridade-rua.webp",
+        "uploads/mapa/inferioridade-grill.webp"
+      ],
+      "facts": [
+        {
+          "label": "Origem",
+          "value": "Galerias de esgoto"
+        },
+        {
+          "label": "Lei",
+          "value": "A do dono do Helheim"
+        }
+      ]
+    },
+    {
+      "id": "campos",
+      "name": "Campos",
+      "short": "Campos",
+      "level": "INTERIOR",
+      "tagline": "Do outro lado do túnel.",
+      "summary": "O interior de PYM-City, alcançado por um único túnel. Estradas de terra, lavouras, um cemitério escondido entre as árvores e a praia da cidade.",
+      "images": ["uploads/mapa/campos-praia.webp"],
+      "facts": [
+        {
+          "label": "Acesso",
+          "value": "Túnel de PYM-City"
+        }
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "id": "distrito-financeiro",
+      "slug": "distrito-financeiro",
+      "name": "Distrito Financeiro",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "A ponta oeste da ilha: bancos, bolsas e torres de escritório que fecham as portas quando escurece.",
+      "shape": [[112, 520], [150, 430], [210, 330], [300, 262], [430, 230], [430, 780], [300, 742], [210, 680], [150, 600]],
+      "labelAt": [300, 410]
+    },
+    {
+      "id": "centro",
+      "slug": "centro",
+      "name": "Centro",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "O coração da cidade principal: a Prefeitura, a PCPD, o Canal 616 e as ruas mais movimentadas de PYM-City.",
+      "images": ["uploads/mapa/centro.webp"],
+      "shape": [[430, 230], [600, 218], [800, 210], [1000, 206], [1080, 204], [1080, 450], [1000, 450], [1000, 808], [800, 800], [600, 792], [430, 780]],
+      "labelAt": [800, 745]
+    },
+    {
+      "id": "parque-central",
+      "slug": "parque-central",
+      "name": "Parque Central",
+      "layer": "cidade",
+      "kind": "Parque",
+      "tone": "verde",
+      "summary": "O grande respiro verde da ilha, com dois lagos e uma passarela elevada que o atravessa de ponta a ponta.",
+      "images": ["uploads/mapa/parque-central.webp"],
+      "shape": [[720, 365], [1000, 365], [1000, 565], [720, 565]]
+    },
+    {
+      "id": "chinatown",
+      "slug": "chinatown",
+      "name": "Chinatown",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "vermelho",
+      "summary": "O canto nordeste da ilha, tomado pelos chineses depois da reconstrução. Tem governo próprio e a PCPD só entra quando é convidada.",
+      "body": [
+        {
+          "heading": "Comprada com a reconstrução"
+        },
+        "Chinatown nasceu dos escombros. Depois da Guerra Viltrumita, quando civis, heróis, empresas e países doaram para reerguer PYM-City, um consórcio de famílias chinesas bancou sozinho a reconstrução do canto nordeste da ilha e cobrou o preço: o direito de ocupar o que construiu.",
+        "Em poucos anos os imóveis passaram de mão em mão até não restar um único dono que não fosse chinês. Lojas, restaurantes, templos e casas de chá substituíram os escritórios, e as placas mudaram de língua.",
+        {
+          "heading": "O Conselho das Lanternas"
+        },
+        "Na prática, Chinatown é governada pelo Conselho das Lanternas, que reúne os chefes das nove famílias fundadoras na Casa das Lanternas. A PCPD patrulha as ruas de fora, mas só cruza o Portão do Dragão quando é convidada. Lá dentro, as disputas se resolvem pelo Conselho.",
+        "Corre nas ruas que algumas famílias guardam lealdade a um legado mais antigo, ligado aos Dez Anéis. O Conselho nunca confirmou nem negou."
+      ],
+      "ruler": "Conselho das Lanternas",
+      "facts": [
+        {
+          "label": "Governo",
+          "value": "Conselho das Lanternas"
+        },
+        {
+          "label": "Entrada",
+          "value": "Portão do Dragão"
+        },
+        {
+          "label": "Rua principal",
+          "value": "Rua China"
+        },
+        {
+          "label": "Origem",
+          "value": "Reconstrução após a Guerra Viltrumita"
+        }
+      ],
+      "related": ["guerra-viltrumita", "arco-era-de-ultron", "dez-aneis"],
+      "shape": [[1080, 204], [1200, 200], [1330, 196], [1420, 214], [1468, 260], [1476, 360], [1475, 450], [1080, 450]],
+      "labelAt": [1280, 410]
+    },
+    {
+      "id": "distrito-residencial",
+      "slug": "distrito-residencial",
+      "name": "Distrito Residencial",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "Prédios de tijolo, escadas de incêndio e as famílias que fazem PYM-City funcionar. Abriga o Centro de Convenções.",
+      "shape": [[1000, 450], [1475, 450], [1478, 560], [1470, 700], [1452, 780], [1380, 808], [1200, 812], [1000, 808]],
+      "labelAt": [1230, 760]
+    },
+    {
+      "id": "plataforma-central",
+      "slug": "plataforma-central",
+      "name": "Plataforma Central",
+      "layer": "superior",
+      "kind": "Plataforma",
+      "tone": "tecnologia",
+      "summary": "A grande estrutura branca suspensa sobre o leste da cidade, com heliportos nas duas pontas. É o primeiro ponto que se vê de cima.",
+      "images": ["uploads/mapa/superior-vista-aerea.webp"],
+      "shape": [[1060, 465], [1340, 465], [1370, 480], [1385, 520], [1370, 560], [1340, 575], [1060, 575], [1030, 560], [1015, 520], [1030, 480]]
+    },
+    {
+      "id": "distrito-tecnologico",
+      "slug": "distrito-tecnologico",
+      "name": "Distrito Tecnológico",
+      "layer": "superior",
+      "kind": "Plataforma",
+      "tone": "tecnologia",
+      "summary": "Andar de laboratórios e sedes de empresas erguido sobre o Centro. Lar da M. Stark Industries.",
+      "shape": [[440, 240], [705, 232], [705, 420], [440, 420]]
+    },
+    {
+      "id": "inferioridade",
+      "slug": "inferioridade",
+      "name": "Inferioridade",
+      "layer": "inferioridade",
+      "kind": "Bairro subterrâneo",
+      "tone": "sombra",
+      "summary": "A cidade de baixo: galerias, reservatórios e ruas sem céu sob as fundações do Centro e do Distrito Financeiro.",
+      "ruler": "O dono do Bar Helheim",
+      "images": [
+        "uploads/mapa/inferioridade-viaduto.webp",
+        "uploads/mapa/inferioridade-rua.webp"
+      ],
+      "shape": [[300, 470], [420, 420], [560, 430], [700, 470], [820, 520], [860, 600], [820, 690], [700, 740], [540, 760], [400, 740], [300, 680], [260, 580]],
+      "labelAt": [700, 712]
+    },
+    {
+      "id": "reservatorio-velho",
+      "slug": "reservatorio-velho",
+      "name": "Reservatório Velho",
+      "layer": "inferioridade",
+      "kind": "Ruína",
+      "tone": "sombra",
+      "summary": "O primeiro lugar ocupado. Um reservatório desativado onde os primeiros moradores da Inferioridade montaram barracos sobre a água parada.",
+      "shape": [[290, 545], [375, 520], [405, 600], [335, 640], [280, 605]]
+    },
+    {
+      "id": "cemiterio",
+      "slug": "cemiterio",
+      "name": "Cemitério dos Campos",
+      "layer": "campos",
+      "kind": "Cemitério",
+      "tone": "sombra",
+      "summary": "Um cemitério escondido entre as árvores, longe do barulho da cidade. Só se chega por uma trilha a partir da estrada.",
+      "shape": [[600, 170], [830, 160], [850, 330], [610, 340]]
+    },
+    {
+      "id": "praia",
+      "slug": "praia",
+      "name": "Praia de PYM-City",
+      "layer": "campos",
+      "kind": "Praia",
+      "tone": "areia",
+      "summary": "A praia da cidade, numa enseada entre dois paredões de pedra. Fica no fim da estrada dos Campos.",
+      "images": ["uploads/mapa/campos-praia.webp"],
+      "shape": [[1000, 830], [1090, 770], [1200, 752], [1320, 760], [1420, 728], [1442, 762], [1320, 798], [1200, 790], [1100, 802], [1010, 860]],
+      "labelAt": [1220, 720]
+    },
+    {
+      "id": "lavouras",
+      "slug": "lavouras",
+      "name": "Lavouras",
+      "layer": "campos",
+      "kind": "Campo",
+      "tone": "ouro",
+      "summary": "Plantações que abastecem parte da cidade, ao longo da estrada.",
+      "shape": [[1180, 190], [1460, 170], [1480, 370], [1200, 390]]
+    }
+  ],
+  "streets": [
+    {
+      "id": "rua-doutor-saymon-alexandre",
+      "slug": "rua-doutor-saymon-alexandre",
+      "name": "Rua Doutor Saymon Alexandre",
+      "layer": "cidade",
+      "kind": "avenida",
+      "canonical": true,
+      "summary": "A avenida mais longa de PYM-City. Corta a ilha de ponta a ponta, do Distrito Financeiro ao túnel.",
+      "path": [[185, 640], [1468, 640]]
+    },
+    {
+      "id": "rua-anthony-t-a",
+      "slug": "rua-anthony-t-a",
+      "name": "Rua Anthony T. A.",
+      "layer": "cidade",
+      "kind": "avenida",
+      "canonical": true,
+      "summary": "Avenida do norte da ilha. Passa pelo Canal 616 e entra em Chinatown.",
+      "path": [[265, 290], [1470, 290]]
+    },
+    {
+      "id": "rua-brad-pym",
+      "slug": "rua-brad-pym",
+      "name": "Rua Brad Pym",
+      "layer": "cidade",
+      "kind": "rua",
+      "canonical": true,
+      "summary": "A única rua que atravessa a malha na diagonal, como a Broadway. Sai do Distrito Financeiro e termina na esquina do Parque Central.",
+      "path": [[178, 576], [720, 372]]
+    },
+    {
+      "id": "rua-pietro-f-melo",
+      "slug": "rua-pietro-f-melo",
+      "name": "Rua Pietro F. Melo",
+      "layer": "cidade",
+      "kind": "rua",
+      "canonical": true,
+      "summary": "Liga o norte ao sul pelo Centro, passando pela Prefeitura. Sob ela fica o bueiro mais usado para descer à Inferioridade.",
+      "path": [[590, 222], [590, 788]]
+    },
+    {
+      "id": "rua-luccas-g",
+      "slug": "rua-luccas-g",
+      "name": "Rua Lucca's G.",
+      "layer": "cidade",
+      "kind": "rua",
+      "canonical": true,
+      "summary": "Corta a ilha de norte a sul por dentro de Chinatown e do Distrito Residencial.",
+      "path": [[1290, 200], [1290, 808]]
+    },
+    {
+      "id": "rua-china",
+      "slug": "rua-china",
+      "name": "Rua China",
+      "layer": "cidade",
+      "kind": "rua",
+      "summary": "A rua principal de Chinatown, coberta de lanternas vermelhas do Portão do Dragão até o rio.",
+      "body": [
+        "Na Fenda de 2030, foi uma das primeiras ruas onde a polícia registrou mudanças: móveis trocaram de cor e paredes viraram coisas que ninguém conhecia."
+      ],
+      "related": ["temporada-11-a-fenda"],
+      "path": [[1082, 360], [1474, 360]]
+    },
+    {
+      "id": "via-elevada-alfa",
+      "slug": "via-elevada-alfa",
+      "name": "Via Elevada Alfa",
+      "layer": "superior",
+      "kind": "via elevada",
+      "summary": "Viga verde que cruza a ilha do oeste até Chinatown, passando sobre o Distrito Tecnológico.",
+      "images": ["uploads/mapa/vias-elevadas.webp"],
+      "path": [[150, 470], [440, 470], [705, 330], [1100, 330], [1460, 240]]
+    },
+    {
+      "id": "via-elevada-beta",
+      "slug": "via-elevada-beta",
+      "name": "Via Elevada Beta",
+      "layer": "superior",
+      "kind": "via elevada",
+      "summary": "Liga a orla sul à Plataforma Central.",
+      "path": [[300, 760], [700, 560], [1015, 520]]
+    },
+    {
+      "id": "via-elevada-gama",
+      "slug": "via-elevada-gama",
+      "name": "Via Elevada Gama",
+      "layer": "superior",
+      "kind": "via elevada",
+      "summary": "Contorna o Centro pelo sul e sobe até a Plataforma Central.",
+      "path": [[440, 420], [440, 700], [1100, 700], [1300, 575]]
+    },
+    {
+      "id": "passarela-do-parque",
+      "slug": "passarela-do-parque",
+      "name": "Passarela do Parque",
+      "layer": "superior",
+      "kind": "via elevada",
+      "summary": "Passarela iluminada que atravessa o Parque Central por cima dos lagos.",
+      "images": ["uploads/mapa/parque-central.webp"],
+      "path": [[860, 590], [860, 340]]
+    },
+    {
+      "id": "canal-mestre",
+      "slug": "canal-mestre",
+      "name": "Canal Mestre",
+      "layer": "inferioridade",
+      "kind": "galeria",
+      "summary": "A galeria de esgoto principal, que corre sob toda a ilha. Foi por ela que a Inferioridade começou.",
+      "path": [[160, 600], [300, 600], [460, 590], [620, 625], [860, 610], [1000, 600], [1440, 610]]
+    },
+    {
+      "id": "rua-do-viaduto",
+      "slug": "rua-do-viaduto",
+      "name": "Rua do Viaduto",
+      "layer": "inferioridade",
+      "kind": "rua",
+      "summary": "A rua mais larga da Inferioridade, sob as vigas de aço que sustentam a cidade de cima. Sempre úmida, sempre escura.",
+      "images": [
+        "uploads/mapa/inferioridade-viaduto.webp",
+        "uploads/mapa/inferioridade-rua.webp"
+      ],
+      "path": [[420, 500], [520, 540], [600, 640], [640, 740]]
+    },
+    {
+      "id": "beco-do-grill",
+      "slug": "beco-do-grill",
+      "name": "Beco do Grill",
+      "layer": "inferioridade",
+      "kind": "beco",
+      "summary": "Beco iluminado pelo letreiro vermelho do Grill, que leva ao Bar Helheim.",
+      "images": ["uploads/mapa/inferioridade-grill.webp"],
+      "path": [[520, 690], [700, 600], [790, 560]]
+    },
+    {
+      "id": "galeria-da-pietro",
+      "slug": "galeria-da-pietro",
+      "name": "Galeria da Pietro",
+      "layer": "inferioridade",
+      "kind": "galeria",
+      "summary": "Desce do bueiro da Rua Pietro F. Melo até o Canal Mestre.",
+      "path": [[590, 470], [585, 530], [600, 600]]
+    },
+    {
+      "id": "estrada-dos-campos",
+      "slug": "estrada-dos-campos",
+      "name": "Estrada dos Campos",
+      "layer": "campos",
+      "kind": "estrada",
+      "summary": "Sai do túnel e atravessa o interior até as lavouras, com desvios para o cemitério e para a praia.",
+      "path": [[150, 520], [330, 520], [520, 460], [760, 480], [980, 430], [1180, 450], [1400, 420], [1560, 430]]
+    },
+    {
+      "id": "trilha-do-cemiterio",
+      "slug": "trilha-do-cemiterio",
+      "name": "Trilha do Cemitério",
+      "layer": "campos",
+      "kind": "trilha",
+      "summary": "Caminho de terra entre as árvores, da estrada até o portão do cemitério.",
+      "path": [[700, 476], [705, 410], [725, 340]]
+    },
+    {
+      "id": "acesso-a-praia",
+      "slug": "acesso-a-praia",
+      "name": "Acesso à Praia",
+      "layer": "campos",
+      "kind": "trilha",
+      "summary": "Desce da estrada até a areia, entre os paredões de pedra.",
+      "path": [[1180, 450], [1190, 600], [1215, 750]]
+    }
+  ],
+  "places": [
+    {
+      "id": "prefeitura",
+      "slug": "prefeitura",
+      "name": "Prefeitura de PYM-City",
+      "layer": "cidade",
+      "district": "centro",
+      "kind": "Governo",
+      "icon": "escudo",
+      "summary": "Prédio branco de colunas na esquina da Rua Pietro F. Melo. Em 2026, o prefeito era Lex Luthor.",
+      "images": ["uploads/mapa/prefeitura.webp"],
+      "related": ["arco-alem-do-gene-x"],
+      "at": [545, 465]
+    },
+    {
+      "id": "pcpd",
+      "slug": "pcpd",
+      "name": "PCPD",
+      "layer": "cidade",
+      "district": "centro",
+      "kind": "Delegacia",
+      "icon": "escudo",
+      "summary": "Departamento de Polícia de PYM-City. Patrulha a cidade principal, pede licença para entrar em Chinatown e não desce à Inferioridade.",
+      "related": ["temporada-11-a-fenda"],
+      "at": [660, 600]
+    },
+    {
+      "id": "canal-616",
+      "slug": "canal-616",
+      "name": "Canal 616",
+      "layer": "cidade",
+      "district": "centro",
+      "kind": "Emissora",
+      "icon": "antena",
+      "summary": "A emissora de TV da cidade. Foi no Canal 616 que a Truth Convention foi anunciada.",
+      "related": ["temporada-12-anti-vida"],
+      "at": [520, 320]
+    },
+    {
+      "id": "valhalla-food",
+      "slug": "valhalla-food",
+      "name": "Valhalla Food",
+      "layer": "cidade",
+      "district": "centro",
+      "kind": "Restaurante",
+      "icon": "ponto",
+      "summary": "Restaurante do Centro citado nos registros da Fenda.",
+      "related": ["temporada-11-a-fenda"],
+      "at": [660, 720]
+    },
+    {
+      "id": "centro-de-convencoes",
+      "slug": "centro-de-convencoes",
+      "name": "Centro de Convenções",
+      "layer": "cidade",
+      "district": "distrito-residencial",
+      "kind": "Evento",
+      "icon": "ponto",
+      "summary": "Palco da No More Lies: The Truth Convention, que reuniu políticos, cientistas, jornalistas, heróis e civis.",
+      "related": ["temporada-12-anti-vida"],
+      "at": [1140, 690]
+    },
+    {
+      "id": "portao-do-dragao",
+      "slug": "portao-do-dragao",
+      "name": "Portão do Dragão",
+      "layer": "cidade",
+      "district": "chinatown",
+      "kind": "Marco",
+      "icon": "portao",
+      "summary": "O portal vermelho que marca a entrada de Chinatown pela Rua China. A PCPD não passa daqui sem convite.",
+      "at": [1095, 360]
+    },
+    {
+      "id": "casa-das-lanternas",
+      "slug": "casa-das-lanternas",
+      "name": "Casa das Lanternas",
+      "layer": "cidade",
+      "district": "chinatown",
+      "kind": "Sede",
+      "icon": "torre",
+      "summary": "Onde se reúne o Conselho das Lanternas, que governa Chinatown.",
+      "owner": "Conselho das Lanternas",
+      "at": [1380, 300]
+    },
+    {
+      "id": "orla-do-rio",
+      "slug": "orla-do-rio",
+      "name": "Orla do Rio",
+      "layer": "cidade",
+      "district": "distrito-financeiro",
+      "kind": "Parque",
+      "icon": "onda",
+      "summary": "Faixa verde na beira da água, sob as vigas da Via Elevada Beta.",
+      "images": ["uploads/mapa/orla.webp"],
+      "at": [300, 728]
+    },
+    {
+      "id": "bueiro-da-pietro",
+      "slug": "bueiro-da-pietro",
+      "name": "Bueiro da Pietro F. Melo",
+      "layer": "cidade",
+      "district": "centro",
+      "kind": "Acesso",
+      "icon": "acesso",
+      "leadsTo": "inferioridade",
+      "summary": "A tampa de ferro mais usada da cidade. Quem sabe onde pisar desce direto para a Inferioridade.",
+      "at": [590, 470]
+    },
+    {
+      "id": "tunel-de-pym-city",
+      "slug": "tunel-de-pym-city",
+      "name": "Túnel de PYM-City",
+      "layer": "cidade",
+      "district": "distrito-residencial",
+      "kind": "Túnel",
+      "icon": "portal",
+      "leadsTo": "campos",
+      "summary": "O único caminho por terra para o interior. No fim da Rua Doutor Saymon Alexandre, ele passa sob o rio e sai nos Campos.",
+      "at": [1462, 640]
+    },
+    {
+      "id": "m-stark-industries",
+      "slug": "m-stark-industries",
+      "name": "M. Stark Industries",
+      "layer": "superior",
+      "district": "distrito-tecnologico",
+      "kind": "Empresa",
+      "icon": "torre",
+      "owner": "matthew-stark",
+      "ownerLabel": "Dono",
+      "summary": "A empresa de Matthew Stark. Depois da Fenda, ressarciu todo item da cidade transformado pela colisão com o outro universo.",
+      "related": ["matthew-stark", "temporada-11-a-fenda"],
+      "at": [560, 300]
+    },
+    {
+      "id": "a-grande-casa",
+      "slug": "a-grande-casa",
+      "name": "A Grande Casa",
+      "layer": "superior",
+      "district": "distrito-tecnologico",
+      "kind": "Prisão",
+      "icon": "escudo",
+      "summary": "A prisão miniaturizada criada por Hank Pym em 2014 para reabilitar vilões. Hoje está sob a guarda da S.H.I.E.L.D.",
+      "related": ["historico-ultron", "shield"],
+      "at": [650, 390]
+    },
+    {
+      "id": "torres-gemeas",
+      "slug": "torres-gemeas",
+      "name": "Torres Gêmeas",
+      "layer": "superior",
+      "district": "centro",
+      "kind": "Prédio",
+      "icon": "torre",
+      "summary": "Duas torres de cúpula azul, as mais altas do Centro, ligadas à Via Elevada Alfa.",
+      "at": [850, 262]
+    },
+    {
+      "id": "capsula-violeta",
+      "slug": "capsula-violeta",
+      "name": "Cápsula Violeta",
+      "layer": "superior",
+      "district": "distrito-financeiro",
+      "kind": "Prédio",
+      "icon": "ponto",
+      "summary": "Prédio em forma de cápsula roxa deitada sobre o Distrito Financeiro.",
+      "at": [255, 640]
+    },
+    {
+      "id": "bar-helheim",
+      "slug": "bar-helheim",
+      "name": "Bar Helheim",
+      "layer": "inferioridade",
+      "district": "inferioridade",
+      "kind": "Bar",
+      "icon": "bar",
+      "owner": "O dono do Bar Helheim",
+      "ownerLabel": "Dono",
+      "summary": "O centro do poder na Inferioridade. Todo acordo passa pelo balcão do Helheim, e seu dono comanda a pequena cidade inteira.",
+      "body": [
+        "O Helheim não tem placa. Quem precisa encontrá-lo segue o letreiro do Grill até o fim do beco e bate na porta de ferro.",
+        "Lá dentro, as famílias dividem território, os carregamentos ganham rota e as dívidas ganham prazo. O dono escuta tudo, fala pouco e nunca esquece."
+      ],
+      "at": [790, 560]
+    },
+    {
+      "id": "grill",
+      "slug": "grill",
+      "name": "Grill",
+      "layer": "inferioridade",
+      "district": "inferioridade",
+      "kind": "Lanchonete",
+      "icon": "ponto",
+      "summary": "Lanchonete de letreiro vermelho no Beco do Grill. A comida é ruim, mas é o último lugar iluminado antes do Helheim.",
+      "images": ["uploads/mapa/inferioridade-grill.webp"],
+      "at": [660, 620]
+    },
+    {
+      "id": "mercado-negro",
+      "slug": "mercado-negro",
+      "name": "Mercado Negro",
+      "layer": "inferioridade",
+      "district": "inferioridade",
+      "kind": "Mercado",
+      "icon": "ponto",
+      "summary": "Barracas sob a Rua do Viaduto onde se compra o que não se vende em cima: armas, tecnologia roubada e documentos novos.",
+      "at": [480, 680]
+    },
+    {
+      "id": "saida-da-pietro",
+      "slug": "saida-da-pietro",
+      "name": "Saída da Pietro F. Melo",
+      "layer": "inferioridade",
+      "district": "inferioridade",
+      "kind": "Acesso",
+      "icon": "acesso",
+      "leadsTo": "cidade",
+      "summary": "Escada de ferro que sobe até o bueiro da Rua Pietro F. Melo, no Centro.",
+      "at": [590, 470]
+    },
+    {
+      "id": "escoadouro-do-rio",
+      "slug": "escoadouro-do-rio",
+      "name": "Escoadouro do Rio",
+      "layer": "inferioridade",
+      "district": "inferioridade",
+      "kind": "Acesso",
+      "icon": "acesso",
+      "leadsTo": "cidade",
+      "summary": "Boca de esgoto que sai na água, perto da Orla. Rota preferida dos contrabandistas.",
+      "at": [380, 745]
+    },
+    {
+      "id": "saida-do-tunel",
+      "slug": "saida-do-tunel",
+      "name": "Túnel de PYM-City",
+      "layer": "campos",
+      "kind": "Túnel",
+      "icon": "portal",
+      "leadsTo": "cidade",
+      "summary": "A boca do túnel do lado dos Campos. Atravessá-lo leva de volta à cidade.",
+      "at": [110, 520]
+    },
+    {
+      "id": "rodovia-para-ascent",
+      "slug": "rodovia-para-ascent",
+      "name": "Rodovia para Ascent City",
+      "layer": "campos",
+      "kind": "Rodovia",
+      "icon": "portal",
+      "leadsToCity": "ascent",
+      "summary": "No fim da Estrada dos Campos começa a rodovia para Ascent City, a 78 km de PYM-City.",
+      "at": [1560, 430]
+    }
+  ],
+  "facts": [
+    {
+      "title": "Cinco vezes de pé",
+      "text": "PYM-City sobreviveu à queda de Apocalypse, à invasão de Loki e dos Chitauri, ao Ragnarok, à Guerra Viltrumita e à Era de Ultron.",
+      "ref": "terra-001"
+    },
+    {
+      "title": "Reconstruída por doações",
+      "text": "Depois da Guerra Viltrumita, civis, heróis, empresas e países deixaram a inimizade de lado e doaram para reerguer a cidade.",
+      "ref": "arco-era-de-ultron"
+    },
+    {
+      "title": "Duas cidades, uma sobre a outra",
+      "text": "Vigas verdes e dutos de cobre sustentam a Cidade Superior acima das ruas antigas. Para quem mora embaixo, ela é o teto.",
+      "local": "plataforma-central"
+    },
+    {
+      "title": "Um bairro com lei própria",
+      "text": "Chinatown é governada pelo Conselho das Lanternas. A PCPD só cruza o Portão do Dragão quando é convidada.",
+      "local": "chinatown"
+    },
+    {
+      "title": "Embaixo do embaixo",
+      "text": "A Inferioridade começou nos canos de esgoto. Hoje é uma cidade inteira, e quem manda nela é o dono do Bar Helheim.",
+      "local": "bar-helheim"
+    },
+    {
+      "title": "A cidade que mudou de cor",
+      "text": "Na Fenda de 2030, móveis trocaram de cor e metade de quase tudo virou o que existia no outro universo. A M. Stark Industries ressarciu cada item.",
+      "ref": "temporada-11-a-fenda"
+    },
+    {
+      "title": "O prefeito que a imprensa amava",
+      "text": "Em 2026, o prefeito de PYM-City era Lex Luthor, adorado pelos jornais e pelos editoriais.",
+      "ref": "arco-alem-do-gene-x"
+    },
+    {
+      "title": "Palco da verdade",
+      "text": "Em 2032 a cidade recebeu a No More Lies: The Truth Convention, anunciada ao vivo pelo Canal 616.",
+      "local": "centro-de-convencoes"
+    },
+    {
+      "title": "Cinco ruas canônicas",
+      "text": "Rua Doutor Saymon Alexandre, Rua Pietro F. Melo, Rua Brad Pym, Rua Anthony T. A. e Rua Lucca's G.",
+      "local": "rua-doutor-saymon-alexandre"
+    },
+    {
+      "title": "Um só caminho para o interior",
+      "text": "Por terra, só o túnel leva aos Campos, onde ficam o cemitério entre as árvores e a praia da cidade.",
+      "local": "tunel-de-pym-city"
+    }
+  ]
+}

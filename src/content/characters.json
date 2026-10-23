@@ -1,0 +1,319 @@
+[
+  {
+    "id": "matthew-stark",
+    "slug": "matthew-stark",
+    "code": "DB-0001",
+    "name": "Matthew Stark",
+    "codename": "Homem de Ferro",
+    "aliases": ["Matt Stark"],
+    "summary": "Gênio bilionário, playboy e filantropo. CEO fundador das Indústrias M. Stark e o homem por trás da armadura do Homem de Ferro.",
+    "description": "Gênio, bilionário, playboy, filantropo... Preciso dizer mais alguma coisa?",
+    "image": "uploads/personagens/matthew-stark.webp",
+    "age": "27 anos",
+    "height": "1,77 m",
+    "weight": "65 kg",
+    "gender": "Masculino",
+    "sexuality": "Heterossexual",
+    "race": "Humano",
+    "alignment": "herói",
+    "status": "ativo",
+    "earth": "terra-001",
+    "history": "Gênio já nascido em berço de ouro, tive a infância mais... chata de todas? Não sei como dizer em palavras corridas, nem sei por que tô escrevendo essa carta pro Obadias, ele provavelmente quer passar a perna em mim e tomar a empresa... Mas vamo lá. Nascido já herdeiro da maior indústria de armas dos Estados Unidos, tive que arcar com tudo isso quando era jovem, 16 anos, mas o Obadias (meu 'grande herói') pegou a empresa e controlou ela. Quando eu atingi a maioridade, tomei a empresa como herdeiro verdadeiro dela, fui sequestrado, levado pra uma caverna e blá blá blá, todo mundo sabe. Enfim, sou o Homem de Ferro.",
+    "powers": [],
+    "abilities": [
+      {
+        "name": "Intelecto nível gênio"
+      },
+      {
+        "name": "Mestre engenheiro"
+      },
+      {
+        "name": "Mestre dos negócios"
+      },
+      {
+        "name": "Mestre tático"
+      },
+      {
+        "name": "Combatente experiente"
+      },
+      {
+        "name": "Poliglota"
+      },
+      {
+        "name": "Excelente piloto"
+      },
+      {
+        "name": "Imune a doenças cardíacas"
+      },
+      {
+        "name": "Imune a doenças degenerativas"
+      }
+    ],
+    "weaknesses": [
+      "Apesar de ser imune às doenças que mais afetam as pessoas, ainda é um humano.",
+      "Controles mentais"
+    ],
+    "rivals": [],
+    "relations": [
+      {
+        "name": "M. Stark Industries",
+        "kind": "organização",
+        "role": "CEO e fundador"
+      },
+      {
+        "name": "Stark Industries",
+        "kind": "organização",
+        "role": "CEO"
+      }
+    ],
+    "fame": [
+      {
+        "place": "Terra",
+        "score": 10,
+        "note": "Praticamente uma celebridade."
+      }
+    ],
+    "stats": [],
+    "gallery": [
+      {
+        "src": "uploads/personagens/matthew-stark-poster.webp",
+        "caption": "Pôster oficial"
+      }
+    ],
+    "factions": ["shield"]
+  },
+  {
+    "id": "kal-el",
+    "slug": "kal-el",
+    "code": "DB-0002",
+    "name": "Kal-El",
+    "codename": "Superman",
+    "identity": "Clark Kent",
+    "aliases": ["O Último Filho de Krypton"],
+    "summary": "O Último Filho de Krypton. Adotado pelos Kent em Smallville, vive como o jornalista Clark Kent no Planeta Diário.",
+    "description": "Kal-El, o Último Filho de Krypton, nasceu dos cientistas Jor-El e Lara Lor-Van pouco antes da destruição de seu mundo condenado. Cientes do destino iminente de seu planeta, eles conduziram uma extensa (mas remota) pesquisa sobre mundos habitáveis dentro do alcance e construíram um foguete para que seu filho pudesse sobreviver. No final, escolheram a Terra e conseguiram lançar o filho ao espaço meros momentos antes da destruição de Krypton. O foguete de Kal pousou em Smallville, Kansas, onde ele foi descoberto por Jonathan e Martha Kent. Ele recebeu o nome de Clark Kent e foi adotado como filho deles.",
+    "image": "uploads/personagens/clark-kent.webp",
+    "age": "36 anos",
+    "height": "1,90 m",
+    "weight": "106,6 kg",
+    "gender": "Masculino",
+    "sexuality": "Heterossexual",
+    "race": "Kryptoniano",
+    "alignment": "herói",
+    "alignmentNote": "Super-herói otimista e bondoso",
+    "status": "ativo",
+    "earth": "terra-001",
+    "powers": [
+      {
+        "name": "Fisiologia kryptoniana",
+        "details": [
+          {
+            "name": "Absorção de energia solar"
+          },
+          {
+            "name": "Super Força ++",
+            "details": [
+              {
+                "name": "Projeções de ondas de choque"
+              }
+            ]
+          },
+          {
+            "name": "Super Durabilidade ++"
+          },
+          {
+            "name": "Super Velocidade ++",
+            "details": [
+              {
+                "name": "Aceleração molecular"
+              }
+            ]
+          },
+          {
+            "name": "Resistência Super +"
+          }
+        ]
+      },
+      {
+        "name": "Sentidos sobre-humanos",
+        "details": [
+          {
+            "name": "Super-visão",
+            "details": [
+              {
+                "name": "Visão do espectro eletromagnético"
+              },
+              {
+                "name": "Visão infravermelha"
+              },
+              {
+                "name": "Visão microscópica"
+              },
+              {
+                "name": "Visão telescópica"
+              },
+              {
+                "name": "Visão de raio-X"
+              }
+            ]
+          },
+          {
+            "name": "Super-audição"
+          }
+        ]
+      },
+      {
+        "name": "Voo",
+        "details": [
+          {
+            "name": "Viagem interestelar"
+          }
+        ]
+      },
+      {
+        "name": "Longevidade"
+      },
+      {
+        "name": "Super sopro",
+        "details": [
+          {
+            "name": "Bafo congelante"
+          }
+        ]
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Intelecto de nível gênio",
+        "details": [
+          {
+            "name": "Liderança"
+          },
+          {
+            "name": "Análise tática"
+          },
+          {
+            "name": "Intimidação"
+          },
+          {
+            "name": "Investigação"
+          }
+        ]
+      },
+      {
+        "name": "Jornalismo"
+      },
+      {
+        "name": "Vontade indomável",
+        "details": [
+          {
+            "name": "Torquasm Vo"
+          },
+          {
+            "name": "Torquasm Rao"
+          }
+        ]
+      },
+      {
+        "name": "Artes marciais",
+        "details": [
+          {
+            "name": "Boxe"
+          },
+          {
+            "name": "Jiu-jitsu"
+          },
+          {
+            "name": "Krav Magá"
+          },
+          {
+            "name": "Luta livre"
+          },
+          {
+            "name": "Esgrima"
+          }
+        ]
+      },
+      {
+        "name": "Mestre combatente corpo a corpo"
+      },
+      {
+        "name": "Multilinguismo"
+      },
+      {
+        "name": "Furtividade",
+        "details": [
+          {
+            "name": "Vigilância"
+          }
+        ]
+      }
+    ],
+    "weaknesses": ["Kryptonita", "Magia", "Sobrecarga sensorial"],
+    "rivals": [
+      "Todos os vilões, bandidos, crápulas e sádicos inimigos que aparecerem."
+    ],
+    "relations": [
+      {
+        "name": "Lois Lane",
+        "kind": "pessoa",
+        "role": "Colega de trabalho, amiga e interesse romântico"
+      },
+      {
+        "name": "Planeta Diário",
+        "kind": "organização",
+        "role": "Jornalista"
+      }
+    ],
+    "fame": [
+      {
+        "place": "Cidade",
+        "as": "Clark Kent",
+        "score": 6,
+        "note": "O jornalista otimista do Planeta Diário."
+      },
+      {
+        "place": "Cidade e meio heroico",
+        "as": "Superman",
+        "score": 10,
+        "note": "Após o Estalar de Dedos de Thanos, outros kryptonianos surgiram ocupando seu lugar enquanto esteve desaparecido, e a ajuda desses colegas também lhe rendeu fama."
+      },
+      {
+        "place": "Ascent-City",
+        "as": "Clark Kent",
+        "score": 6,
+        "note": "Mesmos critérios da cidade principal."
+      },
+      {
+        "place": "Ascent-City",
+        "as": "Superman",
+        "score": 10,
+        "note": "Mesmos critérios da cidade principal."
+      }
+    ],
+    "stats": [
+      {
+        "attribute": "forca",
+        "tier": "super++"
+      },
+      {
+        "attribute": "velocidade",
+        "tier": "super++"
+      },
+      {
+        "attribute": "durabilidade",
+        "tier": "super++"
+      },
+      {
+        "attribute": "resistencia",
+        "tier": "super+"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "uploads/personagens/clark-kent-cena.webp",
+        "caption": "Superman sobre a cidade"
+      }
+    ]
+  }
+]

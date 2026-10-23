@@ -1,0 +1,37 @@
+.controls {
+  position: absolute;
+  z-index: 2;
+  right: max(var(--gutter), env(safe-area-inset-right, 0px));
+  bottom: var(--s-5);
+  display: grid;
+  border: 1px solid var(--line-strong);
+  background: rgba(10, 7, 6, 0.82);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.controls button {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  color: var(--bege-2);
+  transition: color var(--dur-fast) ease, background-color var(--dur-fast) ease;
+}
+
+.controls button + button {
+  border-top: 1px solid var(--line);
+}
+
+.controls button:hover {
+  color: var(--white);
+  background: rgba(230, 216, 188, 0.06);
+}
+
+.controls svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}

@@ -1,0 +1,971 @@
+{
+  "school": {
+    "name": "Kamar-Taj",
+    "location": "Cordilheiras do Himalaia",
+    "intro": "Oculta entre as cordilheiras gélidas e eternas do Himalaia, a Ordem de Kamar-Taj faz parte da primeira e mais rígida linha de defesa da Terra contra ameaças de escala mística, interdimensional e extrassensorial. Fundada há milênios por mestres que decifraram a geometria oculta do cosmos, esta escola aborda a magia como uma ciência espiritual exata. Para os conjuradores de Kamar-Taj, a Mana do universo é como o código-fonte da própria realidade: através de foco mental, gestos manuais geométricos e o uso de relíquias específicas, os discípulos aprendem a reescrever as leis da física local, moldar energia pura no plano físico e transitar entre as infinitas dimensões que compõem o multiverso.",
+    "protocol": "A Ordem opera sob um pacto de isolacionismo absoluto em relação aos conflitos políticos e mundanos dos super-heróis da Terra. O foco exclusivo da escola é a proteção do tecido da realidade contra invasões conceituais de entidades sombrias. Diferente de bruxos que veneram deuses ou realizam sacrifícios de sangue, os mestres de Kamar-Taj ensinam que a magia deve ser dominada através da disciplina, do estudo lógico de grimórios e do controle absoluto do próprio Núcleo espiritual.",
+    "dimensions": "Os magos treinados em Kamar-Taj acreditam que a realidade visível é apenas a superfície de um espelho. Por trás dela, existem dimensões paralelas e dobras geométricas que podem ser moldadas por mentes que compreendem a matemática arcana do espaço-tempo.",
+    "restrictions": [
+      "A magia não deve ser usada para benefício pessoal ou para ganhos materiais, mas exclusivamente para proteger a Terra contra ameaças místicas e interdimensionais.",
+      "É totalmente vedado o uso de necromancia, magia negra, magia do caos, rituais sombrios e sacrifícios. Essa medida é uma forma de segurança cósmica e sobrevivência, pois as leis da física do universo cobram um preço altíssimo por essas práticas."
+    ]
+  },
+  "library": {
+    "paragraphs": [
+      "A Biblioteca de Kamar-Taj é um dos maiores repositórios de conhecimento esotérico e místico da Terra. Mais do que um depósito de papéis velhos, o local é um organismo vivo e energeticamente ativo, onde milhares de tomos, pergaminhos e manuscritos em línguas há muito esquecidas descansam sob a vigilância eterna do Mestre Bibliotecário. O silêncio do ambiente é quebrado apenas pelo eco de sussurros antigos, pois a Mana condensada nas páginas de certos livros é tão densa que gera uma sutil ressonância psíquica no ar. Aqui, o conhecimento é tratado com o mesmo respeito e temor que uma ogiva militar: um único parágrafo lido incorretamente pode libertar uma maldição ou trincar a mente de um conjurador despreparado.",
+      "A biblioteca possui um encantamento permanente de supressão de ruídos externos e blindagem contra telepatia invasora. Nenhuma mente de fora consegue ler os pensamentos de quem está estudando lá dentro, garantindo foco absoluto e paz espiritual para os rituais de meditação profunda. Além disso, os tomos guardados aqui possuem consciência mística própria: recusam-se a abrir suas páginas para feiticeiros cujos Núcleos de Mana sejam instáveis ou fracos demais para suportar o conteúdo."
+    ],
+    "credit": "A forma como o sistema de magia do PYM foi construído e lapidado é exclusiva do nosso servidor. Quem se inspirar nele deve atribuir os créditos."
+  },
+  "kit": {
+    "intro": "Todo discípulo que aceita os dogmas da Ordem e inicia sua jornada nas Artes Eldritch recebe um conjunto de ferramentas e vestes monásticas básicas. Estes itens são propriedades sagradas do santuário, concedidos para garantir a proteção física, o foco mental e a integridade do Núcleo de Mana do portador durante as missões de campo e as sessões de treinamento intensivo.",
+    "items": [
+      {
+        "name": "Vestes do Tecido de Cobre",
+        "text": "Uma indumentária monástica tradicional feita de fios de algodão entrelaçados com ligas leves de cobre místico. Embora pareça uma roupa comum, o tecido possui uma leve propriedade condutora que ajuda a dissipar o calor gerado quando o Núcleo de Mana do Aprendiz esquenta, reduzindo o desgaste físico em treinos exaustivos.",
+        "effect": "Proteção narrativa contra fadiga térmica precoce."
+      },
+      {
+        "name": "Anel de Eslinga de Iniciante",
+        "text": "O artefato mais essencial de Kamar-Taj, forjado em bronze e usado nos dedos indicador e médio. Como debatido nas regras gerais, é isento de Custo de Mana. Permite ao Aprendiz abrir portais circulares para locais que consiga visualizar mentalmente ou que já tenha visitado na Terra.",
+        "effect": "Não é possível abrir mais de um portal ao mesmo tempo."
+      },
+      {
+        "name": "Tomo de Estudos",
+        "text": "Um manual básico de geometria sagrada e sânscrito arcanizado. Não contém feitiços proibidos, mas serve como guia de consulta rápida para o Aprendiz recalibrar seus movimentos manuais.",
+        "effect": "Consultá-lo durante os descansos impede que o mago erre as mandalas de energia nos próximos turnos."
+      }
+    ]
+  },
+  "system": {
+    "grades": [
+      {
+        "id": "aprendiz",
+        "label": "Aprendiz"
+      },
+      {
+        "id": "adepto",
+        "label": "Adepto"
+      },
+      {
+        "id": "mathet",
+        "label": "Mathet"
+      },
+      {
+        "id": "grao-mestre",
+        "label": "Grão-Mestre"
+      }
+    ],
+    "howItWorks": [
+      "A progressão do Núcleo de Mana é dividida em quatro grandes graus de maestria: Aprendiz, Adepto, Mathet e Grão-Mestre. Cada avanço representa uma evolução natural da alma do conjurador, ampliando sua reserva de Mana, sua resistência espiritual, sua capacidade de sustentar feitiços complexos e a quantidade de energia que pode manipular ao mesmo tempo.",
+      "Esses graus não concedem feitiços automaticamente. Funcionam como requisitos para acessar conhecimentos mais avançados nas bibliotecas e tradições mágicas do servidor. Quanto maior o desenvolvimento do Núcleo, maior o número de tomos, grimórios, pergaminhos e artefatos que o personagem está apto a compreender."
+    ],
+    "universal": [
+      "Cada tradição mágica desenvolveu seus próprios métodos de manipular a Mana. Enquanto o Kamar-Taj concentra seus estudos em magia Eldritch, geometria dimensional e entidades como os Vishanti, outras ordens seguem caminhos completamente distintos, com símbolos, rituais, entidades e filosofias próprias. Por isso, dois conjuradores do mesmo grau podem ter arsenais mágicos completamente diferentes.",
+      "Existem, porém, as Magias Universais, capazes de atravessar as fronteiras entre tradições. Todo mago começa com o Núcleo exatamente igual ao de qualquer outro: limpo e puro. Essa semelhança faz com que, desde o princípio, todos estejam aptos a realizar os mesmos feitiços básicos, não importa o caminho que sigam."
+    ],
+    "growth": [
+      "O Núcleo de Mana não cresce de forma espontânea. Assim como qualquer parte do corpo ou da alma, fortalece-se com o uso constante, o aprendizado e a superação dos próprios limites. Sempre que um conjurador manipula Mana, seu Núcleo sofre pequenas adaptações espirituais, tornando-se mais eficiente na absorção, na circulação e no armazenamento dessa energia.",
+      "A expansão do Núcleo representa o amadurecimento do próprio conjurador. Esse crescimento é permanente e acompanha o personagem por toda a jornada, qualquer que seja a tradição mágica que escolha seguir."
+    ],
+    "methods": [
+      {
+        "name": "Estudo arcano",
+        "text": "A leitura de grimórios, códices, pergaminhos e demais escrituras permite compreender novos conceitos sobre a Mana, refinando naturalmente o Núcleo."
+      },
+      {
+        "name": "Treinamento místico",
+        "text": "Práticas constantes de canalização, controle energético, conjuração repetida e aperfeiçoamento técnico fortalecem a circulação de Mana dentro da alma."
+      },
+      {
+        "name": "Meditação espiritual",
+        "text": "Momentos prolongados de concentração estabilizam o fluxo interno de Mana, eliminando impurezas espirituais e aumentando a eficiência do Núcleo."
+      },
+      {
+        "name": "Combate e experiência",
+        "text": "Situações de risco obrigam o Núcleo a operar perto dos limites. Sobreviver a confrontos, missões e desafios místicos acelera sua adaptação."
+      },
+      {
+        "name": "Rituais e provações",
+        "text": "Certas tradições submetem seus membros a rituais, testes ou jornadas espirituais que desafiam a alma. Superá-los pode expandir significativamente o Núcleo."
+      }
+    ],
+    "evolutionSystem": [
+      "A evolução do Núcleo não acontece com a simples passagem do tempo. Depende da participação ativa do personagem em treinamentos, estudos, missões, rituais e demais experiências narrativas do RP.",
+      "Quando o conjurador reúne experiência suficiente, a equipe administrativa pode reconhecer sua evolução e aumentar permanentemente sua capacidade máxima de Mana. Cada avanço é uma conquista narrativa, e não a repetição de ações mecânicas."
+    ],
+    "natural": [
+      {
+        "name": "Estudo místico",
+        "text": "Leitura completa de um grimório, códice, manuscrito ou pergaminho da tradição do personagem.",
+        "mana": 20
+      },
+      {
+        "name": "Meditação espiritual",
+        "text": "Sessão completa de meditação ou treino de controle do fluxo de Mana em RP.",
+        "mana": 15
+      },
+      {
+        "name": "Treinamento mágico",
+        "text": "Treino supervisionado de conjuração, controle de feitiços ou aperfeiçoamento técnico.",
+        "mana": 10
+      },
+      {
+        "name": "Missões místicas",
+        "text": "Participação em eventos, missões ou campanhas que envolvam magia.",
+        "mana": 60
+      },
+      {
+        "name": "Combate contra conjuradores",
+        "text": "Combate narrativo contra outro usuário de magia, usando seus feitiços de forma ativa.",
+        "mana": 25
+      },
+      {
+        "name": "Rituais ou provações",
+        "text": "Conclusão de rituais espirituais, cerimônias ou provas reconhecidas por uma tradição mágica.",
+        "mana": 25
+      }
+    ],
+    "limits": [
+      "Cada atividade concede Pontos de Mana apenas uma vez por dia.",
+      "A evolução depende da validação da equipe administrativa.",
+      "A Capacidade Máxima de Mana nunca diminui.",
+      "A Mana atual continua sendo recuperada normalmente com descanso, meditação, poções ou artefatos."
+    ],
+    "paths": [
+      {
+        "name": "Crescimento natural",
+        "text": "O conjurador fortalece o Núcleo com estudos, treinamentos, meditações, missões, experiências e rituais da própria tradição.",
+        "pros": [
+          "Não gera Corrupção Mística.",
+          "É o método mais seguro e estável de evolução.",
+          "Permite ao Núcleo amadurecer naturalmente."
+        ],
+        "cons": []
+      },
+      {
+        "name": "Crescimento artificial",
+        "text": "O conjurador acelera a evolução recorrendo a pactos, rituais proibidos, artefatos corrompidos, absorção de Mana alheia ou outras fontes antinaturais de poder.",
+        "pros": [
+          "Pode acelerar significativamente a evolução do Núcleo."
+        ],
+        "cons": [
+          "Gera Corrupção Mística.",
+          "Pode provocar alterações físicas, espirituais ou psicológicas.",
+          "Certos artefatos, magias e tradições podem rejeitar conjuradores corrompidos."
+        ]
+      }
+    ],
+    "note": [
+      "Nem todo ritual é proibido. Diversas tradições usam cerimônias, meditações coletivas e ritos espirituais no treinamento, sem risco de corrupção. Só são Rituais Proibidos os que recorrem a fontes ilícitas, entidades malignas, energias corrompidas ou métodos antinaturais de fortalecimento.",
+      "A Corrupção Mística não é um aumento automático de poder, mas o preço pago por quem escolhe o caminho mais curto até a grandeza. Quanto mais o conjurador depender dessas práticas, maiores as consequências narrativas sobre sua alma, seu corpo e sua conexão com a Mana."
+    ],
+    "corrupted": [
+      {
+        "name": "Ritual proibido",
+        "text": "Ritual com entidades malignas, sacrifícios, energias proibidas ou outras práticas antinaturais.",
+        "mana": 35,
+        "corruption": 5
+      },
+      {
+        "name": "Pacto místico",
+        "text": "Firmar ou fortalecer um pacto com uma entidade sobrenatural em troca de poder.",
+        "mana": 50,
+        "corruption": 10
+      },
+      {
+        "name": "Artefato corrompido",
+        "text": "Canalizar de propósito a energia de uma relíquia amaldiçoada para fortalecer o Núcleo.",
+        "mana": 25,
+        "corruption": 5
+      },
+      {
+        "name": "Absorção de Mana",
+        "text": "Roubar ou absorver a Mana de outro ser, artefato ou fonte mística.",
+        "mana": 100,
+        "corruption": 10
+      },
+      {
+        "name": "Fonte proibida",
+        "text": "Treinar em locais impregnados por energias corrompidas, dimensões hostis ou regiões de intensa instabilidade mística.",
+        "mana": 30,
+        "corruption": 5
+      }
+    ],
+    "corruptedNote": [
+      "Métodos corrompidos concedem mais Mana do que o treinamento convencional.",
+      "Todo ganho obtido dessa forma aumenta permanentemente a Corrupção Mística.",
+      "A Corrupção pode gerar consequências narrativas determinadas pela staff e pelo sistema de Corrupção."
+    ]
+  },
+  "books": [
+    {
+      "id": "compendio-universal",
+      "title": "Compêndio Universal das Artes Místicas",
+      "kind": "Compêndio",
+      "shelf": "universal",
+      "summary": "Técnicas fundamentais de manipulação da Mana, comuns a praticamente todas as tradições mágicas.",
+      "color": "#c9a24e",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Compêndio Universal das Artes Místicas",
+          "blocks": [
+            "Muito antes do surgimento das grandes ordens místicas, os primeiros conjuradores descobriram que certas técnicas podiam ser reproduzidas independentemente da cultura, da filosofia ou da fonte de poder. Esses conhecimentos fundamentais foram reunidos ao longo dos séculos no Compêndio Universal das Artes Místicas.",
+            "Ao contrário dos grimórios de Kamar-Taj, dos tratados de Nabu ou dos antigos registros rúnicos de Asgard, este compêndio não pertence a nenhuma escola. Seu conteúdo descreve princípios básicos da manipulação da Mana, permitindo que qualquer conjurador devidamente treinado desenvolva essas habilidades."
+          ],
+          "facts": [
+            {
+              "label": "Categoria",
+              "value": "Conhecimento universal"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Manipulação fundamental de Mana"
+            },
+            {
+              "label": "Acesso",
+              "value": "Qualquer praticante das Artes Místicas com o grau exigido pelo capítulo"
+            }
+          ]
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "A Percepção Arcana",
+          "spell": "Sentido Místico",
+          "description": "Permite perceber assinaturas mágicas, artefatos encantados, feitiços ativos e distorções de Mana nas proximidades.",
+          "mana": "10 Pontos de Mana."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 02",
+          "title": "O Elo Mental",
+          "spell": "Telepatia & Telecinese Básica",
+          "description": "Permite transmitir pensamentos simples para uma única pessoa próxima ou captar emoções muito superficiais. A telecinese manipula pequenos objetos cuja massa seja compatível com a força física do próprio conjurador.",
+          "mana": "15 Pontos de Mana."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 03",
+          "title": "A Vontade Cotidiana",
+          "quote": "Nem toda magia existe para vencer batalhas. Os antigos compreenderam que o verdadeiro domínio sobre a Mana começa quando os menores desejos podem ser realizados com a mesma naturalidade de um simples respirar. Um conjurador que domina o cotidiano jamais desperdiça esforço onde basta um pensamento.",
+          "spell": "Praticidades Cotidianas",
+          "description": "O conjurador usa pequenas quantidades de Mana para tarefas simples do cotidiano, sem esforço físico: acender ou apagar velas e tochas, limpar roupas ou superfícies, secar objetos, aquecer ou resfriar alimentos e bebidas, abrir ou fechar portas destrancadas, mover pequenos objetos próximos, organizar livros e utensílios, reparar danos superficiais em materiais comuns (vidro, porcelana, madeira), escrever ou apagar textos, produzir uma pequena fonte de luz, trancar recipientes simples com um selo mágico temporário e outras utilidades narrativas de impacto equivalente. Não tem capacidade ofensiva e não substitui magias de combate ou manipulações complexas.",
+          "mana": "3 Pontos de Mana por utilização."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 04",
+          "title": "O Passo Celeste",
+          "spell": "Levitação",
+          "description": "Permite flutuar livremente, permanecer suspenso no ar e deslocar-se lentamente sem contato com o solo.",
+          "mana": "35 Pontos de Mana."
+        }
+      ]
+    },
+    {
+      "id": "manuscritos-de-oshtur",
+      "title": "Os Manuscritos de Oshtur",
+      "kind": "Manuscritos",
+      "shelf": "aprendiz",
+      "color": "#3f5a6e",
+      "summary": "Invocações de Oshtur, a Anciã da Terra, mãe de Agamotto e uma das três Vishanti. Seus manuscritos ensinam a fortalecer o conjurador e os próprios feitiços.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Os Manuscritos de Oshtur",
+          "blocks": [
+            "Oshtur é uma das Divindades Anciãs da Terra e uma das três Vishanti, ao lado de Agamotto, seu filho, e de Hoggoth. Foi a única de sua geração a escapar da corrupção que tomou os Deuses Anciãos.",
+            "Associada ao ar, ao intelecto e à razão, Oshtur raramente é invocada para destruir. Seu nome reforça: torna o feitiço mais firme e o conjurador mais resistente. Por isso estes manuscritos são entregues aos Aprendizes antes de qualquer tomo ofensivo."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Aprendiz"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Reforço, intelecto e razão"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "A Bênção de Oshtur",
+          "quote": "A razão é o primeiro escudo. Que Oshtur sustente aquilo que minhas mãos começaram.",
+          "spell": "Bênção de Oshtur",
+          "description": "O conjurador invoca o nome de Oshtur antes de outro feitiço. A conjuração seguinte fica mais estável: é mais difícil de dissipar e não falha por distração ou ferimento leve. A bênção não aumenta o dano nem o alcance, apenas a firmeza da magia.",
+          "mana": "20 Pontos de Mana, somados ao custo do feitiço abençoado.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 02",
+          "title": "O Sopro da Razão",
+          "quote": "Nenhum medo resiste a uma mente que sabe o que vê.",
+          "spell": "Sopro da Razão",
+          "description": "Um sopro de ar frio e limpo atravessa a mente do conjurador ou de um aliado tocado, dissipando confusão, pânico e ilusões de baixo grau. Não quebra controles mentais impostos por magias de grau superior.",
+          "mana": "25 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 03"
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 04",
+          "title": "A Força de Oshtur",
+          "spell": "Força de Oshtur",
+          "description": "O conjurador ou um aliado tocado recebe um reforço temporário: a Força sobe um nível na escala de status, sem ultrapassar Sobre-humano. Ao fim do efeito, o corpo sente o esforço como se tivesse treinado o dia inteiro.",
+          "mana": "30 Pontos de Mana, além de 5 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulos seguintes",
+          "note": "Perdidos na raid."
+        }
+      ]
+    },
+    {
+      "id": "cagliostro-fragmentos",
+      "title": "O Livro de Cagliostro",
+      "kind": "Fragmentos Iniciais",
+      "shelf": "aprendiz",
+      "color": "#6b2a20",
+      "summary": "Os primeiros fragmentos do livro de Alessandro Cagliostro, dedicados à percepção do tempo em objetos pequenos.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "O Livro de Cagliostro",
+          "blocks": [
+            "Escrito pelo conde Alessandro Cagliostro, este é um dos tomos mais vigiados da biblioteca. Seus capítulos tratam do tempo como um fio que pode ser lido, puxado e, nas mãos erradas, rompido.",
+            "Os Fragmentos Iniciais são a única parte entregue a Aprendizes. Ensinam a perceber o tempo de um objeto, nunca a dobrá-lo."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Aprendiz"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Percepção temporal"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Fragmento 01",
+          "title": "O Eco do Instante",
+          "quote": "Toda coisa guarda a memória de quem a tocou. Escute antes de mudar.",
+          "spell": "Eco do Instante",
+          "description": "Tocando um objeto inanimado pequeno, o conjurador vê por alguns segundos o que aconteceu a ele na última hora: quem o segurou, onde esteve, o que o danificou. A visão é muda e borrada nas bordas.",
+          "mana": "30 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Fragmento 02",
+          "title": "A Maçã de Cagliostro",
+          "spell": "Maturação e Retorno",
+          "description": "O conjurador acelera ou faz voltar, por alguns minutos, o estado de um objeto pequeno e sem vida: uma fruta amadurece e apodrece, uma vela consome, uma folha seca volta a ficar verde. O efeito se desfaz ao fim da concentração.",
+          "mana": "40 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "texto",
+          "title": "Advertência",
+          "blocks": [
+            "Os avisos deste tomo vêm depois dos encantamentos. Leia-os antes de praticar qualquer um.",
+            "Nenhum fragmento pode ser usado em seres vivos. Quem tenta prender um ser vivo no próprio tempo corre o risco de ficar preso junto."
+          ],
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Fragmentos seguintes"
+        }
+      ]
+    },
+    {
+      "id": "codice-geometria-eldritch",
+      "title": "O Códice de Geometria Eldritch",
+      "kind": "Aplicada",
+      "shelf": "adepto",
+      "color": "#2f4a3c",
+      "summary": "Manual prático de geometria Eldritch: escudos, chicotes e construtos de energia moldados por mandalas.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "O Códice de Geometria Eldritch",
+          "blocks": [
+            "O Códice ensina a transformar Mana em formas estáveis. Cada construto nasce de uma mandala traçada pelas mãos: quanto mais precisa a geometria, mais resistente a forma.",
+            "Esta é a edição aplicada, usada no treinamento de campo dos Adeptos. A teoria pura fica em outro volume."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Adepto"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Construtos de energia"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "Os Escudos dos Serafins",
+          "quote": "A geometria correta não cede. Trace o círculo como quem fecha uma porta.",
+          "spell": "Escudos dos Serafins",
+          "description": "O conjurador traça uma ou duas mandalas circulares que funcionam como escudos de energia. Bloqueiam golpes físicos, projéteis e rajadas de energia até o nível Super de força; acima disso, racham e se desfazem.",
+          "mana": "40 Pontos de Mana, além de 10 Pontos de Mana por turno para mantê-los.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 02",
+          "title": "O Chicote Eldritch",
+          "spell": "Chicote Eldritch",
+          "description": "Um chicote ou laço de energia nasce da mão do conjurador. Pode prender, puxar, desarmar ou golpear à distância de alguns metros. Prende alvos de força até o nível Super +.",
+          "mana": "30 Pontos de Mana por conjuração.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 03"
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulo 04"
+        }
+      ]
+    },
+    {
+      "id": "manuscritos-de-vathelos",
+      "title": "Os Manuscritos de Vathelos",
+      "kind": "Manuscritos",
+      "shelf": "adepto",
+      "color": "#4a3a5c"
+    },
+    {
+      "id": "cagliostro-intermediario",
+      "title": "O Livro de Cagliostro",
+      "kind": "Capítulos Intermediários",
+      "shelf": "adepto",
+      "color": "#6b2a20",
+      "summary": "Os capítulos intermediários de Cagliostro: dobrar o tempo de estruturas e áreas pequenas.",
+      "pages": [
+        {
+          "type": "feitiço",
+          "label": "Capítulo 07",
+          "title": "A Restauração do Que Foi",
+          "quote": "O passado ainda está perto. Estenda a mão antes que ele vá embora.",
+          "spell": "Restauração Temporal",
+          "description": "O conjurador faz retornar ao estado anterior uma estrutura ou objeto inanimado danificado nos últimos minutos: uma parede volta a ficar de pé, um carro amassado se refaz. Não funciona em seres vivos nem em danos causados por magia de grau superior.",
+          "mana": "120 Pontos de Mana, variando conforme o tamanho da estrutura.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 08",
+          "title": "O Instante Suspenso",
+          "spell": "Instante Suspenso",
+          "description": "Por um único turno, o conjurador congela no tempo um objeto em movimento (um projétil, uma queda, uma explosão pequena) dentro de alguns metros. Seres vivos não podem ser congelados.",
+          "mana": "90 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulo 09",
+          "note": "Arrancado do tomo."
+        },
+        {
+          "type": "texto",
+          "title": "Advertência",
+          "blocks": [
+            "Quem dobra o tempo sem a Ordem por perto pode não encontrar o caminho de volta. Os capítulos seguintes exigem a supervisão de um Mathet."
+          ],
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "folhas-adepto",
+      "title": "Folhas Avulsas do Acervo Adepto",
+      "kind": "Folhas recuperadas",
+      "shelf": "adepto",
+      "summary": "Páginas recuperadas do Event Log depois da raid. O tomo de origem ainda não foi identificado.",
+      "color": "#8a6a3a",
+      "pages": [
+        {
+          "type": "rasgada",
+          "note": "Folha rasgada ao meio na raid."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 05",
+          "title": "O Primeiro Reflexo da Dimensão Espelhada",
+          "quote": "Não procure uma nova dimensão; ela sempre esteve sobreposta à sua. O mundo possui um reflexo invisível, separado apenas por uma fina película de realidade. Estenda sua Mana até essa fronteira e toque-a delicadamente. Se sua mente vacilar, será o reflexo quem observará você.",
+          "spell": "Dimensão Espelhada: Primeiro Reflexo",
+          "description": "O Adepto aprende a abrir uma pequena fissura para a Dimensão Espelhada, criando uma área isolada da realidade com até 25 metros de raio. Nada do que ocorre em seu interior causa dano ao mundo real, permitindo que treinamentos, confrontos ou contenções sejam realizados com segurança. Neste grau, o conjurador ainda não consegue remodelar livremente o cenário, limitando-se a pequenas distorções geométricas, como inclinar ruas, deslocar paredes, criar plataformas ou alterar a orientação de estruturas próximas. A manutenção da dimensão exige concentração contínua, e seu colapso devolve imediatamente todos os presentes ao plano físico.",
+          "mana": "100 Pontos de Mana para abrir, além de 20 Pontos de Mana por turno para mantê-la ativa."
+        }
+      ]
+    },
+    {
+      "id": "manuscritos-de-watoomb",
+      "title": "Os Manuscritos de Watoomb",
+      "kind": "O Domínio dos Ventos Épicos",
+      "shelf": "mathet",
+      "color": "#3c5a66",
+      "summary": "Os ventos de Watoomb, um dos Principados místicos, senhor do ar e do clima. Os feitiços mais invocados por magos de qualquer lado.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Os Manuscritos de Watoomb",
+          "blocks": [
+            "Watoomb é um dos Principados místicos, entidades cujos nomes são invocados para conceder poder. Domina o vento e o clima, e foi o primeiro a emprestar sua força a magos de outras dimensões.",
+            "Os Ventos de Watoomb estão entre os feitiços mais usados por magos de todas as índoles. Por isso seus manuscritos ficam no acervo Mathet: o vento obedece a qualquer um, mas só o mestre sabe quando pará-lo."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Mathet"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Vento e clima"
+            },
+            {
+              "label": "Subtítulo",
+              "value": "O Domínio dos Ventos Épicos"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "Os Ventos de Watoomb",
+          "quote": "Pelos Ventos de Watoomb: que tudo o que não pertence a este lugar seja levado para longe dele.",
+          "spell": "Ventos de Watoomb",
+          "description": "Uma rajada de vento místico parte das mãos do conjurador. Derruba e empurra adversários, dissipa névoas, fumaça e poeira e desvia projéteis leves. Com concentração total, pode empurrar uma entidade de volta pelo portal por onde entrou.",
+          "mana": "120 Pontos de Mana, além de 20 Pontos de Mana por turno de rajada contínua.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 02"
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 03",
+          "title": "O Céu de Watoomb",
+          "spell": "Domínio do Clima",
+          "description": "O conjurador altera o clima numa área de algumas quadras: forma ou dissipa chuva, neblina, ventania ou calmaria. A mudança dura enquanto ele mantiver o foco e se desfaz devagar ao fim.",
+          "mana": "250 Pontos de Mana, além de 25 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulos seguintes"
+        }
+      ]
+    },
+    {
+      "id": "cagliostro-avancado",
+      "title": "O Livro de Cagliostro",
+      "kind": "Avançado",
+      "shelf": "mathet",
+      "color": "#6b2a20",
+      "summary": "A parte avançada do livro de Cagliostro: os laços de tempo. Parte das páginas foi arrancada de propósito.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Advertência ao leitor",
+          "blocks": [
+            "Estes capítulos ensinam a criar laços de tempo. Um laço mal fechado prende o próprio conjurador, repetindo o mesmo instante para sempre.",
+            "O ritual de contato com a Dimensão Sombria foi arrancado deste volume por ordem da Ordem. Sua prática é vedada em Kamar-Taj."
+          ],
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulo 11",
+          "note": "Ritual da Dimensão Sombria. Arrancado do tomo: prática vedada pela Ordem."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 12",
+          "title": "O Laço de Cagliostro",
+          "quote": "Um instante repetido mil vezes ainda é um só instante. Prenda-o, mas nunca entre nele.",
+          "spell": "Laço Temporal",
+          "description": "O conjurador prende uma pequena área num laço de alguns segundos que se repete. Quem está dentro revive o mesmo instante até o laço ser desfeito ou o conjurador perder o foco. Exige o Olho de Agamotto ou artefato temporal equivalente.",
+          "mana": "600 Pontos de Mana, além de 60 Pontos de Mana por repetição.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 13"
+        }
+      ]
+    },
+    {
+      "id": "raios-de-balthakk",
+      "title": "Os Raios de Balthakk",
+      "kind": "Tomo",
+      "shelf": "mathet",
+      "summary": "Tomo de Balthakk, Principado de energia pura: raios destrutivos e luz purificadora.",
+      "color": "#b08a3c",
+      "pages": [
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "Os Raios Funestos de Balthakk",
+          "quote": "Balthakk não ilumina. Balthakk atinge.",
+          "spell": "Raios Funestos de Balthakk",
+          "description": "O conjurador dispara raios de energia pura que atingem o alvo como um golpe de força Super +. Atravessam escudos físicos comuns e afetam entidades incorpóreas.",
+          "mana": "80 Pontos de Mana por rajada.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 02"
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 03",
+          "title": "A Luz Branca de Balthakk",
+          "quote": "Nem toda luz existe para iluminar. Algumas foram criadas para purificar. Permita que Balthakk atravesse seu Núcleo de Mana como um sol nascente, expulsando toda energia que não pertença à ordem natural das Artes Místicas.",
+          "spell": "A Luz Branca de Balthakk",
+          "description": "O conjurador libera uma intensa luz branca de natureza sagrada, capaz de dissipar pequenas maldições, enfraquecer energias corrompidas, repelir entidades espirituais hostis e purificar ambientes contaminados por magia obscura. Contra usuários de magia sombria, a luz provoca intenso desconforto e reduz temporariamente a estabilidade de seus feitiços.",
+          "mana": "75 Pontos de Mana."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 04",
+          "title": "O Braseiro de Balthakk",
+          "spell": "Braseiro de Balthakk",
+          "description": "O corpo do conjurador é envolvido por uma aura de energia ardente. Quem o toca ou é tocado por ele sofre queimaduras místicas, e seus golpes passam a ferir entidades espirituais.",
+          "mana": "150 Pontos de Mana, além de 15 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulos seguintes",
+          "note": "O restante do tomo se perdeu na raid."
+        }
+      ]
+    },
+    {
+      "id": "manuscritos-de-valtorr",
+      "title": "Os Manuscritos de Valtorr",
+      "kind": "Manuscritos",
+      "shelf": "mathet",
+      "color": "#5a2e3a",
+      "summary": "Os vapores de Valtorr, Principado das névoas: prender, esconder e confundir.",
+      "pages": [
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "Os Vapores de Valtorr",
+          "quote": "Que os Vapores de Valtorr escondam os meus e prendam os que me caçam.",
+          "spell": "Vapores de Valtorr",
+          "description": "Uma névoa mística se espalha a partir do conjurador. Pode cobrir uma área e esconder aliados, ou se fechar em volta de um alvo e prendê-lo como correntes de fumaça densa.",
+          "mana": "70 Pontos de Mana, além de 10 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 02",
+          "title": "A Nuvem de Valtorr",
+          "spell": "Nuvem de Valtorr",
+          "description": "O conjurador condensa os vapores numa pequena nuvem de tempestade sobre um alvo, que é atingido por descargas elétricas a cada turno.",
+          "mana": "110 Pontos de Mana, além de 15 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulo 03",
+          "note": "As Víboras de Valtorr. Só restou o título."
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 04"
+        }
+      ]
+    },
+    {
+      "id": "ensinamentos-de-farallah",
+      "title": "Os Ensinamentos de Farallah",
+      "kind": "Grimório",
+      "shelf": "mathet",
+      "classification": "Grão-Mestre",
+      "summary": "Rituais de aprisionamento e selos de contenção atribuídos à entidade Farallah.",
+      "color": "#7a5a1e",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Os Ensinamentos de Farallah",
+          "blocks": [
+            "Os Ensinamentos de Farallah reúnem antigos rituais atribuídos à misteriosa entidade mística Farallah, cujo domínio repousa sobre o aprisionamento, a autoridade arcana e os selos de contenção. Diferentemente de outros tomos ofensivos, seus escritos ensinam que um verdadeiro mestre não precisa destruir seu inimigo para vencê-lo: basta retirar-lhe toda possibilidade de agir.",
+            "Os manuscritos são usados principalmente por Guardiões das Artes Místicas encarregados de conter entidades extradimensionais e proteger locais sagrados.",
+            "Os registros mais antigos atribuem sua autoria à própria entidade Farallah. Ao longo dos séculos, Mestres das Artes Místicas expandiram seus ensinamentos com anotações sobre aplicações defensivas e rituais de aprisionamento."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Grão-Mestre"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Magia de contenção, selamento e dominação arcana"
+            }
+          ]
+        },
+        {
+          "type": "feitiço",
+          "label": "Trecho 01",
+          "title": "O Pentagrama de Farallah",
+          "quote": "Cinco pontas, cinco vontades, uma só porta.",
+          "spell": "Pentagrama de Farallah",
+          "description": "Cinco conjuradores se posicionam nas pontas de um pentagrama traçado em Mana e transportam todos os que estão dentro dele para um local que pelo menos um deles conheça. Com menos de cinco, o pentagrama não se fecha.",
+          "mana": "60 Pontos de Mana de cada um dos cinco conjuradores.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Trecho 02"
+        },
+        {
+          "type": "rasgada",
+          "label": "Trechos 03 a 07",
+          "note": "Cinco trechos arrancados de uma só vez."
+        },
+        {
+          "type": "feitiço",
+          "label": "Trecho 08",
+          "title": "As Presas de Farallah",
+          "quote": "A prisão perfeita não possui grades. Ela nasce quando a própria realidade decide fechar sua mandíbula sobre aquele que ousou desafiar a ordem. Permita que Farallah manifeste seus dentes e verá até mesmo os mais arrogantes conhecerem a imobilidade.",
+          "spell": "As Presas de Farallah",
+          "description": "O conjurador invoca enormes mandíbulas espectrais de energia mística dourada, que surgem ao redor do alvo e se fecham violentamente sobre ele. Mais do que causar impacto físico, as Presas exercem intensa pressão arcana, restringindo movimentos e dificultando a canalização de Mana enquanto permanecem fechadas. O feitiço é amplamente usado para capturar criaturas sobrenaturais e impedir a fuga de inimigos poderosos.",
+          "mana": "90 Pontos de Mana, além de 10 Pontos de Mana por turno para manter as Presas manifestadas."
+        }
+      ]
+    },
+    {
+      "id": "paginas-lendarias",
+      "title": "As Páginas Lendárias do Kamar-Taj",
+      "kind": "Páginas",
+      "shelf": "mathet",
+      "color": "#8a2a1e",
+      "summary": "Os feitiços que fizeram a fama dos Mestres das Artes Místicas, copiados à mão pelos bibliotecários de Kamar-Taj.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "As Páginas Lendárias",
+          "blocks": [
+            "Não é um livro único, mas uma coleção de páginas copiadas ao longo dos séculos: os feitiços que os Mestres das Artes Místicas mais usaram em batalha.",
+            "Cada página traz o nome da entidade invocada. Conheça o nome antes de pronunciá-lo."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Mathet"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Feitiços clássicos de combate"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Página Lendária",
+          "title": "As Bandas Carmesins de Cyttorak",
+          "quote": "Pelas Bandas Carmesins de Cyttorak!",
+          "spell": "Bandas Carmesins de Cyttorak",
+          "description": "Faixas de energia carmesim surgem ao redor do alvo e o prendem com a força de Cyttorak. Seguram oponentes de força até o nível Mega; quanto mais forte o alvo, mais Mana o conjurador gasta para mantê-las.",
+          "mana": "150 Pontos de Mana, além de 15 Pontos de Mana por turno (30 contra alvos de nível Mega).",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Página Lendária",
+          "title": "As Imagens de Ikonn",
+          "spell": "Imagens de Ikonn",
+          "description": "O conjurador cria várias cópias ilusórias de si mesmo, que se movem e falam como ele. As imagens confundem adversários, mas desaparecem ao primeiro golpe.",
+          "mana": "90 Pontos de Mana, além de 10 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Página Lendária"
+        },
+        {
+          "type": "feitiço",
+          "label": "Página Lendária",
+          "title": "As Névoas de Munnopor",
+          "spell": "Névoas de Munnopor",
+          "description": "Uma névoa pesada cai sobre os adversários, deixando-os lentos e ofegantes. Criaturas aladas perdem altura sob o peso dela.",
+          "mana": "70 Pontos de Mana, além de 10 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Página Lendária"
+        }
+      ]
+    },
+    {
+      "id": "pergaminhos-de-raggadorr",
+      "title": "Os Pergaminhos de Raggadorr",
+      "kind": "Pergaminhos",
+      "shelf": "mathet",
+      "color": "#2e4a5a",
+      "summary": "Os anéis de Raggadorr: barreiras que protegem, prendem e anulam poderes.",
+      "pages": [
+        {
+          "type": "feitiço",
+          "label": "Pergaminho 01",
+          "title": "Os Sete Anéis de Raggadorr",
+          "quote": "Pelos Anéis Rubros de Raggadorr: que nenhum poder atravesse o círculo.",
+          "spell": "Anéis de Raggadorr",
+          "description": "Sete anéis de energia surgem ao redor do conjurador ou de um alvo. Podem formar uma barreira protetora ou se fechar sobre um inimigo, prendendo-o e anulando temporariamente seus poderes místicos e sobre-humanos.",
+          "mana": "200 Pontos de Mana, além de 20 Pontos de Mana por turno.",
+          "restored": true
+        },
+        {
+          "type": "borrada",
+          "label": "Pergaminho 02",
+          "note": "Chuvas de Raggadorr"
+        },
+        {
+          "type": "rasgada",
+          "label": "Pergaminho 03",
+          "note": "Fitas de Raggadorr"
+        }
+      ]
+    },
+    {
+      "id": "folhas-mathet",
+      "title": "Folhas Avulsas do Acervo Mathet",
+      "kind": "Folhas recuperadas",
+      "shelf": "mathet",
+      "summary": "Capítulos recuperados do Event Log depois da raid. Os tomos de origem ainda não foram identificados.",
+      "color": "#8a6a3a",
+      "pages": [
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "A Grande Transmutação",
+          "quote": "Toda matéria recorda aquilo que já foi. Pedra, ferro, madeira ou ouro compartilham a mesma origem primordial. Não imponha uma nova forma ao mundo; apenas convença-o de que ele sempre pertenceu a ela.",
+          "spell": "Transmutação",
+          "description": "O conjurador altera temporária ou permanentemente as propriedades físicas de matéria inanimada, transformando objetos, estruturas e materiais em outros elementos compatíveis. A complexidade da transmutação depende diretamente do conhecimento do usuário, sendo impossível alterar matéria viva ou criar recursos infinitos. Se usado sem responsabilidade, o mago pode perder seu Núcleo para sempre.",
+          "mana": "300 Pontos de Mana, variando conforme o volume transformado."
+        },
+        {
+          "type": "borrada",
+          "note": "Folha encharcada. A tinta escorreu."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 06",
+          "title": "A Luz de Nirvalon",
+          "quote": "Pelo poder que se move, respira, flui e cresce conosco como um só: que Nirvalon aniquile todo o desespero através da pura luz branca. Que assim seja!",
+          "spell": "A Luz de Nirvalon",
+          "description": "O conjurador manifesta um intenso clarão de energia sagrada capaz de purificar corrupções místicas, dissipar maldições inferiores, enfraquecer criaturas sombrias e restaurar parcialmente a vitalidade física e espiritual de aliados. Sua luminosidade atravessa ilusões, sombras sobrenaturais e ocultações mágicas. Se o conjurador desejar, a Luz de Nirvalon pode se tornar uma esfera capaz de conter com segurança até mesmo o Darkhold.",
+          "mana": "700 Pontos de Mana."
+        },
+        {
+          "type": "rasgada",
+          "note": "Só restou a margem."
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 81",
+          "title": "A Mão de Hoggoth",
+          "quote": "A força jamais pertenceu aos músculos, mas à vontade que os conduz. Estenda a palma de sua mão e permita que Hoggoth a envolva com sua presença ancestral. Aquilo que antes era apenas um gesto tornar-se-á uma extensão colossal da própria autoridade mística, capaz de proteger, conter ou esmagar conforme a necessidade do equilíbrio.",
+          "spell": "A Mão de Hoggoth",
+          "description": "O conjurador materializa uma gigantesca mão espectral de energia dourada diante de si. A Mão de Hoggoth responde fielmente aos movimentos de seu criador, podendo agarrar criaturas de porte absurdo, conter adversários, bloquear projéteis, destruir estruturas ou manipular objetos extremamente pesados à distância. Sua força acompanha diretamente o poder do Núcleo de Mana do usuário, tornando-se uma das manifestações mais versáteis das Artes Místicas.",
+          "mana": "85 Pontos de Mana na conjuração, além de 15 Pontos de Mana por turno para manter a manifestação ativa."
+        }
+      ]
+    },
+    {
+      "id": "tomo-mestres-supremos",
+      "title": "Tomo dos Mestres Supremos",
+      "kind": "Tomo",
+      "shelf": "grao-mestre",
+      "color": "#5c1410",
+      "summary": "O tomo reservado aos Mestres Supremos. Reúne as invocações diretas às Vishanti.",
+      "pages": [
+        {
+          "type": "texto",
+          "title": "Tomo dos Mestres Supremos",
+          "blocks": [
+            "Este tomo só se abre para Grão-Mestres. Reúne as invocações diretas às Vishanti (Agamotto, Oshtur e Hoggoth) e os feitiços usados pelos Magos Supremos ao longo das eras.",
+            "Cada página foi escrita por um Mestre diferente. A caligrafia muda; o peso das palavras, não."
+          ],
+          "facts": [
+            {
+              "label": "Classificação",
+              "value": "Grão-Mestre"
+            },
+            {
+              "label": "Afinidade",
+              "value": "Invocações das Vishanti"
+            }
+          ],
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 01",
+          "title": "A Luz de Agamotto",
+          "quote": "Pelo Olho de Agamotto, que tudo vê: que nenhuma mentira sobreviva à luz.",
+          "spell": "Luz de Agamotto",
+          "description": "O conjurador abre o Olho de Agamotto, ou invoca seu nome, e projeta uma luz que revela a verdade: desfaz ilusões e disfarces, expõe metamorfos e entidades ocultas e enfraquece criaturas das trevas.",
+          "mana": "400 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 02",
+          "title": "As Hostes de Hoggoth",
+          "quote": "Pelas Hostes de Hoggoth: volte ao lugar de onde veio.",
+          "spell": "Banimento das Hostes de Hoggoth",
+          "description": "O conjurador invoca as Hostes de Hoggoth para banir uma entidade extradimensional de volta ao seu plano de origem. Entidades de grande poder resistem e exigem que o conjurador sustente o feitiço por vários turnos.",
+          "mana": "600 Pontos de Mana, além de 50 Pontos de Mana por turno de resistência da entidade.",
+          "restored": true
+        },
+        {
+          "type": "feitiço",
+          "label": "Capítulo 03",
+          "title": "As Chamas dos Faltine",
+          "spell": "Chamas dos Faltine",
+          "description": "Labaredas de fogo místico, nascidas da dimensão dos Faltine, envolvem o alvo. Queimam corpo e espírito e são especialmente danosas para demônios e mortos-vivos.",
+          "mana": "500 Pontos de Mana.",
+          "restored": true
+        },
+        {
+          "type": "rasgada",
+          "label": "Capítulo 04"
+        },
+        {
+          "type": "borrada",
+          "label": "Capítulo 05"
+        }
+      ]
+    }
+  ]
+}

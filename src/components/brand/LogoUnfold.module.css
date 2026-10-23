@@ -1,0 +1,152 @@
+/*
+ * Geometria tirada do arquivo original (795 × 452 px):
+ * P 0–244, Y 254–548, M 557–795.
+ */
+.stage {
+  perspective: 1400px;
+  perspective-origin: 50% 40%;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 795 / 452;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition: transform 1.2s var(--ease-out);
+  filter: drop-shadow(0 18px 40px rgba(138, 3, 3, 0.35));
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.p {
+  left: 0;
+  width: 30.69%;
+  transform-origin: 100% 50%;
+}
+
+.y {
+  left: 31.95%;
+  width: 36.98%;
+  transform-origin: 50% 50%;
+}
+
+.m {
+  left: 70.06%;
+  width: 29.94%;
+  transform-origin: 0% 50%;
+}
+
+/* Estado dobrado (antes de tocar) */
+.stage:not([data-play]) .p {
+  opacity: 0;
+  transform: rotateY(-100deg);
+}
+.stage:not([data-play]) .y {
+  opacity: 0;
+  transform: scaleY(0.04);
+}
+.stage:not([data-play]) .m {
+  opacity: 0;
+  transform: rotateY(100deg);
+}
+
+.stage[data-play] .y {
+  animation: open-center 620ms var(--ease-out) both;
+}
+.stage[data-play] .p {
+  animation: open-left 1000ms 380ms cubic-bezier(0.2, 0.9, 0.2, 1.06) both;
+}
+.stage[data-play] .m {
+  animation: open-right 1000ms 480ms cubic-bezier(0.2, 0.9, 0.2, 1.06) both;
+}
+
+/* Um reflexo de luz cruza o logo uma vez, logo depois de abrir. */
+.sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(251, 248, 243, 0.32) 50%, transparent 65%);
+  background-size: 250% 100%;
+  background-position: 120% 0;
+  mix-blend-mode: soft-light;
+  -webkit-mask: var(--logo-mask) center / 100% 100% no-repeat;
+  mask: var(--logo-mask) center / 100% 100% no-repeat;
+  opacity: 0;
+}
+
+.stage[data-play] .sheen {
+  animation: sheen 1400ms 1350ms var(--ease-in-out) both;
+}
+
+@keyframes open-center {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.04);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes open-left {
+  0% {
+    opacity: 0;
+    transform: rotateY(-100deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes open-right {
+  0% {
+    opacity: 0;
+    transform: rotateY(100deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes sheen {
+  0% {
+    opacity: 1;
+    background-position: 120% 0;
+  }
+  100% {
+    opacity: 1;
+    background-position: -20% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stage .panel {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+  .sheen {
+    display: none;
+  }
+}

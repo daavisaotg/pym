@@ -1,0 +1,55 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.list[data-depth='0'] {
+  gap: 0.55rem;
+}
+
+.list:not([data-depth='0']) {
+  margin-top: 0.35rem;
+  padding-left: 1.1rem;
+  border-left: 1px solid var(--line);
+}
+
+.item {
+  position: relative;
+}
+
+/* Marcador quadrado, como os bullets da tela da NSA. */
+.list[data-depth='0'] > .item {
+  padding-left: 1rem;
+}
+
+.list[data-depth='0'] > .item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.38rem;
+  height: 0.38rem;
+  background: var(--red-signal);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-base);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: var(--bege);
+}
+
+.list:not([data-depth='0']) .name {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--bege-2);
+}

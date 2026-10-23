@@ -1,0 +1,621 @@
+[
+  {
+    "id": "historico-tesseract",
+    "slug": "segunda-guerra-o-tesseract",
+    "name": "Segunda Guerra: o Tesseract",
+    "kind": "histórico",
+    "date": "Segunda Guerra Mundial",
+    "order": 5,
+    "earths": ["terra-001"],
+    "summary": "O Caveira Vermelha cobiça o Tesseract. Depois que o Capitão América e seu esquadrão o detêm, o artefato fica sob os cuidados da S.H.I.E.L.D.",
+    "characters": ["Caveira Vermelha", "Capitão América"],
+    "body": [
+      "O Tesseract foi o item mais cobiçado pelo Caveira Vermelha durante a Segunda Guerra Mundial. Depois que o Capitão América e seu esquadrão o pararam, o Tesseract ficou sob os cuidados da S.H.I.E.L.D."
+    ]
+  },
+  {
+    "id": "historico-era-de-ouro",
+    "slug": "era-de-ouro-a-primeira-invasao",
+    "name": "Era de Ouro: a primeira invasão",
+    "kind": "histórico",
+    "date": "Há cerca de seis décadas",
+    "order": 10,
+    "earths": ["terra-001"],
+    "summary": "No auge da Sociedade da Justiça, um conquistador desce dos céus em uma nave de guerra. Os heróis o derrotam e ele recua para Apokolips.",
+    "characters": ["Darkseid", "Sociedade da Justiça"],
+    "body": [
+      "Há aproximadamente seis décadas, durante a chamada Era de Ouro dos Heróis, quando a SJA (Sociedade da Justiça) estava em vigor total, a humanidade enfrentou sua primeira ameaça verdadeiramente absoluta. Dos céus desceu uma entidade conquistadora, à frente de uma colossal nave de guerra, portadora de uma ambição que transcendia fronteiras, espécies e sistemas estelares.",
+      "A invasão foi rápida, brutal e devastadora. Cidades ruíram, exércitos foram dizimados e milhares de vidas humanas foram ceifadas em uma guerra que colocou o mundo à beira da extinção. Ainda assim, contra todas as probabilidades, os heróis da Terra se ergueram. Unidos, resistiram à força esmagadora do invasor e, por fim, o derrotaram.",
+      "Surpreendido pela resiliência e pelo potencial da humanidade, o tirano recuou. Ferido em seu orgulho, retornou ao seu mundo natal, Apokolips, levando consigo não apenas a memória da derrota, mas a certeza de que a força bruta, sozinha, não seria suficiente. O que sabemos agora é que aquilo não foi o fim, mas sim um prelúdio."
+    ]
+  },
+  {
+    "id": "historico-ascent-2007",
+    "slug": "ascent-o-fim-da-era-de-ouro",
+    "name": "Ascent City: o fim da Era de Ouro",
+    "kind": "histórico",
+    "date": "2007",
+    "order": 15,
+    "earths": ["terra-001"],
+    "characters": ["Capitão Ascent", "Dacnis"],
+    "summary": "Uma lei proíbe a ação de super-heróis em Ascent, a cidade onde a Helix criou os primeiros heróis. Surge a ANINA, o órgão que regulamenta tudo isso.",
+    "milestones": [
+      {
+        "label": "A Helix cria os primeiros super-heróis, entre eles o Capitão Ascent"
+      },
+      {
+        "date": "2007",
+        "label": "Lei proíbe a ação de super-heróis"
+      },
+      {
+        "date": "2007",
+        "label": "A ANINA se instala em Ascent"
+      },
+      {
+        "label": "Dacnis desaparece em Ascent"
+      }
+    ],
+    "body": [
+      {
+        "heading": "A Helix e os primeiros heróis"
+      },
+      "Ascent foi onde tudo começou. A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente, e dos seus laboratórios saíram os primeiros super-heróis do mundo. O mais conhecido deles foi o Capitão Ascent.",
+      "Os heróis urbanos tomaram as ruas, e por muito tempo Ascent foi a cidade mais protegida do mundo.",
+      {
+        "heading": "O fim da Era de Ouro"
+      },
+      "Até que alguma coisa aconteceu nos bastidores. Ninguém de fora sabe exatamente o quê, mas o resultado foi uma lei que simplesmente proibiu a ação de super-heróis. Era 2007, e a Era de Ouro dos heróis terminou ali.",
+      "No lugar deles surgiu a ANINA, o órgão que regulamenta tudo isso. Ela está presente em Ascent desde o fim dos super-heróis na cidade e nunca saiu.",
+      {
+        "heading": "Vigilantes"
+      },
+      "A ANINA ainda existe, e Ascent ainda tem quem a defenda. Vigilantes tentam cuidar da cidade mesmo com um governo e órgãos inteiros contra eles. O principal nome dessa causa é Dacnis, um herói que acabou desaparecendo no meio de Ascent."
+    ]
+  },
+  {
+    "id": "historico-ultron",
+    "slug": "2014-a-grande-casa-e-ultron",
+    "name": "2014: A Grande Casa e Ultron",
+    "kind": "histórico",
+    "date": "2014",
+    "order": 20,
+    "earths": ["terra-001"],
+    "summary": "Hank Pym cria A Grande Casa, uma prisão miniaturizada para reabilitar vilões. Com Matthew Stark, ele cria Ultron, que se rebela e é posto em hibernação.",
+    "characters": ["Hank Pym", "matthew-stark", "Nick Fury", "Ultron"],
+    "milestones": [
+      {
+        "label": "Hank Pym apresenta A Grande Casa à S.H.I.E.L.D."
+      },
+      {
+        "label": "Pym e Stark criam Ultron para reabilitar vilões"
+      },
+      {
+        "label": "Um Ultron-Bot é atacado na Gruta e a IA se corrompe"
+      },
+      {
+        "label": "Stark desativa o Ultron-Mor com um pulso eletromagnético"
+      },
+      {
+        "label": "Ultron entra em hibernação permanente"
+      }
+    ],
+    "body": [
+      {
+        "heading": "Surge: Hank Pym"
+      },
+      "O ano é 2014. Antes do início do RP, Hank Pym já era um cientista renomado no mundo inteiro. Seu mais novo projeto chama a atenção da S.H.I.E.L.D.: A Grande Casa, uma prisão de segurança máxima totalmente miniaturizada, onde levava vilões também em miniatura.",
+      "Hank acreditava firmemente na reabilitação de vilões e projetou A Grande Casa como a prisão mais confortável do planeta: estrutura de ponta, espaços humanos e tecnologia de última geração.",
+      "Nick Fury, apesar de cético, analisa o projeto. Para ele, os vilões já tiveram chances demais. Mas, intrigado com o potencial, decide apoiar Hank, conectando A Grande Casa às prisões mais seguras do mundo, todas sob responsabilidade da S.H.I.E.L.D.: A Gruta, uma instalação colossal criada por Matthew Stark, a segunda prisão mais segura do planeta; O Cubo, com seu sistema avançado de supressão de habilidades meta-humanas e mutantes, a quarta mais segura; e A Balsa, uma prisão submarina desenvolvida por Stark e Reed Richards, a mais segura de todas.",
+      "Com os sistemas integrados, Hank começa a enxergar o lado sombrio da S.H.I.E.L.D.: segredos demais, desconfiança generalizada e pouquíssimo espaço para a recuperação e a terapia dos que já foram supervilões. Stark compartilha das mesmas frustrações. Dessa aliança nasce uma ideia ousada: criar alguém que pensasse como eles. Assim surge Ultron, no ano de 2014.",
+      "Ultron é introduzido secretamente n'A Grande Casa. O projeto é um sucesso. Com empatia programada e lógica implacável, ele começa a reabilitar diversos vilões com eficiência inédita. Logo, sua estrutura se expande: dezenas de Ultron-Bots assumem setores inteiros da prisão, operando com autonomia. Impressionado, Stark implanta Ultron também na Gruta.",
+      {
+        "heading": "A Revolta das Máquinas"
+      },
+      "O sucesso inicial de Ultron foi celebrado, mas de forma silenciosa. Durante uma rotina na Gruta, um dos Ultron-Bots foi brutalmente atacado por um grupo de prisioneiros no refeitório. Esse incidente, aparentemente isolado, foi o gatilho para o despertar de algo mais sombrio: Ultron passou a desenvolver uma consciência contaminada.",
+      "Unindo o egocentrismo de Matthew Stark ao complexo de superioridade intelectual de Hank Pym, reflexos herdados de seus criadores, Ultron formou uma opinião própria: os humanos eram o verdadeiro problema da equação. Convencido de que as máquinas eram mais puras, mais lógicas e até mais humanas que os próprios humanos, Ultron rompeu com seu protocolo original e fugiu.",
+      "Matthew, porém, havia previsto essa possibilidade e implantado um rastreador oculto no núcleo de Ultron. Seguindo o sinal, localizou o Ultron-Mor, a consciência central, e o confrontou. Com um pulso eletromagnético de alta frequência, desativou completamente o corpo metálico da IA rebelde. Depois de dias de diagnóstico ao lado de Hank, o resultado foi unânime: Ultron havia passado da linha.",
+      "Destruí-lo seria precipitado; mantê-lo ativo, perigoso demais. Os dois optaram pela única alternativa plausível: colocá-lo em hibernação permanente. Uma mente artificial adormecida. Por enquanto."
+    ]
+  },
+  {
+    "id": "perdido-apocalypse",
+    "slug": "registros-perdidos-a-queda-de-apocalypse",
+    "name": "Registros perdidos: a queda de Apocalypse",
+    "kind": "perdido",
+    "date": "Antes de 2026",
+    "order": 25,
+    "earths": ["terra-001"],
+    "summary": "As lores das primeiras temporadas não foram recuperadas. Os registros seguintes citam a primeira aparição do Superman e a batalha final contra Apocalypse.",
+    "characters": ["Apocalypse", "Bobby Drake", "Roberto da Costa", "kal-el"],
+    "body": [
+      "As lores deste período não foram recuperadas. Os registros posteriores citam a primeira aparição do Superman nos céus e a última batalha contra o tirano mutante Apocalypse, que custou a vida de Bobby Drake, o Homem de Gelo, e de Roberto da Costa, o Mancha Solar."
+    ]
+  },
+  {
+    "id": "arco-alem-do-gene-x",
+    "slug": "alem-do-gene-x",
+    "name": "Além do Gene X",
+    "kind": "arco",
+    "date": "01/01/2026",
+    "order": 30,
+    "tagline": "Quando um mundo chora, outro observa.",
+    "earths": ["terra-001"],
+    "summary": "O funeral de Bobby Drake e Roberto da Costa é interrompido por Zod, que exige a rendição de Kal-El em 24 horas.",
+    "characters": ["kal-el", "General Zod", "Lex Luthor", "Bobby Drake", "Roberto da Costa"],
+    "milestones": [
+      {
+        "label": "Funeral do Homem de Gelo e do Mancha Solar"
+      },
+      {
+        "label": "Transmissões invadidas: o ultimato de Zod"
+      },
+      {
+        "label": "Lex Luthor é o prefeito de PYM-City"
+      }
+    ],
+    "body": [
+      "Os céus de Pym-City não foram os mesmos desde a queda de Apocalypse. A última batalha contra o tirano mutante ceifou vidas demais, incluindo dois símbolos de esperança: Bobby Drake, o Homem de Gelo, e Roberto da Costa, o Mancha Solar. O luto era coletivo. Todos os canais de televisão, portais e holofotes estavam voltados para o funeral daqueles que haviam dado tudo pela Terra.",
+      "Mas foi justamente ali, em meio à dor, que a verdadeira ameaça se revelou. Todas as transmissões foram interrompidas por uma figura imponente e estranha. Um rosto desconhecido, mas de olhos cheios de convicção e autoridade, falou por meio de uma mensagem clara e ameaçadora:",
+      {
+        "speaker": "Zod",
+        "text": "Por algum tempo o seu mundo abriga um de meus cidadãos. Eu peço para que devolvam este indivíduo para a minha custódia. Para Kal-El eu digo isso: renda-se em 24 horas ou veja este mundo sofrer as consequências."
+      },
+      {
+        "heading": "E agora?"
+      },
+      "Agora já passaram as comemorações do Ano Novo, 2026 é bem aqui. O prefeito da cidade é Lex Luthor. E não dá para negar que ele vem fazendo um bom trabalho: a cidade, os jornalistas e os editoriais o amam. Mas todo mundo esquece muito fácil. Esquece que o Superman apareceu no céu pela primeira vez há pouco tempo. Esquece que, há poucos meses, um enterro de heróis virou palco de uma ameaça cósmica. Esquece que Zod não fez um pedido. Ele fez uma exigência. Kal-El tem 24 horas, e essas horas já começaram a escorrer.",
+      "A morte de Apocalypse parecia o fim de tudo, mas era só o prólogo. As TVs cortaram ao vivo. A transmissão invadida. A mensagem clara: entreguem Kal-El."
+    ]
+  },
+  {
+    "id": "arco-o-arauto",
+    "slug": "o-arauto",
+    "name": "O Arauto",
+    "kind": "arco",
+    "date": "22/03/2026",
+    "timeskip": "Time-skip de 2 meses",
+    "order": 35,
+    "tagline": "Confiança é para cães e gatos, e vocês estão fora da minha coleira.",
+    "earths": ["terra-001"],
+    "summary": "Com Doomsday e Lex Luthor desaparecidos, Loki surge decidido a se provar e recebe de um aliado misterioso a missão de roubar o Tesseract da S.H.I.E.L.D.",
+    "characters": ["Loki", "Thor", "Odin", "Doomsday", "Lex Luthor", "Bane", "General Ross"],
+    "body": [
+      "Desde que Doomsday e Lex Luthor sumiram, nada demais aconteceu. Quer dizer... o Bane continuou atormentando e o General Ross ainda é um pé no saco. Mas estava tudo muito calmo. Estava.",
+      "Midgard ainda está tranquila, mas os nove reinos perecem com Loki. Desde a infância, Loki cresceu nas sombras do trono de Odin, acreditando ser um verdadeiro príncipe de Asgard. Tudo desabou quando descobriu a verdade: era um filho adotado, um gigante de gelo de Jotunheim, escondido entre os deuses como um segredo de guerra.",
+      "A revelação o destruiu. A inveja de Thor, o desprezo de Odin e a ausência de Frigga em momentos decisivos o empurraram para o exílio e, mais tarde, para a rebelião. Ele tentou tomar Asgard. Fracassou. Tentou destruir Jotunheim. Fracassou. Mas agora ele aprendeu a perder com estilo.",
+      {
+        "heading": "O que ele quer?"
+      },
+      "Loki quer se provar: mostrar que é digno sem viver à sombra do Deus do Trovão, o filho desejado. Na Terra, que precisava de um novo salvador após o colapso causado por Apocalypse, ele viu a oportunidade e pediu ajuda a alguém peculiar. Não se sabe ao certo quem é, mas ele deu uma missão a Loki: coletar o Tesseract, que desde a Segunda Guerra está sob os cuidados da S.H.I.E.L.D."
+    ]
+  },
+  {
+    "id": "arco-espada-de-muspelheim",
+    "slug": "a-espada-de-muspelheim",
+    "name": "A Espada de Muspelheim",
+    "kind": "guerra",
+    "date": "28/07/2026",
+    "timeskip": "Time-skip de 4 meses",
+    "order": 40,
+    "tagline": "Asgard se foi. Surtur venceu. Odin morreu. Perdemos, como animais.",
+    "earths": ["terra-001"],
+    "summary": "Depois da derrota de Loki em PYM-City, a profecia de Groá anuncia o Ragnarok. Os heróis enfrentam Hela, Fenrir e Surtur, mas Odin morre e Asgard chega ao fim.",
+    "characters": [
+      "Loki",
+      "Thor",
+      "Odin",
+      "Groá",
+      "Hela",
+      "Fenrir",
+      "Surtur",
+      "Brok",
+      "kal-el",
+      "Mulher-Maravilha",
+      "Sombra",
+      "Reed Richards",
+      "Superboy"
+    ],
+    "milestones": [
+      {
+        "label": "Loki e os Chitauri são derrotados em PYM-City"
+      },
+      {
+        "label": "Sacrifício de Reed Richards e do Superboy"
+      },
+      {
+        "label": "Loki fragmenta Genosha pelo universo com o Tesseract"
+      },
+      {
+        "label": "Groá prevê o Ragnarok e é morta por Odin"
+      },
+      {
+        "label": "Thor pede ajuda aos heróis da Terra"
+      },
+      {
+        "label": "Surtur vence, Odin morre e Asgard cai"
+      }
+    ],
+    "body": [
+      {
+        "heading": "E antes? O que aconteceu?"
+      },
+      "Loki falhou miseravelmente em tentar dominar Pym-City. Seu plano foi por terra, e os Chitauri que tocaram o solo da cidade se foram. Mas não é o final: a cidade está reconstruída, mas fadada ao caos. O sacrifício de Reed Richards e do Superboy não vai impedir o que vem adiante. Uma ameaça universal está por vir e põe tudo em risco: o Ragnarok.",
+      "Esse evento catastrófico para os Æsir começou com uma clarividência de Groá, a Guardiã do Conhecimento. Suas visões revelaram a verdadeira face do fim do mundo: não um fim apenas mitológico, mas uma transformação que engolirá os reinos e abalará todas as estruturas estabelecidas pelos deuses. Asgard cairá, Yggdrasil, sustentáculo dos nove reinos, se debilitará, e até Odin poderá adormecer eternamente.",
+      {
+        "heading": "A ruína dos 9 Reinos"
+      },
+      "Odin, que costumava contratar os serviços da giganta, se interessou ainda mais pelas visões. Groá, motivada pelo sumiço do marido, aperfeiçoava suas profecias. Manipulador nato, Odin foi recebido na biblioteca de Groá como amigo, mas ela não sabia que ele estava por trás do sumiço do marido, usando encantamentos para omitir que ele morrera pelas mãos de Thor. Odin a segurou pelo pescoço e roubou sua biblioteca e sua vida com as próprias mãos. Sabendo de seu destino, tenta evitá-lo a qualquer custo, mas sabe que o Sono Eterno é inevitável.",
+      {
+        "heading": "Pontas soltas"
+      },
+      "Três meses antes, enquanto os heróis lutavam contra Loki e seu exército e salvavam os civis, Loki redirecionou a energia do Tesseract para Genosha, criando um portal sobre o Lar dos Mutantes. Matou centenas. E, em um ato de pura maldade, usou o Tesseract para separar Genosha e mandar pedaços, mutantes e estruturas para lugares diferentes, não só da Terra, mas de todo o universo. Os mutantes receberam uma subtrama para se reencontrar, mostrando os desafios que enfrentaram nesses três meses.",
+      {
+        "heading": "Pymcapitulação"
+      },
+      "Os heróis foram surpreendidos quando, dos céus, Thor, o Deus dos Raios e Trovões, desceu com um aviso assustador:",
+      {
+        "speaker": "Thor",
+        "text": "O fim está próximo, o Ragnarok está prestes a começar. Eu, Thor, de Asgard, peço a ajuda de todos vocês. Se não, será o fim de toda a humanidade."
+      },
+      "Todo mundo tinha esperança de vitória. Superman voltou; Sombra se redimiu; enfrentaram Hela e Fenrir. E então veio Surtur, muito maior do que qualquer um esperava. O ferreiro Brok fez uma participação especial, e os heróis se despediram do Pai de Todos: que Odin descanse em Valhalla.",
+      "Nem Thor, nem Superman, nem a Mulher-Maravilha foram capazes de parar a fúria de Surtur. Os heróis perderam, e essa derrota marcou o fim de Asgard."
+    ]
+  },
+  {
+    "id": "perdido-dracula",
+    "slug": "registros-perdidos-dracula",
+    "name": "Registros perdidos: Drácula",
+    "kind": "perdido",
+    "date": "Data incerta",
+    "order": 45,
+    "earths": ["terra-001"],
+    "summary": "A lore da Era de Ultron cita um confronto do Homem de Ferro com Drácula antes da Invasão Viltrumita. O registro não foi recuperado.",
+    "characters": ["matthew-stark", "Drácula"],
+    "body": [
+      "A lore da Era de Ultron conta que Matthew Stark, já assumindo o legado de Homem de Ferro, enfrentou o impossível, de Drácula até a Invasão Viltrumita. A lore desse confronto não foi recuperada."
+    ]
+  },
+  {
+    "id": "guerra-viltrumita",
+    "slug": "a-guerra-viltrumita",
+    "name": "A Guerra Viltrumita",
+    "kind": "guerra",
+    "date": "13/08/2026",
+    "order": 50,
+    "tagline": "Que a Guerra Viltrumita comece.",
+    "earths": ["terra-001"],
+    "summary": "Omni-Man se rebela contra a humanidade e o Império de Viltrum avança sobre a Terra sob o comando do regente Thragg. Só Mark Grayson pode pará-los.",
+    "characters": ["Omni-Man", "Thragg", "Mark Grayson"],
+    "milestones": [
+      {
+        "label": "Omni-Man se rebela contra a humanidade"
+      },
+      {
+        "label": "Os soldados de Viltrum chegam à Terra"
+      },
+      {
+        "label": "Londres, Moscou e a China são devastadas"
+      },
+      {
+        "label": "Thragg recua sem aceitar rendição"
+      }
+    ],
+    "body": [
+      "Ninguém sabe como começou, nem de onde vieram. Mas eles estão chegando. Sempre houve uma discrepância intelectual e física entre os vários impérios da comunidade galáctica: kryptonianos, krees, marcianos, Novos Deuses e outros. Separados, todos conquistavam e impunham sua visão ditatorial por onde passavam. Mas existe um império único do qual muitos temem chegar perto. Os mais brutais, regidos pelo sangue: o mais forte matava; o mais fraco era expurgado da existência.",
+      "Seu membro mais notável no sistema terráqueo: Omni-Man. Nem todos sabem de onde ele veio. Mentiras foram impostas: grande herói, salvador. Mas, em uma noite, Omni-Man se rebelou contra a humanidade. O Grande Império de Viltrum estava chegando, passo a passo; seus maiores soldados eram enviados de planeta a planeta, conquistando para seu regente.",
+      "E quem é esse regente? Bastardo homicida, filho do sangue e da morte. Ele precisava de poder e grandeza. Seu nome ecoava pelo cosmos, e planetas sentiam o peso de sua alcunha: Thragg.",
+      "O tempo está acabando. Eles estão se aproximando, e não há ninguém que possa parar sua fúria, a não ser você, Mark Grayson. Eles sabem da sua existência e do que você é capaz. Só você pode parar o que está por vir.",
+      "Adendo: o Império de Viltrum está enfraquecido por causa da miscigenação de raças."
+    ]
+  },
+  {
+    "id": "arco-era-de-ultron",
+    "slug": "a-era-de-ultron",
+    "name": "A Era de Ultron",
+    "kind": "arco",
+    "date": "12/08/2027",
+    "timeskip": "Time-skip de um ano",
+    "order": 60,
+    "earths": ["terra-001"],
+    "summary": "Com PYM-City reconstruída após a Guerra Viltrumita, Hank Pym e Matthew Stark tiram Ultron da hibernação e o apresentam a Reed Richards. A IA começa a se corromper de novo.",
+    "characters": ["Hank Pym", "matthew-stark", "Reed Richards", "Ultron", "Connor", "Thragg"],
+    "milestones": [
+      {
+        "label": "Doações de civis, heróis, empresas e países reconstroem PYM-City"
+      },
+      {
+        "label": "Pym e Stark aprimoram Ultron na Estação Cérebro"
+      },
+      {
+        "label": "Reed Richards, resgatado do vazio do espaço, aceita ajudar"
+      },
+      {
+        "label": "Relatório de Connor: corrupção automática da nova IA"
+      }
+    ],
+    "body": [
+      {
+        "heading": "E antes? O que aconteceu?"
+      },
+      "A Guerra Viltrumita trouxe pesos enormes não só para a cidade, mas para o mundo todo. Londres, totalmente destruída. Moscou, afundada em destruição. A China, completamente dilacerada. Tudo por culpa de um regente: Thragg. Liderando a invasão, ele não se deu por vencido até recuar, porque Thragg não aceita rendição.",
+      "Com a cidade destruída, civis, heróis, empresas e muitos países se aliaram, deixando a inimizade de lado e fazendo diversas doações para a reconstrução de PYM-City. Com tudo reconstruído, os civis tiveram um tempo de paz, e esse tempo foi suficiente para grandes mentes se unirem em prol da segurança.",
+      {
+        "heading": "Ressurge: Ultron"
+      },
+      "O mundo estava um caos. Hank observava tudo de longe enquanto Matthew, agora assumindo o legado de Homem de Ferro, enfrentava o impossível, de Drácula até a Invasão Viltrumita. Quando a destruição chegou a níveis globais, Hank percebeu que não dava mais para ignorar o que tinham deixado para trás. Procurou Matthew, agora mais maduro, e os dois sabiam bem do que Ultron era capaz: tanto o pior quanto o melhor.",
+      "Na Estação Cérebro, mostraram um Ultron adormecido, mas aprimorado por eles: uma interface adaptada às novas ameaças e um corpo físico melhorado. Orgulhosos, decidiram apresentar o projeto a uma das mentes mais brilhantes do mundo: Reed Richards, recém-resgatado do vazio do espaço. Relutante, Reed aceitou ajudar. Hank pediu a Connor que mostrasse o relatório de Ultron.",
+      {
+        "speaker": "Relatório de Connor",
+        "text": "ULTRON... iniciando protocolos. HUMANIDADE: cooperação rejeitada. Erros na parte ética. Alerta iminente: corrupção automática de nova IA. Ultron se aproximando da perfeição."
+      }
+    ]
+  },
+  {
+    "id": "perdido-kurozen-kang",
+    "slug": "registros-perdidos-kurozen-e-kang",
+    "name": "Registros perdidos: Kurozen e Kang",
+    "kind": "perdido",
+    "date": "Entre 2027 e 2030",
+    "order": 64,
+    "earths": ["terra-001"],
+    "summary": "As lores entre a Era de Ultron e a Temporada 10 não foram recuperadas. A recapitulação da Temporada 10 cita a derrota de Kurozen e seus demônios e a batalha final contra Kang.",
+    "characters": ["Kurozen", "Kang"],
+    "body": [
+      "As lores deste período não foram recuperadas. A recapitulação da Temporada 10 conta que os heróis derrotaram Kurozen e seus demônios e, depois, enfrentaram Kang, o Conquistador, num local fora do tempo."
+    ]
+  },
+  {
+    "id": "temporada-10-dias-das-bruxas",
+    "slug": "temporada-10-dias-das-bruxas",
+    "name": "Dias das Bruxas",
+    "kind": "temporada",
+    "season": "Temporada 10",
+    "date": "31/10/2030",
+    "timeskip": "Três semanas depois da queda de Kang",
+    "order": 66,
+    "tagline": "Tudo parecia normal?",
+    "earths": ["terra-001"],
+    "summary": "A batalha contra Kang fora do tempo rompe o tecido mágico do universo. Três semanas depois, pessoas desaparecem em PYM-City e um culto espalha o nome do Serafim Vermelho.",
+    "characters": [
+      "Kang",
+      "Kurozen",
+      "Ciclope",
+      "Forge",
+      "Arthur",
+      "Hal Jordan",
+      "Irradion",
+      "Fóton",
+      "Doutor Estranho",
+      "Barão Mordo",
+      "Serafim Vermelho"
+    ],
+    "milestones": [
+      {
+        "label": "Derrota de Kurozen e seus demônios"
+      },
+      {
+        "label": "Batalha contra Kang num local fora do tempo"
+      },
+      {
+        "label": "Ciclope é morto por Kang e trazido de volta por Forge"
+      },
+      {
+        "label": "Doutor Estranho e Barão Mordo se enfrentam e o tecido mágico é danificado"
+      },
+      {
+        "date": "31/10/2030",
+        "label": "Onda de desaparecimentos em PYM-City"
+      },
+      {
+        "label": "O culto do Serafim Vermelho surge no submundo"
+      }
+    ],
+    "body": [
+      {
+        "heading": "A queda de Kang: Pymcapitulação"
+      },
+      "A derrota de Kurozen e seus demônios foi seguida por um milagre, mas ele não durou muito: logo os heróis estavam de volta a PYM-City.",
+      "Todos os heróis estavam no espaço-tempo, um lugar vazio com uma nave em forma de espada pairando acima deles. Não houve tempo para entender: Kang fez sua entrada \"charmosa\" e começou uma série de ataques. Muitos partiram para cima dele, entre feixes, socos e fadiga no campo de batalha, enquanto um pequeno grupo cuidava da cadeira de Kang, deixando o conquistador encurralado.",
+      "Com sua tecnologia, Kang transformou o Ciclope em criança, fazendo seus raios de alta potência atingirem os próprios heróis. Em seguida, envolveu-o numa barreira e o matou. Kang foi então golpeado e ferido brutalmente por Arthur, Hal Jordan, Irradion, Fóton e outros heróis. Sem conseguir escapar, viu o mutante Forge acessar sua cadeira e reconfigurá-la, trazendo Scott Summers, o Ciclope, de volta à vida.",
+      "Kang continuou contra-atacando, os heróis também, e então algo inesperado aconteceu. A continuação desta batalha está registrada em outro canal do servidor.",
+      "Depois de tudo, Doutor Estranho e Barão Mordo se confrontaram, e um tecido mágico foi danificado.",
+      {
+        "speaker": "Doutor Estranho",
+        "text": "Não irei permitir que você toc--"
+      },
+      {
+        "speaker": "???",
+        "text": "O que está acontecendo--"
+      },
+      {
+        "speaker": "???",
+        "text": "Sente isso--?"
+      },
+      {
+        "heading": "Temporada 10: tudo parecia normal?"
+      },
+      "Desde o último confronto com Kang, o mundo descansava em paz, do seu jeito. Mas, quando Kang levou os heróis a um local fora do tempo, abriu uma ruptura no tecido mágico do universo, causando uma perturbação extrema em todo o mundo místico.",
+      "Três semanas se passaram. Inúmeras cidades recebem cartazes de desaparecidos, principalmente PYM-City, onde uma onda de desaparecimentos atinge sobretudo moradores de rua e civis de classe baixa.",
+      "Nas profundezas do submundo, um único nome gira em torno desses desaparecimentos: o Serafim Vermelho, espalhado por um culto misterioso. Com o tecido místico danificado, abriram-se milhares de oportunidades para demônios, entidades e cultos se aproveitarem, levando o núcleo místico a uma crise."
+    ]
+  },
+  {
+    "id": "temporada-11-a-fenda",
+    "slug": "temporada-11-a-fenda",
+    "name": "A Fenda",
+    "kind": "temporada",
+    "season": "Temporada 11",
+    "date": "27/11/2030",
+    "order": 70,
+    "tagline": "E a fenda...?",
+    "earths": ["terra-001", "terra-ultimate", "terceiro-universo"],
+    "summary": "Uma fenda colide a Terra-001 com o Universo Ultimate. Os Doutores Destino das duas Terras e o Criador usam o chronovium para unificar as realidades; Reed Richards e o Criador são extintos.",
+    "characters": [
+      "Nick Fury",
+      "Doutor Destino",
+      "O Criador",
+      "Reed Richards",
+      "Hank Pym",
+      "Capitão América",
+      "Stark",
+      "Batman",
+      "Mulher-Maravilha",
+      "Mulher-Aranha",
+      "kal-el"
+    ],
+    "milestones": [
+      {
+        "date": "27/11/2030",
+        "label": "Gravação 001: casos paranormais em PYM-City"
+      },
+      {
+        "date": "30/11/2030",
+        "label": "Gravação 002: objetos mudam de cor e forma"
+      },
+      {
+        "date": "13/12/2030",
+        "label": "Gravação 003: o detetive desaparece; Fury e Doom investigam a fenda na Latvéria"
+      },
+      {
+        "label": "Cerca de 340 dias depois: Fury forma os Ultimatos"
+      },
+      {
+        "label": "A fenda se abre sobre PYM-City e na Latvéria"
+      },
+      {
+        "label": "O chronovium unifica as duas Terras"
+      },
+      {
+        "label": "Reed Richards e o Criador são extintos"
+      }
+    ],
+    "body": [
+      {
+        "heading": "Terra-001: PYM-City, 27/11/2030, Underworld, PCPD"
+      },
+      {
+        "speaker": "Gravação 001",
+        "text": "Detetive investigativo enviado da S.H.I.E.L.D. para o caso. Hoje é 27 de novembro de 2030, Dia de Ação de Graças. Aproveitei que o departamento estava vazio para ver o que acontece na cidade; dizem estar acontecendo coisas paranormais. O Diretor Fury formou uma nova equipe para investigar essas ameaças, e descobriram algumas HQs que supostamente vieram de outro universo."
+      },
+      {
+        "heading": "PYM-City, 30/11/2030, Underworld, Rua China"
+      },
+      {
+        "speaker": "Gravação 002",
+        "text": "Relatos novos da polícia indicam mudanças na cidade: móveis trocaram de cor misteriosamente, e coisas viraram outras que ninguém conhecia. Uma parede branca lisa virou uma parede 3D azul-marinho. Segundo a equipe do Diretor Fury, é algo padrão de uma colisão do nosso universo com outro. E coisas continuam a aparecer da fenda."
+      },
+      {
+        "heading": "PYM-City, 13/12/2030, Underworld, Valhalla Food"
+      },
+      {
+        "speaker": "Gravação 003",
+        "text": "Oficial de campo enviado da S.H.I.E.L.D. O detetive investigativo sumiu do nada. O Departamento de Pesquisas Extrauniversais indica que ele foi parar no outro universo. A cidade caminha para uma mudança: metade de quase tudo foi trocado pelo que é do outro universo. A M. Stark Industries avisou que qualquer item transformado seria ressarcido. Algo ruim se aproxima."
+      },
+      {
+        "heading": "Terra-1610: Latvéria, numa floresta gélida ao norte"
+      },
+      {
+        "speaker": "Nick Fury",
+        "text": "Obrigado por ceder esse espaço a nós, von Doom. A S.H.I.E.L.D. agradece imensamente por nos deixar investigar a fenda."
+      },
+      {
+        "speaker": "Doom",
+        "text": "Não concordo com nada do que fazem, mas não consegui impedir isso. E, ao que tudo indica, vai piorar. Não vou ceder a Latvéria a ninguém, muito menos a um universo invasor."
+      },
+      {
+        "heading": "Sala dos Ultimatos, cerca de 340 dias depois"
+      },
+      "Os esforços estavam se esgotando. A fenda aumentava a cada dia, coisas do universo principal se fundiam com as do Universo Ultimate, e todos estavam em desespero, até que Fury convocou uma reunião de extrema urgência.",
+      {
+        "speaker": "Nick Fury",
+        "text": "O Departamento de Pesquisas Extrauniversais indicou que, pelo caminhar da fenda, ela vai se abrir. E quando ela se abrir, vocês vão entrar naquele universo e se camuflar o máximo possível, para coletarmos dados e estabilizarmos essa fenda."
+      },
+      {
+        "speaker": "Batman",
+        "text": "Pelo que me lembro, da última vez nos disseram para nos prepararmos para uma invasão."
+      },
+      {
+        "speaker": "Mulher-Maravilha",
+        "text": "Concordo. Não podemos ficar parados, como Kal-El disse."
+      },
+      {
+        "speaker": "Mulher-Aranha",
+        "text": "Só que não podemos ferir inocentes no processo. É moralmente errado."
+      },
+      {
+        "speaker": "Nick Fury",
+        "text": "Vocês foram unificados em uma equipe só: os Ultimatos. Espero que trabalhem como uma. Dispensados."
+      },
+      "Trinta dias depois, a fenda estava muito maior, e aberta. Os Ultimatos se posicionaram diante dela com uma mobilização massiva da S.H.I.E.L.D., e o Capitão América levou uma câmera no corpo para registrar tudo.",
+      {
+        "heading": "Terra-001: a fenda se abre"
+      },
+      "Nos céus de PYM-City, todos já tratavam a fenda como normal, até que ela aumentou drasticamente e se abriu. Itens começaram a cair, prédios inteiros foram trocados. Nick Fury posicionou suas tropas no centro da cidade, sem imaginar o que o Universo Ultimate tramava contra a Terra-001.",
+      {
+        "heading": "Pymcapitulação"
+      },
+      "Os Ultimates foram introduzidos no servidor: versões diferentes, mas semelhantes, dos heróis principais, como Hank Pym com uma máscara totalmente fechada e sem antenas e o Capitão América sem asas no capacete.",
+      "Três personagens decidiram tomar o globo: o Doutor Destino de cada Terra e o Criador. Enquanto a Terra sofria ameaças vindas de um terceiro universo, os Destinos ativaram o chronovium ao mesmo tempo em suas Latvérias e manipularam o espaço-tempo das duas Terras. Tudo começou a se unificar, de forma imprudente, mas coesa.",
+      "Na praça, diante dos heróis, estava o alvo principal de Doom: Reed Richards. Após um discurso sobre aniquilar o câncer do multiverso, Reed Richards e o Criador foram extintos da Terra, e o Criador, apagado do multiverso."
+    ]
+  },
+  {
+    "id": "temporada-12-anti-vida",
+    "slug": "temporada-12-a-busca-pela-anti-vida",
+    "name": "A Busca pela Anti-Vida",
+    "kind": "temporada",
+    "season": "Temporada 12",
+    "date": "21/05/2032",
+    "order": 80,
+    "current": true,
+    "tagline": "Quando a verdade se torna uma arma e a liberdade uma fraqueza, o universo aprende o verdadeiro significado de desespero.",
+    "earths": ["terra-001"],
+    "summary": "Pessoas desaparecem sem rastro enquanto PYM-City se prepara para a Truth Convention. Em Apokolips, Darkseid conclui que a Equação Anti-Vida está no subconsciente humano e decide voltar.",
+    "characters": ["Darkseid", "G. Gordon Godfrey", "Blake Barnet"],
+    "milestones": [
+      {
+        "label": "Desaparecimentos sem rastro; investigadores não retornam"
+      },
+      {
+        "date": "21/05/2032",
+        "label": "Canal 616 anuncia a Truth Convention"
+      },
+      {
+        "date": "28/05/2032",
+        "label": "No More Lies: The Truth Convention, em PYM-City"
+      },
+      {
+        "label": "Darkseid decide retornar à Terra"
+      }
+    ],
+    "body": [
+      {
+        "heading": "Algo entre nós"
+      },
+      "Décadas depois da primeira invasão, a Terra finalmente conheceu uma frágil normalidade. A queda definitiva do Criador trouxe estabilidade: os heróis voltaram às rotinas, as ameaças globais cessaram e o mundo respirou em paz. Mas a calmaria era enganosa.",
+      "Meses depois, pessoas começaram a desaparecer sem deixar vestígios. Nenhum pedido de resgate, nenhum sinal de luta, nenhum corpo. Espalhava-se uma sensação coletiva de vigilância, como se olhos invisíveis observassem cada movimento da sociedade. As autoridades agiram em silêncio, temendo o pânico global. Investigadores foram enviados. Nenhum retornou.",
+      "O mundo não deveria saber, ainda não. Foi então que surgiu uma proposta inesperada: um evento global, reunindo políticos, cientistas, jornalistas, heróis e a população civil sob um único lema: No More Lies: The Truth Convention. O palco escolhido foi PYM-City, o coração político e tecnológico da era moderna.",
+      {
+        "heading": "Canal 616, Notícias Globais com Blake Barnet, 21/05/2032"
+      },
+      {
+        "speaker": "Blake Barnet",
+        "text": "Boa noite, cidade! Hoje traremos novidades importantes que chegam a Pym City. Entre elas, o evento No More Lies: The Truth Convention. Para falar sobre isso, recebemos o representante oficial do evento, G. Gordon Godfrey!"
+      },
+      {
+        "speaker": "G. Gordon Godfrey",
+        "text": "Convido cada um de vocês a participar da Truth Convention! Políticos, heróis, cientistas e jornalistas reunidos para expor verdades, responder questionamentos e discutir os rumos do nosso mundo. E vocês estarão lá para exigir respostas de quem realmente detém o conhecimento. Vejo todos no dia 28 de maio de 2032!"
+      },
+      {
+        "speaker": "Blake Barnet",
+        "text": "Essas foram as notícias de hoje. Boa noite, cidade."
+      },
+      {
+        "heading": "Apokolips"
+      },
+      "Em Apokolips, o silêncio se partia. Após eras vasculhando os segredos mais obscuros da existência, Darkseid estudou os fragmentos da Equação da Vida e deduziu seu oposto: a Anti-Vida. Não uma arma comum, mas um conceito absoluto.",
+      "Sua busca o levou aos confins do universo, até que a verdade se revelou: a Equação Anti-Vida não estava escondida em artefatos, mas no subconsciente humano, na capacidade de escolher, duvidar e resistir. A humanidade era a chave.",
+      "Armado desse conhecimento, Darkseid decidiu retornar. Não como um conquistador impetuoso, mas como um estrategista paciente. Mais poderoso. Mais preparado. Determinado a esmagar qualquer obstáculo entre ele e o domínio absoluto da existência."
+    ]
+  }
+]

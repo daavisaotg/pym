@@ -1,0 +1,138 @@
+.wrap {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: calc(var(--nav-h) + var(--s-6)) var(--gutter) var(--s-7);
+}
+
+.frame {
+  --c: 18px;
+  position: relative;
+  width: min(44rem, 100%);
+  padding: var(--s-6) clamp(var(--s-4), 5vw, var(--s-7));
+  background: rgba(15, 11, 9, 0.82);
+  border: 1px solid var(--line);
+  clip-path: polygon(0 0, calc(100% - var(--c)) 0, 100% var(--c), 100% 100%, var(--c) 100%, 0 calc(100% - var(--c)));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+/* Linha de varredura que desce pela ficha. */
+.frame::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, rgba(230, 216, 188, 0.04), transparent);
+  animation: scan 5s linear infinite;
+  pointer-events: none;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding-bottom: var(--s-3);
+  margin-bottom: var(--s-5);
+  border-bottom: 1px solid var(--line);
+  color: var(--bege-3);
+  font-size: var(--text-sm);
+}
+
+.lock {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+.lock::before {
+  content: '';
+  width: 0.45rem;
+  height: 0.45rem;
+  background: var(--red-signal);
+  box-shadow: 0 0 10px var(--red-signal);
+  animation: blink 2.4s ease-in-out infinite;
+}
+
+.title {
+  font-size: clamp(2.6rem, 7vw, 4.6rem);
+  font-weight: 500;
+  color: var(--white);
+}
+
+.stamp {
+  display: inline-block;
+  margin-top: var(--s-3);
+  padding: 0.1em 0.5em;
+  border: 2px solid var(--red-signal);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, var(--text-lg));
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--red-signal);
+  transform: rotate(-2deg);
+}
+
+.desc {
+  max-width: var(--measure);
+  margin-top: var(--s-5);
+  font-size: var(--text-md);
+  line-height: 1.45;
+  color: var(--bege);
+}
+
+.requested {
+  margin-top: var(--s-3);
+  color: var(--bege-3);
+}
+
+.requested .code {
+  color: var(--bege);
+}
+
+.redacted {
+  display: grid;
+  gap: var(--s-2);
+  margin-top: var(--s-5);
+}
+
+.redacted span {
+  height: 0.9rem;
+  background: var(--ink-0);
+  border: 1px solid var(--line);
+}
+
+.note {
+  margin-top: var(--s-5);
+  font-size: var(--text-sm);
+  color: var(--bege-3);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+  margin-top: var(--s-6);
+}
+
+@keyframes scan {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(400%);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 640px) {
+  .actions {
+    flex-direction: column;
+  }
+}

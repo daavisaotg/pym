@@ -1,0 +1,436 @@
+[
+  {
+    "id": "dez-aneis",
+    "slug": "dez-aneis",
+    "name": "Dez Anéis",
+    "category": "artefatos",
+    "summary": "Dez anéis de origem alienígena, cada um com um poder diferente, ligados ao legado do Mandarim."
+  },
+  {
+    "id": "quantum-bands",
+    "slug": "quantum-bands",
+    "name": "Quantum Bands",
+    "category": "artefatos",
+    "summary": "Braceletes que permitem manipular energia quântica. São o símbolo do Protetor do Universo, título carregado por Quasar."
+  },
+  {
+    "id": "livro-dos-vishanti",
+    "slug": "livro-dos-vishanti",
+    "name": "Livro dos Vishanti",
+    "category": "artefatos",
+    "summary": "Um dos grimórios de magia branca mais poderosos da Terra, reunindo o conhecimento de Agamotto, Hoggoth e Oshtur. Fica sob a guarda do Mago Supremo.",
+    "related": ["kamar-taj", "olho-de-agamotto"]
+  },
+  {
+    "id": "caixa-materna",
+    "slug": "caixa-materna",
+    "name": "Caixa Materna",
+    "category": "artefatos",
+    "summary": "Computador senciente dos Novos Deuses de Nova Gênese. Abre Tubos de Explosão para viagens instantâneas, cura ferimentos e se comunica com a Fonte.",
+    "related": ["novos-deuses", "temporada-12-anti-vida"]
+  },
+  {
+    "id": "laco-da-verdade",
+    "slug": "laco-da-verdade",
+    "name": "Laço da Verdade",
+    "category": "artefatos",
+    "summary": "Laço da Mulher-Maravilha, forjado por Hefesto. Quem é amarrado por ele é obrigado a dizer a verdade.",
+    "related": ["amazonas"]
+  },
+  {
+    "id": "tridente-de-netuno",
+    "slug": "tridente-de-netuno",
+    "name": "Tridente de Netuno",
+    "category": "artefatos",
+    "summary": "Tridente ligado ao trono de Atlântida, capaz de comandar os mares e as criaturas que vivem neles.",
+    "related": ["atlantes"]
+  },
+  {
+    "id": "elmo-do-destino",
+    "slug": "elmo-do-destino",
+    "name": "Elmo do Destino",
+    "category": "artefatos",
+    "summary": "Elmo de Nabu, Senhor da Ordem. Quem o veste se torna o Senhor Destino e divide o corpo com a consciência de Nabu."
+  },
+  {
+    "id": "livro-dos-campeoes",
+    "slug": "livro-dos-campeoes",
+    "name": "Livro dos Campeões",
+    "category": "artefatos",
+    "pending": true
+  },
+  {
+    "id": "escaravelho",
+    "slug": "escaravelho",
+    "name": "Escaravelho",
+    "category": "artefatos",
+    "summary": "Artefato alienígena que se funde ao hospedeiro e gera uma armadura adaptável. É a origem do Besouro Azul."
+  },
+  {
+    "id": "olho-de-agamotto",
+    "slug": "olho-de-agamotto",
+    "name": "Olho de Agamotto",
+    "category": "artefatos",
+    "summary": "Amuleto do Mago Supremo, criado por Agamotto. Sua luz revela a verdade, dissipa ilusões e enfraquece criaturas das trevas.",
+    "related": ["kamar-taj", "livro-dos-vishanti"]
+  },
+  {
+    "id": "manto-da-levitacao",
+    "slug": "manto-da-levitacao",
+    "name": "Manto da Levitação",
+    "category": "artefatos",
+    "summary": "Capa senciente que permite ao portador levitar e voar. Escolhe a quem servir e reage por conta própria em combate.",
+    "related": ["kamar-taj"]
+  },
+  {
+    "id": "martelo-mjolnir",
+    "slug": "martelo-mjolnir",
+    "name": "Martelo Mjolnir",
+    "category": "artefatos",
+    "summary": "Martelo forjado em metal uru em Nidavellir. Só quem for digno pode erguê-lo e comandar o trovão.",
+    "related": ["asgardianos", "arco-espada-de-muspelheim"]
+  },
+  {
+    "id": "joia-de-cyttorak",
+    "slug": "joia-de-cyttorak",
+    "name": "Joia de Cyttorak",
+    "category": "artefatos",
+    "summary": "Gema carmesim do templo de Cyttorak. Transforma o portador no Fanático, uma força física que nada consegue deter."
+  },
+  {
+    "id": "novos-deuses",
+    "slug": "novos-deuses",
+    "name": "Novos Deuses",
+    "category": "raças",
+    "summary": "Deuses nascidos da queda dos antigos deuses, divididos entre Nova Gênese e Apokolips, o mundo de Darkseid.",
+    "related": ["temporada-12-anti-vida", "historico-era-de-ouro", "caixa-materna"]
+  },
+  {
+    "id": "viltrumitas",
+    "slug": "viltrumitas",
+    "name": "Viltrumitas",
+    "category": "raças",
+    "summary": "Povo do Império de Viltrum: força, velocidade, voo e longevidade extremos, regidos pela lei do mais forte. No PYM, o império está enfraquecido pela miscigenação de raças.",
+    "related": ["guerra-viltrumita"]
+  },
+  {
+    "id": "marcianos",
+    "slug": "marcianos",
+    "name": "Marcianos",
+    "category": "raças",
+    "summary": "Povo de Marte com telepatia, metamorfose, invisibilidade e intangibilidade. O fogo é sua maior fraqueza."
+  },
+  {
+    "id": "skrulls",
+    "slug": "skrulls",
+    "name": "Skrulls",
+    "category": "raças",
+    "summary": "Metamorfos do Império Skrull, capazes de assumir a aparência de qualquer pessoa. Rivais históricos dos Kree.",
+    "related": ["krees"]
+  },
+  {
+    "id": "androides",
+    "slug": "androides",
+    "name": "Andróides",
+    "category": "raças",
+    "summary": "Seres artificiais construídos à semelhança de seres vivos, de sintezoides a máquinas conscientes.",
+    "related": ["historico-ultron"]
+  },
+  {
+    "id": "olympianos",
+    "slug": "olympianos",
+    "name": "Olympianos",
+    "category": "raças",
+    "summary": "Deuses do Olimpo, como Zeus e Hércules, com força, resistência e longevidade divinas."
+  },
+  {
+    "id": "asgardianos",
+    "slug": "asgardianos",
+    "name": "Asgardianos",
+    "category": "raças",
+    "summary": "Povo de Asgard, um dos Nove Reinos, com força, durabilidade e longevidade muito acima das humanas. No PYM, Asgard caiu no Ragnarok.",
+    "related": ["arco-espada-de-muspelheim", "martelo-mjolnir"]
+  },
+  {
+    "id": "shi-ars",
+    "slug": "shi-ars",
+    "name": "Shi'ars",
+    "category": "raças",
+    "summary": "Império alienígena de traços aviários, governado de Chandilar e protegido pela Guarda Imperial."
+  },
+  {
+    "id": "czarnianos",
+    "slug": "czarnianos",
+    "name": "Czarnianos",
+    "category": "raças",
+    "summary": "Povo do planeta Czarnia, com regeneração extrema e força sobre-humana. Lobo é o último sobrevivente conhecido."
+  },
+  {
+    "id": "tamaraneanos",
+    "slug": "tamaraneanos",
+    "name": "Tamaraneanos",
+    "category": "raças",
+    "summary": "Povo do planeta Tamaran. Absorvem radiação solar, voam movidos pelas emoções e disparam rajadas de energia."
+  },
+  {
+    "id": "krees",
+    "slug": "krees",
+    "name": "Krees",
+    "category": "raças",
+    "summary": "Império militarista de Hala, guiado pela Inteligência Suprema. Rivais históricos dos Skrulls e criadores dos Inumanos.",
+    "related": ["skrulls", "inumanos"]
+  },
+  {
+    "id": "kryptonianos",
+    "slug": "kryptonianos",
+    "name": "Kryptonianos",
+    "category": "raças",
+    "summary": "Povo de Krypton. Sob um sol amarelo, ganham força, voo, visão de calor e invulnerabilidade. A kryptonita é sua maior fraqueza.",
+    "related": ["kal-el", "arco-alem-do-gene-x"]
+  },
+  {
+    "id": "deviantes",
+    "slug": "deviantes",
+    "name": "Deviantes",
+    "category": "raças",
+    "summary": "Criados pelos Celestiais ao lado dos Eternos, com genética instável que gera formas e poderes sempre diferentes."
+  },
+  {
+    "id": "amazonas",
+    "slug": "amazonas",
+    "name": "Amazonas",
+    "category": "raças",
+    "summary": "Guerreiras imortais de Themyscira, criadas pelos deuses gregos e treinadas por milênios em combate.",
+    "related": ["laco-da-verdade"]
+  },
+  {
+    "id": "talokanils",
+    "slug": "talokanils",
+    "name": "Talokanils",
+    "category": "raças",
+    "summary": "Povo de Talokan, reino submarino de origem mesoamericana, com respiração aquática e força ampliada."
+  },
+  {
+    "id": "atlantes",
+    "slug": "atlantes",
+    "name": "Atlantes",
+    "category": "raças",
+    "summary": "Povo de Atlântida, adaptado à vida no fundo do mar, com força e resistência à pressão das profundezas.",
+    "related": ["tridente-de-netuno"]
+  },
+  {
+    "id": "inumanos",
+    "slug": "inumanos",
+    "name": "Inumanos",
+    "category": "raças",
+    "summary": "Humanos modificados pelos Kree. Seus poderes despertam na exposição à Névoa Terrígena.",
+    "related": ["krees"]
+  },
+  {
+    "id": "mutantes",
+    "slug": "mutantes",
+    "name": "Mutantes",
+    "category": "raças",
+    "summary": "Humanos nascidos com o gene X, cujos poderes costumam despertar na adolescência. No PYM, Genosha, o Lar dos Mutantes, foi fragmentada por Loki.",
+    "related": ["arco-espada-de-muspelheim", "perdido-apocalypse"]
+  },
+  {
+    "id": "seres-humanos",
+    "slug": "seres-humanos",
+    "name": "Seres Humanos",
+    "category": "raças",
+    "summary": "A espécie mais numerosa da Terra. É a referência da escala de status, que começa no nível Humano.",
+    "related": ["matthew-stark"]
+  },
+  {
+    "id": "forca-enigma",
+    "slug": "forca-enigma",
+    "name": "Força Enigma",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Energia cósmica que escolhe hospedeiros em momentos de grande necessidade e os transforma no Capitão Universo."
+  },
+  {
+    "id": "o-carniceiro",
+    "slug": "o-carniceiro",
+    "name": "O Carniceiro",
+    "category": "pactos",
+    "group": "Pacto",
+    "pending": true
+  },
+  {
+    "id": "etrigan",
+    "slug": "etrigan",
+    "name": "Etrigan",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Demônio rimador do Inferno, preso por Merlin ao corpo do cavaleiro Jason Blood."
+  },
+  {
+    "id": "poco-de-lazaro",
+    "slug": "poco-de-lazaro",
+    "name": "Poço de Lázaro",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Poços místicos que curam ferimentos e devolvem a vida e a juventude, ao custo de uma loucura temporária."
+  },
+  {
+    "id": "forca-fenix",
+    "slug": "forca-fenix",
+    "name": "Força Fênix",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Entidade cósmica da vida, da morte e do renascimento. Escolhe hospedeiros como Jean Grey.",
+    "related": ["mutantes"]
+  },
+  {
+    "id": "hellspawn",
+    "slug": "hellspawn",
+    "name": "Hellspawn",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Soldados do Inferno criados por pactos com demônios, como Malebolgia. Spawn é o mais conhecido."
+  },
+  {
+    "id": "espirito-da-vinganca",
+    "slug": "espirito-da-vinganca",
+    "name": "Espírito da Vingança",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Espírito que se une a um hospedeiro humano e o transforma no Motoqueiro Fantasma, punindo os culpados com o Olhar de Penitência."
+  },
+  {
+    "id": "homem-coisa",
+    "slug": "homem-coisa",
+    "name": "Homem-Coisa",
+    "category": "pactos",
+    "group": "Pacto",
+    "summary": "Criatura do pântano que guarda o Nexo de Todas as Realidades. Quem sente medo diante dele queima ao seu toque."
+  },
+  {
+    "id": "fraternidade-dos-raptors",
+    "slug": "fraternidade-dos-raptors",
+    "name": "Fraternidade dos Raptors",
+    "category": "tropas",
+    "pending": true
+  },
+  {
+    "id": "tropa-nova",
+    "slug": "tropa-nova",
+    "name": "Tropa Nova",
+    "category": "tropas",
+    "summary": "Força policial intergaláctica de Xandar. Seus centuriões são alimentados pela Força Nova."
+  },
+  {
+    "id": "os-sith",
+    "slug": "os-sith",
+    "name": "Os Sith",
+    "category": "tropas",
+    "summary": "Ordem que domina o lado sombrio da Força, movida pela paixão, pelo ódio e pela busca de poder.",
+    "related": ["jedi"]
+  },
+  {
+    "id": "jedi",
+    "slug": "jedi",
+    "name": "Jedi",
+    "category": "tropas",
+    "summary": "Ordem de guardiões da paz que usa o lado luminoso da Força e empunha sabres de luz.",
+    "related": ["os-sith"]
+  },
+  {
+    "id": "venom",
+    "slug": "venom",
+    "name": "Venom",
+    "category": "simbiontes",
+    "summary": "Simbionte Klyntar que já foi o traje negro do Homem-Aranha. Seu hospedeiro mais famoso é Eddie Brock.",
+    "related": ["carnificina", "anti-venom", "mania"]
+  },
+  {
+    "id": "carnificina",
+    "slug": "carnificina",
+    "name": "Carnificina",
+    "category": "simbiontes",
+    "summary": "Cria de Venom, ligada ao assassino Cletus Kasady. Mais forte e mais sádica que o próprio pai.",
+    "related": ["venom", "toxina", "scorn"]
+  },
+  {
+    "id": "anti-venom",
+    "slug": "anti-venom",
+    "name": "Anti-Venom",
+    "category": "simbiontes",
+    "summary": "Simbionte branco nascido da cura de Eddie Brock. Purifica toxinas e é letal para outros simbiontes.",
+    "related": ["venom"]
+  },
+  {
+    "id": "scream",
+    "slug": "scream",
+    "name": "Scream",
+    "category": "simbiontes",
+    "summary": "Um dos cinco simbiontes extraídos à força de Venom pela Fundação Vida. Ataca com cabelos afiados e gritos sônicos.",
+    "related": ["riot", "phage", "lasher", "agony"]
+  },
+  {
+    "id": "venom-2099",
+    "slug": "venom-2099",
+    "name": "Venom 2099",
+    "category": "simbiontes",
+    "summary": "Versão futura do simbionte Venom, no ano de 2099.",
+    "related": ["venom"]
+  },
+  {
+    "id": "phage",
+    "slug": "phage",
+    "name": "Phage",
+    "category": "simbiontes",
+    "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, especialista em lâminas e espinhos.",
+    "related": ["riot", "scream", "lasher", "agony"]
+  },
+  {
+    "id": "mania",
+    "slug": "mania",
+    "name": "Mania",
+    "category": "simbiontes",
+    "summary": "Simbionte ligado a Andi Benton, nascido de um fragmento de Venom.",
+    "related": ["venom"]
+  },
+  {
+    "id": "lasher",
+    "slug": "lasher",
+    "name": "Lasher",
+    "category": "simbiontes",
+    "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, que ataca com tentáculos em forma de chicote.",
+    "related": ["riot", "scream", "phage", "agony"]
+  },
+  {
+    "id": "riot",
+    "slug": "riot",
+    "name": "Riot",
+    "category": "simbiontes",
+    "summary": "Líder dos simbiontes extraídos de Venom pela Fundação Vida, capaz de transformar o corpo em armas pesadas.",
+    "related": ["scream", "phage", "lasher", "agony"]
+  },
+  {
+    "id": "scorn",
+    "slug": "scorn",
+    "name": "Scorn",
+    "category": "simbiontes",
+    "summary": "Cria de Carnificina capaz de se fundir com máquinas e tecnologia.",
+    "related": ["carnificina"]
+  },
+  {
+    "id": "agony",
+    "slug": "agony",
+    "name": "Agony",
+    "category": "simbiontes",
+    "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, capaz de expelir ácido.",
+    "related": ["riot", "scream", "phage", "lasher"]
+  },
+  {
+    "id": "toxina",
+    "slug": "toxina",
+    "name": "Toxina",
+    "category": "simbiontes",
+    "summary": "Cria de Carnificina ligada a um policial. Nasceu para ser mais forte que o pai e o avô.",
+    "related": ["carnificina", "venom"]
+  }
+]

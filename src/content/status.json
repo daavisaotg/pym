@@ -1,0 +1,102 @@
+{
+  "intro": "Os status são o sistema de nível do PYM, definidos por sorteio, treino e timeskips. Nem tudo aqui será usado no RP, e a escala não segue nenhum parâmetro do mundo real.",
+  "warning": "Não somem as porcentagens. Cada nível é comparado só com o anterior: quem somar 25% + 25% + 25% para descobrir um nível e reclamar com a staff leva warn.",
+  "tiers": [
+    {
+      "id": "humano",
+      "label": "Humano",
+      "group": "humano",
+      "general": "Nível de um humano comum."
+    },
+    {
+      "id": "atletico",
+      "label": "Atlético",
+      "group": "humano",
+      "general": "O auge do corpo humano."
+    },
+    {
+      "id": "sobre-humano",
+      "label": "Sobre-humano",
+      "group": "humano",
+      "general": "Acima de um atleta, como o estado de adrenalina em acesso constante. Ainda pode ser humano, mas é recomendado meta-humano ou outra raça."
+    },
+    {
+      "id": "super",
+      "label": "Super",
+      "group": "super",
+      "general": "Bem acima do sobre-humano. Restrito aos supers."
+    },
+    {
+      "id": "super+",
+      "label": "Super +",
+      "group": "super",
+      "general": "Cerca de 25% acima do Super."
+    },
+    {
+      "id": "super++",
+      "label": "Super ++",
+      "group": "super",
+      "general": "Cerca de 25% acima do Super +."
+    },
+    {
+      "id": "super+++",
+      "label": "Super +++",
+      "group": "super",
+      "general": "Cerca de 25% acima do Super ++. O máximo que um super alcança com treinos e timeskips."
+    },
+    {
+      "id": "mega",
+      "label": "Mega",
+      "group": "mega",
+      "restricted": "Sorteio",
+      "general": "Um salto muito acima do Super +++. Exclusivo de raças-sorteio, artefatos ou atributos de sorteio."
+    },
+    {
+      "id": "mega+",
+      "label": "Mega +",
+      "group": "mega",
+      "restricted": "Sorteio + treino",
+      "general": "O máximo alcançável no ON-RP. Exige ter Mega (por sorteio) e treino."
+    }
+  ],
+  "attributes": [
+    {
+      "id": "forca",
+      "label": "Força",
+      "descriptions": {
+        "humano": "Força de um humano normal.",
+        "atletico": "Força de um atleta. Pense em um boxeador, esporte que usa muito a força bruta.",
+        "sobre-humano": "Acima de um atleta, como se o estado de adrenalina estivesse sempre ativo.",
+        "super": "Bem acima do sobre-humano, restrito aos supers. Diante de uma parede, quem tem Super Força a derruba; quem é sobre-humano quebra alguns tijolos.",
+        "super+": "Um pouco acima do Super: cerca de 25% a mais que o Super.",
+        "super++": "Cerca de 25% a mais que o Super +.",
+        "super+++": "Cerca de 25% a mais que o Super ++.",
+        "mega": "Um salto distante até do Super +++. Quebra com facilidade os ossos de quem está abaixo de Super +, machuca forte quem é Super + e Super ++, e tem 50% a mais de força que o Super +++.",
+        "mega+": "O máximo de força no ON-RP. Desbloqueado por treino por quem já tem Mega Força, que só vem de sorteio."
+      }
+    },
+    {
+      "id": "velocidade",
+      "label": "Velocidade",
+      "descriptions": {
+        "humano": "Velocidade normal de um humano.",
+        "atletico": "O auge do ser humano. Uma velocidade alta, mas que não se compara às demais.",
+        "sobre-humano": "Acima de um atleta, como alguém no máximo do corpo sob adrenalina.",
+        "super": "Restrito aos supers. Para atravessar uma rua, o sobre-humano leva alguns minutos; o Super, alguns segundos.",
+        "super+": "Cerca de 25% acima do Super.",
+        "super++": "Cerca de 25% acima do Super +.",
+        "super+++": "Cerca de 25% acima do Super ++. O máximo para um super com treinos e timeskips.",
+        "mega": "Exclusivo de raças-sorteio, artefatos ou atributos de sorteio. A diferença é como a do Superman para o Batman (apenas exemplo).",
+        "mega+": "O maior nível no ON-RP. Restrito a sorteio, ou alcançado com treino por quem já tem Mega."
+      }
+    },
+    {
+      "id": "durabilidade",
+      "label": "Durabilidade"
+    },
+    {
+      "id": "resistencia",
+      "label": "Resistência"
+    }
+  ]
+}

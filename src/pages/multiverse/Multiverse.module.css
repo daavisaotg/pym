@@ -1,0 +1,139 @@
+.page {
+  position: relative;
+}
+
+.stage {
+  position: relative;
+  height: 100svh;
+  min-height: 36rem;
+  overflow: hidden;
+}
+
+/* Escurece levemente as bordas para o HUD ficar legível sobre a galáxia */
+.stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, rgba(7, 5, 4, 0.7), transparent 28%, transparent 78%, rgba(7, 5, 4, 0.8)),
+    radial-gradient(120% 90% at 50% 50%, transparent 60%, rgba(0, 0, 0, 0.5));
+}
+
+.hud {
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--s-4));
+  left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  max-width: 24rem;
+  pointer-events: none;
+}
+
+.kicker {
+  color: var(--red-signal);
+}
+
+.h1 {
+  margin-top: var(--s-1);
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+.lede {
+  margin-top: var(--s-2);
+  color: var(--bege-2);
+  font-size: var(--text-sm);
+}
+
+.footer {
+  position: absolute;
+  z-index: 2;
+  left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  bottom: var(--s-5);
+  display: grid;
+  gap: var(--s-2);
+  pointer-events: none;
+}
+
+.legend {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-4);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bege-2);
+}
+
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--bege-3);
+}
+
+.toTimeline {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bege);
+  text-decoration: none;
+  pointer-events: auto;
+}
+
+.toTimeline:hover {
+  color: var(--white);
+}
+
+/* Com um painel aberto, o HUD sai de cena e o planeta fica sozinho */
+.hud,
+.footer {
+  transition: opacity var(--dur) ease;
+}
+
+.stage[data-open] .hud,
+.stage[data-open] .footer {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Com o painel aberto no celular, o HUD inferior some para não brigar com a folha */
+@media (max-width: 899px) {
+  .stage[data-open] .footer {
+    display: none;
+  }
+
+  .hint {
+    display: none;
+  }
+
+  .stage[data-open] .hud {
+    opacity: 0;
+  }
+}
+
+@media (pointer: coarse) {
+  .hint {
+    display: none;
+  }
+}

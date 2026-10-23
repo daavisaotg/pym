@@ -1,0 +1,553 @@
+/*
+ * Ficha de personagem: releitura da tela da NSA de Os Incríveis no visual PYM.
+ * Uma "tela" de monitor com barra superior, selo, barras de status e foto,
+ * seguida de painéis com faixa de título.
+ */
+
+.page {
+  padding-top: calc(var(--nav-h) + var(--s-5));
+  padding-bottom: var(--s-8);
+}
+
+.wrap {
+  max-width: 72rem;
+}
+
+.screen {
+  --c: 18px;
+  position: relative;
+  background: rgba(12, 9, 7, 0.9);
+  border: 1px solid var(--line-strong);
+  clip-path: polygon(0 0, calc(100% - var(--c)) 0, 100% var(--c), 100% 100%, var(--c) 100%, 0 calc(100% - var(--c)));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: power-on 520ms var(--ease-out) both;
+  transform-origin: 50% 30%;
+}
+
+/* Linhas de varredura bem fracas sobre a tela inteira */
+.screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(230, 216, 188, 0.025) 0 1px, transparent 1px 3px);
+}
+
+/* ── Barra superior ─────────────────────────────────────────── */
+
+.topbar {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-2) var(--s-4) var(--s-2) var(--s-2);
+  background: var(--red);
+  color: var(--white);
+}
+
+.controls {
+  display: flex;
+  gap: 2px;
+}
+
+.ctrl {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.18);
+  transition: background-color var(--dur-fast) ease;
+}
+
+.ctrl:hover {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.title {
+  font-size: clamp(1.7rem, 4.2vw, 3.1rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.counter {
+  color: rgba(251, 248, 243, 0.75);
+  white-space: nowrap;
+}
+
+/* ── Cabeçalho ──────────────────────────────────────────────── */
+
+.head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) clamp(11rem, 22vw, 16rem);
+  gap: var(--s-5);
+  padding: var(--s-5) var(--s-5) var(--s-4);
+}
+
+.sealCol {
+  padding-top: var(--s-2);
+  animation: rise 500ms 200ms var(--ease-out) both;
+}
+
+.statsCol {
+  display: grid;
+  align-content: start;
+  gap: var(--s-4);
+  min-width: 0;
+}
+
+.names {
+  display: grid;
+  gap: var(--s-1);
+  animation: rise 500ms 240ms var(--ease-out) both;
+}
+
+.realName {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--bege);
+  line-height: 1.1;
+}
+
+.aliases {
+  font-style: italic;
+  color: var(--bege-2);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+
+.badge {
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bege-2);
+}
+
+.badge[data-alignment='herói'] {
+  border-color: var(--bege-3);
+  color: var(--white);
+}
+
+.badge[data-alignment='vilão'] {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.badge[data-alignment='anti-herói'] {
+  border-color: var(--red-signal);
+  color: var(--bege);
+}
+
+.badge[data-status='falecido'],
+.badge[data-status='desaparecido'] {
+  border-style: dashed;
+}
+
+.photo {
+  position: relative;
+  margin: 0;
+  align-self: start;
+  border: 2px solid var(--bege-3);
+  padding: 4px;
+  background: var(--ink-0);
+  animation: rise 520ms 160ms var(--ease-out) both;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  filter: contrast(1.05) saturate(0.85);
+}
+
+.noPhoto {
+  aspect-ratio: 4 / 5;
+  display: grid;
+  place-items: center;
+  color: var(--bege-3);
+  font-size: var(--text-sm);
+  background: repeating-linear-gradient(45deg, var(--ink-1) 0 8px, var(--ink-2) 8px 16px);
+}
+
+/* Faixa de leitura que desce uma vez pela foto ao abrir */
+.scan {
+  position: absolute;
+  inset: 4px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, rgba(200, 38, 29, 0.35) 48%, rgba(251, 248, 243, 0.5) 50%, transparent 52%);
+  background-size: 100% 300%;
+  animation: photo-scan 1300ms 450ms var(--ease-in-out) both;
+}
+
+.photoCaption {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  padding: 0.2rem 0.4rem;
+  background: rgba(7, 5, 4, 0.78);
+  color: var(--bege-2);
+  font-size: 0.62rem;
+}
+
+/* ── Painéis ────────────────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-3);
+  padding: 0 var(--s-5) var(--s-5);
+}
+
+.panel {
+  border: 1px solid var(--line-strong);
+  background: rgba(7, 5, 4, 0.45);
+  min-width: 0;
+  animation: rise 480ms var(--ease-out) both;
+}
+
+.panel[data-wide] {
+  grid-column: 1 / -1;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 0.35rem var(--s-3);
+  background: var(--ink-2);
+  border-bottom: 1px solid var(--line-strong);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--bege);
+}
+
+.panelHead::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--red-signal);
+}
+
+.panelBody {
+  padding: var(--s-4);
+}
+
+.none {
+  color: var(--bege-3);
+  font-style: italic;
+}
+
+.facts {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: var(--s-3) var(--s-4);
+}
+
+.fact dt {
+  font-size: var(--text-xs);
+  color: var(--bege-3);
+}
+
+.fact dd {
+  margin: 0;
+  color: var(--bege);
+  line-height: 1.4;
+}
+
+.fact dd a {
+  text-decoration-color: var(--red-signal);
+}
+
+.relations {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--s-2);
+}
+
+.relation {
+  display: grid;
+  padding-bottom: var(--s-2);
+  border-bottom: 1px dashed var(--line);
+}
+
+.relationName {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bege);
+}
+
+.relationMeta {
+  font-size: var(--text-sm);
+  color: var(--bege-3);
+}
+
+.rivals {
+  display: grid;
+  gap: var(--s-1);
+  margin-top: var(--s-4);
+  color: var(--bege-2);
+}
+
+.subhead {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--bege-3);
+}
+
+.prose {
+  max-width: 44em;
+  line-height: 1.7;
+  color: var(--bege);
+}
+
+/* A história do Matthew é uma carta: itálico, como texto do próprio personagem */
+.letter {
+  font-style: italic;
+  color: var(--bege-2);
+}
+
+.fame {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--s-3);
+}
+
+.fameRow {
+  display: grid;
+  grid-template-columns: minmax(10rem, 16rem) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.2rem var(--s-4);
+}
+
+.fameWhere {
+  display: grid;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-base);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bege);
+  line-height: 1.2;
+}
+
+.fameAs {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  text-transform: none;
+  letter-spacing: 0;
+  font-style: italic;
+  color: var(--bege-3);
+}
+
+.fameMeter {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3px;
+  height: 0.7rem;
+}
+
+.fameMeter span {
+  background: var(--ink-2);
+}
+
+.fameMeter span[data-on] {
+  background: var(--bege-2);
+}
+
+.fameScore {
+  color: var(--bege);
+  font-variant-numeric: tabular-nums;
+}
+
+.fameNote {
+  grid-column: 2 / -1;
+  font-size: var(--text-sm);
+  color: var(--bege-3);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: var(--s-3);
+}
+
+.galleryItem {
+  margin: 0;
+  display: grid;
+  gap: var(--s-1);
+}
+
+.galleryItem img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line-strong);
+}
+
+.galleryItem figcaption {
+  font-size: var(--text-xs);
+  color: var(--bege-3);
+}
+
+/* ── Rodapé da tela ─────────────────────────────────────────── */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-5) var(--s-3);
+  border-top: 6px solid var(--red);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bege-3);
+}
+
+.footerHint {
+  font-family: var(--font-body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: var(--text-xs);
+}
+
+@keyframes power-on {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.02);
+    filter: brightness(3);
+  }
+  45% {
+    opacity: 1;
+    transform: scaleY(1.01);
+    filter: brightness(1.6);
+  }
+  100% {
+    transform: none;
+    filter: none;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes photo-scan {
+  from {
+    background-position: 0 100%;
+    opacity: 1;
+  }
+  to {
+    background-position: 0 0%;
+    opacity: 0;
+  }
+}
+
+/* ── Responsivo ─────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .head {
+    grid-template-columns: minmax(0, 1fr) clamp(9rem, 32vw, 13rem);
+  }
+
+  .sealCol {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding-inline: var(--s-2);
+  }
+
+  .topbar {
+    grid-template-columns: auto minmax(0, 1fr);
+    padding-right: var(--s-3);
+  }
+
+  .counter {
+    display: none;
+  }
+
+  .head {
+    grid-template-columns: 1fr;
+    padding: var(--s-4) var(--s-3) var(--s-3);
+  }
+
+  .photo {
+    order: -1;
+    width: min(15rem, 70%);
+    justify-self: center;
+  }
+
+  .grid {
+    padding: 0 var(--s-3) var(--s-3);
+  }
+
+  .panelBody {
+    padding: var(--s-3);
+  }
+
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .fameRow {
+    grid-template-columns: 1fr auto;
+  }
+
+  .fameMeter {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .fameNote {
+    grid-column: 1 / -1;
+  }
+
+  .footer {
+    padding-inline: var(--s-3);
+  }
+
+  .footerHint {
+    display: none;
+  }
+}

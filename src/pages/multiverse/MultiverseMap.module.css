@@ -1,0 +1,114 @@
+.map {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.map[data-dragging] {
+  cursor: grabbing;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.planet {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  pointer-events: auto;
+  cursor: pointer;
+  will-change: transform, width, height;
+}
+
+.planet:focus-visible {
+  outline: 1px solid var(--white);
+  outline-offset: 10px;
+}
+
+.label {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 1.4rem);
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  gap: 0.1rem;
+  white-space: nowrap;
+  pointer-events: none;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+}
+
+.labelCode {
+  color: var(--red-signal);
+  font-size: 0.66rem;
+}
+
+.labelName {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.labelStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--text-xs);
+  color: var(--bege-2);
+}
+
+.dot {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.planet[aria-pressed='true'] .label {
+  opacity: 0;
+}
+
+.controls {
+  position: absolute;
+  right: max(var(--gutter), env(safe-area-inset-right, 0px));
+  bottom: var(--s-5);
+  display: grid;
+  gap: 2px;
+  z-index: 2;
+}
+
+.controls button {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: rgba(15, 11, 9, 0.85);
+  border: 1px solid var(--line-strong);
+  color: var(--bege);
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  line-height: 1;
+  transition:
+    border-color var(--dur-fast) ease,
+    color var(--dur-fast) ease;
+}
+
+.controls button:hover {
+  border-color: var(--bege-3);
+  color: var(--white);
+}

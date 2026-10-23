@@ -1,0 +1,212 @@
+.arrow {
+  position: absolute;
+  z-index: 5;
+  top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--s-3));
+  right: max(var(--gutter), env(safe-area-inset-right, 0px));
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  height: 2.8rem;
+  padding: 0 var(--s-3) 0 var(--s-2);
+  border: 1px solid var(--red-signal);
+  background: rgba(10, 7, 6, 0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--white);
+  box-shadow: 0 0 0 0 var(--red-glow);
+  animation: beckon 3.2s ease-in-out 1.5s 3;
+  transition: background-color var(--dur-fast) ease;
+}
+
+@media (min-width: 900px) {
+  .arrow[data-shifted] {
+    right: calc(min(30rem, 42vw) + var(--s-3) + var(--s-3));
+  }
+}
+
+.arrow {
+  transition:
+    background-color var(--dur-fast) ease,
+    right 420ms var(--ease-out);
+}
+
+.arrow:hover {
+  background: rgba(138, 3, 3, 0.45);
+}
+
+.arrow svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  transition: transform 500ms var(--ease-out);
+}
+
+.arrow[data-open] {
+  animation: none;
+}
+
+.arrow[data-open] svg {
+  transform: rotate(180deg);
+}
+
+.arrowLabel {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@keyframes beckon {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 38, 29, 0);
+  }
+  40% {
+    box-shadow: 0 0 0 8px rgba(200, 38, 29, 0.25);
+  }
+}
+
+.drawer {
+  position: absolute;
+  z-index: 4;
+  top: calc(var(--nav-h) + env(safe-area-inset-top, 0px) + var(--s-3));
+  right: max(var(--s-3), env(safe-area-inset-right, 0px));
+  bottom: var(--s-3);
+  width: min(27rem, calc(100vw - 2 * var(--s-3)));
+  display: flex;
+  flex-direction: column;
+  background: rgba(12, 9, 7, 0.95);
+  border: 1px solid var(--line-strong);
+  border-top: 3px solid var(--red);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transform: translateX(calc(100% + 2rem));
+  visibility: hidden;
+  transition:
+    transform 560ms var(--ease-out),
+    visibility 0s 560ms;
+}
+
+.drawer[data-open] {
+  transform: none;
+  visibility: visible;
+  transition: transform 560ms var(--ease-out);
+}
+
+.head {
+  padding: var(--s-4) 9rem var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  font-size: 0.68rem;
+  color: var(--red-signal);
+}
+
+.title {
+  margin-top: var(--s-1);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  margin: 0;
+  padding: var(--s-3) var(--s-4) var(--s-5);
+  list-style: none;
+  display: grid;
+  align-content: start;
+  gap: var(--s-3);
+  scrollbar-width: thin;
+}
+
+.fact {
+  position: relative;
+  display: grid;
+  gap: var(--s-1);
+  padding: var(--s-3) var(--s-3) var(--s-3) 3rem;
+  border: 1px solid var(--line);
+  background: rgba(7, 5, 4, 0.5);
+}
+
+.drawer[data-open] .fact {
+  animation: rise 520ms var(--ease-out) both;
+}
+
+.no {
+  position: absolute;
+  top: var(--s-3);
+  left: var(--s-3);
+  font-size: var(--text-xs);
+  color: var(--red-signal);
+}
+
+.factTitle {
+  font-size: var(--text-md);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.factText {
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--bege);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-3);
+  margin-top: var(--s-1);
+}
+
+.actions button,
+.actions a {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: underline;
+  text-decoration-color: var(--red-signal);
+  text-underline-offset: 0.25em;
+}
+
+.actions button:hover,
+.actions a:hover {
+  color: var(--bege);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 640px) {
+  .arrow {
+    height: 2.4rem;
+    padding: 0 var(--s-2);
+  }
+
+  .head {
+    padding-right: 7rem;
+  }
+
+  .title {
+    font-size: var(--text-md);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow,
+  .drawer[data-open] .fact {
+    animation: none;
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "id": "ascent",
+  "slug": "ascent",
+  "layout": "ascent",
+  "name": "Ascent City",
+  "code": "AC-002",
+  "earth": "terra-001",
+  "tagline": "A primeira cidade dos super-heróis.",
+  "summary": "A cidade onde nasceram os primeiros super-heróis, criados pela Helix. Desde 2007, quando uma lei proibiu a ação de heróis, Ascent é vigiada pela ANINA. Fica a 78 km de PYM-City.",
+  "layers": [
+    {
+      "id": "cidade",
+      "name": "Ascent City",
+      "short": "Ascent",
+      "level": "78 KM DE PYM-CITY",
+      "tagline": "A primeira cidade dos super-heróis.",
+      "summary": "Já foi a cidade mais protegida do mundo. Hoje os heróis são proibidos, a ANINA regula tudo e só os vigilantes ainda agem nas ruas.",
+      "body": [
+        {
+          "heading": "A Helix e os primeiros heróis"
+        },
+        "Ascent foi onde tudo começou. A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente, e dos seus laboratórios saíram os primeiros super-heróis do mundo. O mais conhecido deles foi o Capitão Ascent.",
+        "Os heróis urbanos tomaram as ruas, e por muito tempo Ascent foi a cidade mais protegida do mundo.",
+        {
+          "heading": "O fim da Era de Ouro"
+        },
+        "Até que alguma coisa aconteceu nos bastidores. Ninguém de fora sabe exatamente o quê, mas o resultado foi uma lei que simplesmente proibiu a ação de super-heróis. Era 2007, e a Era de Ouro dos heróis terminou ali.",
+        "No lugar deles surgiu a ANINA, o órgão que regulamenta tudo isso. Ela está presente em Ascent desde o fim dos super-heróis na cidade e nunca saiu.",
+        {
+          "heading": "Vigilantes"
+        },
+        "A ANINA ainda existe, e Ascent ainda tem quem a defenda. Vigilantes tentam cuidar da cidade mesmo com um governo e órgãos inteiros contra eles. O principal nome dessa causa é Dacnis, um herói que acabou desaparecendo no meio de Ascent."
+      ],
+      "ruler": "ANINA",
+      "rulerLabel": "Quem regula",
+      "images": ["uploads/mapa/ascent-vista-aerea.webp", "uploads/mapa/ascent-canal.webp"],
+      "facts": [
+        {
+          "label": "Distância de PYM-City",
+          "value": "78 km"
+        },
+        {
+          "label": "Órgão regulador",
+          "value": "ANINA, desde 2007"
+        },
+        {
+          "label": "Primeiros heróis",
+          "value": "Criados pela Helix"
+        },
+        {
+          "label": "Símbolo",
+          "value": "Capitão Ascent"
+        }
+      ]
+    }
+  ],
+  "districts": [
+    {
+      "id": "distrito-das-torres",
+      "slug": "distrito-das-torres",
+      "name": "Distrito das Torres",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "A fileira de arranha-céus de vidro na beira do mar, a oeste da cidade.",
+      "images": ["uploads/mapa/ascent-canal.webp"],
+      "shape": [[520, 90], [612, 90], [612, 910], [520, 910]],
+      "labelAt": [566, 165]
+    },
+    {
+      "id": "centro-de-ascent",
+      "slug": "centro-de-ascent",
+      "name": "Centro",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "O lado oeste do canal: comércio, a Praça Central e os prédios do governo.",
+      "shape": [[612, 90], [828, 90], [828, 910], [612, 910]],
+      "labelAt": [720, 690]
+    },
+    {
+      "id": "margem-leste",
+      "slug": "margem-leste",
+      "name": "Margem Leste",
+      "layer": "cidade",
+      "kind": "Bairro",
+      "tone": "neutro",
+      "summary": "O lado leste do canal, de prédios baixos e ruas residenciais.",
+      "shape": [[877, 90], [1080, 90], [1080, 910], [877, 910]],
+      "labelAt": [990, 560]
+    },
+    {
+      "id": "canal-de-ascent",
+      "slug": "canal-de-ascent",
+      "name": "Canal",
+      "layer": "cidade",
+      "kind": "Canal",
+      "tone": "agua",
+      "summary": "O canal que corta Ascent de norte a sul, atravessado por três pontes.",
+      "images": ["uploads/mapa/ascent-canal.webp"],
+      "shape": [[830, 125], [875, 125], [875, 1045], [830, 1045]],
+      "labelAt": [852, 980]
+    },
+    {
+      "id": "parque-norte",
+      "slug": "parque-norte",
+      "name": "Parque Norte",
+      "layer": "cidade",
+      "kind": "Parque",
+      "tone": "verde",
+      "labelAt": [610, 182],
+      "summary": "Praça arborizada com chafariz no canto noroeste da cidade.",
+      "shape": [[524, 194], [696, 194], [696, 306], [524, 306]]
+    },
+    {
+      "id": "praca-central",
+      "slug": "praca-central",
+      "name": "Praça Central",
+      "layer": "cidade",
+      "kind": "Praça",
+      "tone": "neutro",
+      "summary": "A grande praça redonda do Centro, no coração de Ascent.",
+      "shape": [[616, 444], [786, 444], [786, 596], [616, 596]],
+      "labelAt": [701, 612]
+    },
+    {
+      "id": "pier-norte",
+      "slug": "pier-norte",
+      "name": "Píer Norte",
+      "layer": "cidade",
+      "kind": "Lazer",
+      "tone": "neutro",
+      "summary": "O fim do canal ao norte, com a roda-gigante e o parque de diversões de frente para o mar.",
+      "images": ["uploads/mapa/ascent-canal.webp"],
+      "shape": [[790, 90], [905, 90], [905, 125], [790, 125]],
+      "labelAt": [848, 76]
+    },
+    {
+      "id": "complexo-prisional-anina",
+      "slug": "complexo-prisional-anina",
+      "name": "Complexo Prisional",
+      "layer": "cidade",
+      "kind": "Área restrita",
+      "tone": "sombra",
+      "summary": "O terreno murado da prisão da ANINA, nas colinas a leste da cidade.",
+      "shape": [[1340, 240], [1470, 240], [1470, 360], [1340, 360]],
+      "labelAt": [1405, 226]
+    }
+  ],
+  "streets": [
+    {
+      "id": "ponte-norte",
+      "slug": "ponte-norte",
+      "name": "Ponte Norte",
+      "layer": "cidade",
+      "kind": "ponte",
+      "summary": "Liga o Centro à Margem Leste perto do Parque Norte.",
+      "path": [[790, 190], [905, 190]]
+    },
+    {
+      "id": "ponte-central",
+      "slug": "ponte-central",
+      "name": "Ponte Central",
+      "layer": "cidade",
+      "kind": "ponte",
+      "summary": "A ponte do meio, de frente para a Praça Central.",
+      "path": [[790, 440], [905, 440]]
+    },
+    {
+      "id": "avenida-sul",
+      "slug": "avenida-sul",
+      "name": "Avenida Sul",
+      "layer": "cidade",
+      "kind": "avenida",
+      "summary": "A avenida larga do sul da cidade. Atravessa o canal e vira a rodovia para PYM-City.",
+      "path": [[520, 860], [1080, 860]]
+    },
+    {
+      "id": "rodovia-ascent-pym",
+      "slug": "rodovia-ascent-pym",
+      "name": "Rodovia Ascent–PYM",
+      "layer": "cidade",
+      "kind": "estrada",
+      "summary": "Sai da Avenida Sul e corta as colinas até PYM-City, a 78 km.",
+      "images": ["uploads/mapa/ascent-rodovia.webp"],
+      "path": [[1080, 860], [1180, 840], [1260, 790], [1420, 730], [1590, 650]]
+    },
+    {
+      "id": "estrada-da-prisao",
+      "slug": "estrada-da-prisao",
+      "name": "Estrada da Prisão",
+      "layer": "cidade",
+      "kind": "estrada",
+      "summary": "Leva da cidade às colinas da prisão da ANINA.",
+      "path": [[1080, 310], [1220, 300], [1340, 300]]
+    }
+  ],
+  "places": [
+    {
+      "id": "estatua-capitao-ascent",
+      "slug": "estatua-capitao-ascent",
+      "name": "Estátua do Capitão Ascent",
+      "layer": "cidade",
+      "district": "praca-central",
+      "kind": "Monumento",
+      "icon": "ponto",
+      "summary": "No centro da Praça Central, a estátua do primeiro herói da Helix ainda está de pé, mesmo com os heróis proibidos.",
+      "at": [701, 520]
+    },
+    {
+      "id": "sede-da-anina",
+      "slug": "sede-da-anina",
+      "name": "Sede da ANINA",
+      "layer": "cidade",
+      "district": "centro-de-ascent",
+      "kind": "Governo",
+      "icon": "escudo",
+      "owner": "ANINA",
+      "ownerLabel": "Órgão",
+      "summary": "De onde a ANINA regula tudo o que envolve heróis em Ascent desde 2007.",
+      "at": [744, 380]
+    },
+    {
+      "id": "antiga-torre-helix",
+      "slug": "antiga-torre-helix",
+      "name": "Antiga Torre da Helix",
+      "layer": "cidade",
+      "district": "distrito-das-torres",
+      "kind": "Torre",
+      "icon": "torre",
+      "summary": "A torre de vidro da Helix, a agência que criou os primeiros super-heróis alterando o DNA humano.",
+      "at": [566, 830]
+    },
+    {
+      "id": "prisao-anina",
+      "slug": "prisao-anina",
+      "name": "Prisão de Alta Segurança da ANINA",
+      "layer": "cidade",
+      "district": "complexo-prisional-anina",
+      "kind": "Prisão",
+      "icon": "escudo",
+      "owner": "ANINA",
+      "ownerLabel": "Órgão",
+      "summary": "Muros altos, torres de vigia e holofotes nas colinas fora da cidade.",
+      "images": ["uploads/mapa/ascent-prisao-anina.webp"],
+      "at": [1405, 300]
+    },
+    {
+      "id": "rodovia-para-pym",
+      "slug": "rodovia-para-pym",
+      "name": "Rodovia para PYM-City",
+      "layer": "cidade",
+      "kind": "Rodovia",
+      "icon": "portal",
+      "leadsToCity": "pym-city",
+      "summary": "Daqui são 78 km até PYM-City.",
+      "at": [1590, 650]
+    }
+  ],
+  "facts": [
+    {
+      "title": "A primeira cidade dos heróis",
+      "text": "Os primeiros super-heróis do mundo nasceram em Ascent, e os heróis urbanos tomaram as ruas da cidade.",
+      "local": "centro-de-ascent"
+    },
+    {
+      "title": "DNA feito à mão",
+      "text": "A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente. Entre os heróis que ela criou estava o Capitão Ascent.",
+      "local": "antiga-torre-helix"
+    },
+    {
+      "title": "A cidade mais protegida do mundo",
+      "text": "Por muito tempo, nenhum lugar da Terra foi tão bem guardado quanto Ascent.",
+      "local": "estatua-capitao-ascent"
+    },
+    {
+      "title": "2007: heróis proibidos",
+      "text": "Alguma coisa aconteceu nos bastidores e uma lei proibiu a ação de super-heróis. Foi o fim da Era de Ouro dos heróis.",
+      "ref": "historico-ascent-2007"
+    },
+    {
+      "title": "A ANINA nunca saiu",
+      "text": "O órgão regulamentador chegou com o fim dos heróis em 2007 e continua presente em Ascent.",
+      "local": "sede-da-anina"
+    },
+    {
+      "title": "Vigilantes contra o governo",
+      "text": "Mesmo com o governo e órgãos inteiros contra eles, vigilantes ainda tentam cuidar da cidade.",
+      "local": "centro-de-ascent"
+    },
+    {
+      "title": "O sumiço de Dacnis",
+      "text": "O principal vigilante de Ascent, Dacnis, desapareceu no meio da cidade."
+    },
+    {
+      "title": "78 km de PYM-City",
+      "text": "A Rodovia Ascent–PYM liga as duas cidades.",
+      "local": "rodovia-ascent-pym"
+    }
+  ]
+}
