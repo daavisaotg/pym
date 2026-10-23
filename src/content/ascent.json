@@ -19,7 +19,7 @@
         {
           "heading": "A Helix e os primeiros heróis"
         },
-        "Ascent foi onde tudo começou. A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente, e dos seus laboratórios saíram os primeiros super-heróis do mundo. O mais conhecido deles foi o Capitão Ascent.",
+        "Ascent foi onde tudo começou. A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente, e dos seus laboratórios saíram os primeiros super-heróis do mundo. \nDentre todos os Super-Heróis de Ascent, o mais conhecido foi o Ascent-Man, um herói que surgiu na década de 1960. Ainda existem dúvidas sobre se ele foi criado em laboratório ou não.",
         "Os heróis urbanos tomaram as ruas, e por muito tempo Ascent foi a cidade mais protegida do mundo.",
         {
           "heading": "O fim da Era de Ouro"
@@ -199,7 +199,7 @@
     {
       "id": "estatua-capitao-ascent",
       "slug": "estatua-capitao-ascent",
-      "name": "Estátua do Capitão Ascent",
+      "name": "Estátua do Ascent Man",
       "layer": "cidade",
       "district": "praca-central",
       "kind": "Monumento",
@@ -265,7 +265,7 @@
     },
     {
       "title": "DNA feito à mão",
-      "text": "A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente. Entre os heróis que ela criou estava o Capitão Ascent.",
+      "text": "A Helix foi a primeira agência a conseguir alterar o DNA humano manualmente. Entre os heróis que ela criou estava o Ascent Man.",
       "local": "antiga-torre-helix"
     },
     {
