@@ -315,5 +315,222 @@
         "caption": "Superman sobre a cidade"
       }
     ]
+  },
+  {
+    "alignment": "herói",
+    "status": "ativo",
+    "earth": "terra-001",
+    "name": "Sentinela",
+    "id": "sentinela",
+    "slug": "sentinela",
+    "codename": "Sentinela",
+    "identity": "Bob Reynolds",
+    "player": "Pcerrer",
+    "code": "DB-0003",
+    "aliases": ["O Vácuo", "O Guardião Dourado"],
+    "image": "https://media.discordapp.net/attachments/1538395592407908384/1563294975196799016/image.png?ex=6add1b66&is=6adbc9e6&hm=14ff495c83485c72b281243197979c1529443dbee5cfa32b30ac30d7ff724248&=&format=webp&quality=lossless",
+    "age": "32",
+    "gender": "Masculino",
+    "weight": "83",
+    "height": "1.85",
+    "sexuality": "Heterossexual",
+    "race": "Humano geneticamente modificado",
+    "alignmentNote": "Super-herói que busca fazer o certo.",
+    "summary": "Robert \"Bob\" Reynolds é o Sentinela Dourado, um humano aprimorado pela Fórmula do Sentinela Dourado, possuindo poderes cósmicos absurdamente poderosos.",
+    "description": "Robert \"Bob\" Reynolds nasceu nos Estados Unidos, vivendo uma infância simples marcada por inseguranças e dificuldades emocionais. Sua vida mudou quando encontrou um laboratório abandonado e descobriu a misteriosa Fórmula do Sentinela Dourado, um experimento capaz de conceder poderes inimagináveis. Após ingerir a fórmula, Bob se tornou o Sentinela Dourado, um ser com o poder equivalente a mil sóis. Porém, junto de sua força surgiu o Vazio, uma entidade sombria dentro de si que ameaça tomar controle de sua mente. Agora, Robert luta para proteger o mundo enquanto tenta manter sua própria humanidade.",
+    "history": "Robert \"Bob\" Reynolds nasceu em uma pequena cidade dos Estados Unidos, tendo uma infância simples marcada por traumas emocionais, inseguranças e dificuldades para se sentir pertencente ao mundo. Sua vida mudou quando encontrou um laboratório abandonado e descobriu a misteriosa Fórmula do Sentinela Dourado. Ao ingerir o experimento, seu corpo foi transformado por uma energia além da compreensão humana, concedendo-lhe poderes equivalentes a mil sóis.\n\nApós sua transformação, Bob se tornou o Sentinela Dourado, um dos seres mais poderosos existentes. Porém, junto ao seu poder surgiu o Vazio, uma entidade sombria que representa seu lado destrutivo e ameaça tomar o controle de sua mente. Agora, Robert luta para proteger os inocentes enquanto tenta controlar sua própria escuridão e manter sua humanidade.",
+    "stats": [
+      {
+        "attribute": "forca",
+        "tier": "super++"
+      },
+      {
+        "attribute": "durabilidade",
+        "tier": "super++"
+      },
+      {
+        "attribute": "velocidade",
+        "tier": "super++"
+      },
+      {
+        "attribute": "resistencia",
+        "tier": "super++"
+      }
+    ],
+    "powers": [
+      {
+        "name": "Manipulação de Energia Cósmica",
+        "details": [
+          {
+            "name": "Geração de Energia Cósmica",
+            "details": [
+              {
+                "name": "Criação e disparo de energia proveniente do cosmos"
+              }
+            ]
+          },
+          {
+            "name": "Absorção Energética",
+            "details": [
+              {
+                "name": "Absorção de diferentes formas de energia para aumentar seu próprio poder"
+              }
+            ]
+          },
+          {
+            "name": "Fotocinese",
+            "details": [
+              {
+                "name": "Controle da luz, podendo criar rajadas luminosas, cegueira temporária e ataques de laser"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Voo",
+        "details": [
+          {
+            "name": "Capacidade de romper a barreira do som.",
+            "details": [
+              {
+                "name": "Voo registrado em Mach 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Teletransporte"
+      },
+      {
+        "name": "Telecinese"
+      },
+      {
+        "name": "Fator de Cura Regenerativo"
+      },
+      {
+        "name": "Longevidade"
+      },
+      {
+        "name": "Autossuficiência"
+      },
+      {
+        "name": "Invulnerabilidade"
+      },
+      {
+        "name": "The Void",
+        "details": [
+          {
+            "name": "Alter Ego Maligno",
+            "details": [
+              {
+                "name": "Uma entidade sombria dentro da mente de Bob que representa seu lado destrutivo"
+              }
+            ]
+          },
+          {
+            "name": "Manipulação de Energia Sombria",
+            "details": [
+              {
+                "name": "O Vazio possui uma conexão com forças negativas e tenta assumir o controle do Sentinela"
+              }
+            ]
+          },
+          {
+            "name": "Instabilidade Emocional",
+            "details": [
+              {
+                "name": "Quanto mais Bob perde o controle de suas emoções, maior a influência do Vazio"
+              }
+            ]
+          },
+          {
+            "name": "Poder Amplificado",
+            "details": [
+              {
+                "name": "Libera uma versão mais destrutiva dos poderes do Sentinela"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Intelecto Superior",
+        "details": [
+          {
+            "name": "Adaptação Acelerada",
+            "details": [
+              {
+                "name": "Carisma"
+              },
+              {
+                "name": "Intimidação"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Precisão"
+      },
+      {
+        "name": "Imprevisibilidade"
+      },
+      {
+        "name": "Especialista em Acrobacia"
+      }
+    ],
+    "personality": [
+      "Bob Reynolds é um homem gentil, compassivo e humano, cheio de medos e inseguranças. Ele sente culpa pelo perigo que seu alter ego representa e tenta manter sua humanidade. É vulnerável, introspectivo e busca uma vida normal",
+      "Sentinela é o lado heroico e idealista de Bob. É corajoso, determinado e possui um forte senso de justiça. Age como um símbolo de esperança, tentando proteger os inocentes e controlar o Vazio",
+      "O Void é o lado maligno do Sentinela, uma entidade que tenta convencer Bob a liberar todo o seu poder e assumir o controle"
+    ],
+    "relations": [
+      {
+        "name": "Lindy Lee-Reynolds",
+        "kind": "pessoa",
+        "role": "Esposa"
+      },
+      {
+        "name": "Reed Richards",
+        "kind": "pessoa",
+        "role": "Antigo Parceiro"
+      },
+      {
+        "name": "Stephen Strange",
+        "kind": "pessoa",
+        "role": "Antigo Parceiro"
+      },
+      {
+        "name": "Bruce Banner/Hulk",
+        "kind": "pessoa",
+        "role": "Antigo Parceiro. Único que se lembra de Sentinela após eventos"
+      }
+    ],
+    "fame": [
+      {
+        "place": "Terra",
+        "score": 0,
+        "as": "Sentinela",
+        "note": "Ninguém mais o reconhece"
+      },
+      {
+        "place": "Terra",
+        "score": 0,
+        "as": "Bob Reynolds",
+        "note": "Ninguém mais o reconhece"
+      }
+    ],
+    "weaknesses": [
+      "Ataques Psíquicos",
+      "Vulnerabilidade a CHI",
+      "Falta de controle sobre seus poderes e emoções",
+      "Ataques ligados à escuridão ou forças malignas"
+    ],
+    "facts": [],
+    "tags": ["Pcerrer"]
   }
 ]
