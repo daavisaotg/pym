@@ -179,18 +179,18 @@ vizinhos.
 
 ## Painel administrativo
 
-Abra `/admin` no site (por exemplo `https://usuario.github.io/repo/admin`). O painel não aparece
-no menu e não é indexado.
+Abra `/admin` no site. O painel não aparece no menu, não é indexado e pede a **senha do painel**.
 
-- **Editar:** cada seção (Personagens, Linha do tempo, Facções, Verbetes, Kamar-Taj, PYM-City,
-  Explorar, textos da Home, Escala de status) tem lista, busca, criar, duplicar, excluir e
-  reordenar. Ruas, bairros e prédios do mapa são posicionados clicando e arrastando num mapa.
-- **Rascunho:** tudo fica salvo neste navegador até ser publicado ou descartado.
-- **Prévia:** "Prévia do site" abre o site com os rascunhos aplicados, só para você.
-- **Publicar:** conecte o repositório com um token *fine-grained* do GitHub (permissão
-  **Contents: Read and write**, só neste repositório). Cada publicação vira um commit com os JSON
-  e as imagens novas, e o GitHub Actions reconstrói o site em 1 ou 2 minutos.
-- **Sem token:** "Baixar .zip" entrega os arquivos já nas pastas certas para subir na mão.
+- **Senha:** o repositório guarda só um hash dela (PBKDF2) em `src/content/painel.json`, nunca a
+  senha em si. Troque em **Publicação ativa → Trocar a senha**.
+- **Publicação:** configurada uma vez em `/admin/conectar` com um token *fine-grained* do GitHub
+  (só este repositório, **Contents: Read and write**). O token é guardado criptografado com a senha
+  (AES-GCM) no mesmo `painel.json`; depois disso a staff publica só com a senha.
+- **Editar:** cada seção tem lista, busca, criar, duplicar, excluir e reordenar. Ruas, bairros e
+  prédios dos mapas são posicionados clicando e arrastando.
+- **Rascunho e prévia:** tudo fica salvo no navegador até publicar; "Prévia do site" mostra o site
+  com os rascunhos, só para você.
+- **Sem publicação ativa:** "Baixar .zip" entrega os arquivos já nas pastas certas.
 
 Imagens enviadas pelo painel são reduzidas para no máximo 1600 px, convertidas para WebP e
 salvas em `public/uploads/<pasta>/`.

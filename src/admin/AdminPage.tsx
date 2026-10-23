@@ -7,7 +7,8 @@ import { asset } from '@/lib/asset';
 import { SectionView } from './SectionView';
 import { ConnectView } from './ConnectView';
 import { PublishView } from './PublishView';
-import { clearMessages, dirtyIds, disconnect, init, isDirty, useAdmin } from './store';
+import { clearMessages, dirtyIds, init, isDirty, logout, useAdmin } from './store';
+import { LoginView } from './LoginView';
 import styles from './Admin.module.css';
 
 
@@ -49,6 +50,8 @@ export default function AdminPage() {
     window.open(toHref('/'), '_blank');
   };
 
+  if (!admin.authed) return <LoginView />;
+
   return (
     <div className={styles.shell} data-menu={menu || undefined}>
       <title>Painel | PYM</title>
@@ -83,17 +86,11 @@ export default function AdminPage() {
         <div className={styles.sideFoot}>
           <p className={styles.connLine} data-on={admin.conn ? '' : undefined}>
             <span className={styles.connDot} />
-            {admin.conn ? (
-              <>
-                {admin.conn.owner}/{admin.conn.repo}
-                <button type="button" onClick={disconnect}>
-                  sair
-                </button>
-              </>
-            ) : (
-              <Link to="/admin/conectar">Conectar ao GitHub</Link>
-            )}
+            <Link to="/admin/conectar">{admin.conn ? 'Publicação ativa' : 'Publicação não configurada'}</Link>
           </p>
+          <button type="button" className={styles.sideLink} onClick={logout}>
+            Sair do painel
+          </button>
           <a href={toHref('/')} className={styles.sideLink}>
             ← Voltar ao site
           </a>
@@ -134,7 +131,7 @@ export default function AdminPage() {
             <p className={styles.empty}>Abrindo o arquivo…</p>
           ) : section ? (
             <SectionView key={section.id} section={section} />
-          ) : route === 'conectar' ? (
+          ) : route === 'conectar' || route === 'configuracoes' ? (
             <ConnectView />
           ) : route === 'publicar' ? (
             <PublishView />
@@ -170,13 +167,13 @@ function Dashboard({ pending, onPreview }: { pending: ContentFileId[]; onPreview
           <h2 className={styles.cardTitle}>Publicação</h2>
           {admin.conn ? (
             <p>
-              Conectado a <strong>{admin.conn.owner}/{admin.conn.repo}</strong> ({admin.conn.branch}) como {admin.conn.user}. Publicar cria um commit e o
-              site se atualiza sozinho em 1 ou 2 minutos.
+              Publicação ativa em <strong>{admin.conn.owner}/{admin.conn.repo}</strong>. O botão Publicar envia as alterações e o site se atualiza
+              sozinho em 1 ou 2 minutos.
             </p>
           ) : (
             <p>
-              Sem conexão com o GitHub. Você pode editar e baixar os arquivos num .zip, ou{' '}
-              <Link to="/admin/conectar">conectar o repositório</Link> para publicar direto daqui.
+              A publicação ainda não está ativa. Você pode editar e baixar os arquivos num .zip, ou{' '}
+              <Link to="/admin/conectar">configurar a publicação</Link> uma vez para a staff publicar só com a senha.
             </p>
           )}
           <p className={styles.muted}>

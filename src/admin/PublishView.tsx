@@ -181,7 +181,7 @@ export function PublishView() {
         ) : (
           <>
             <p>
-              Sem conexão com o GitHub. <Link to="/admin/conectar">Conecte o repositório</Link> para publicar direto, ou baixe o .zip e envie os
+              A publicação ainda não está ativa. <Link to="/admin/conectar">Configure a publicação</Link> uma vez para publicar direto, ou baixe o .zip e envie os
               arquivos pelo GitHub (eles já estão nas pastas certas: descompacte na raiz do projeto).
             </p>
             <button type="button" className={styles.primary} onClick={zip}>

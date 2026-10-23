@@ -12,6 +12,7 @@ import {
 } from '@/data/contentFiles';
 import { sessionUploads } from '@/lib/asset';
 import { commit, fileSha, readFile, verify, type CommitFile, type Connection } from './github';
+import { buildConfig, checkPassword, clearSession, CONFIG_PATH, decryptToken, getConfig, hasSession, saveSession, setConfig } from './auth';
 import { clean, pretty } from './json';
 import { makeZip, type ZipEntry } from './zip';
 
@@ -32,6 +33,8 @@ export interface FileState {
 }
 
 export interface AdminState {
+  /** Entrou com a senha do painel */
+  authed: boolean;
   ready: boolean;
   files: Partial<Record<ContentFileId, FileState>>;
   conn: Connection | null;
@@ -46,7 +49,7 @@ export interface AdminState {
 const CONN_KEY = 'pym-admin:conn';
 const TOKEN_KEY = 'pym-admin:token';
 
-let state: AdminState = { ready: false, files: {}, conn: null, uploads: {} };
+let state: AdminState = { authed: typeof window !== 'undefined' && hasSession(), ready: false, files: {}, conn: null, uploads: {} };
 const listeners = new Set<() => void>();
 
 function set(patch: Partial<AdminState> | ((s: AdminState) => Partial<AdminState>)) {
@@ -138,7 +141,7 @@ export async function init() {
   );
   const uploads = readUploads();
   Object.assign(sessionUploads, uploads);
-  set({ ready: true, files, uploads, conn: readConnection() });
+  set({ ready: true, files, uploads, conn: state.authed ? readConnection() : null });
   if (state.conn) await pullFromGitHub(stored);
 }
 
@@ -303,4 +306,95 @@ export function exportZip() {
 
 export function fileText(id: ContentFileId) {
   return pretty(clean(state.files[id]!.draft));
+}
+
+/* ── Senha do painel ────────────────────────────────────────── */
+
+/** A senha fica só na memória desta aba, para configurar a publicação ou trocar a senha. */
+let password: string | null = null;
+const keptSession = () => {
+  try {
+    return localStorage.getItem('pym-admin:session') !== null;
+  } catch {
+    return false;
+  }
+};
+
+export async function login(pw: string, keep: boolean): Promise<boolean> {
+  if (!(await checkPassword(pw))) return false;
+  password = pw;
+  saveSession(keep);
+  set({ authed: true, error: undefined });
+  const token = await decryptToken(pw);
+  if (token) {
+    const { owner, repo, branch } = getConfig().repo;
+    await connect({ owner, repo, branch, token }, keep);
+  }
+  return true;
+}
+
+export function logout() {
+  clearSession();
+  try {
+    sessionStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(TOKEN_KEY);
+  } catch {
+    /* nada */
+  }
+  password = null;
+  set({ authed: false, conn: null, notice: undefined, error: undefined });
+}
+
+export const publishingReady = () => Boolean(getConfig().token);
+export const knowsPassword = () => password !== null;
+
+async function saveConfig(cfg: ReturnType<typeof getConfig>, message: string) {
+  const c = state.conn;
+  if (!c) throw new Error('Sem conexão com o GitHub.');
+  await commit(c, [{ path: CONFIG_PATH, content: `${JSON.stringify(cfg, null, 2)}\n`, encoding: 'utf-8' }], message);
+  setConfig(cfg);
+}
+
+/** Primeira configuração (ou troca) do token de publicação, guardado criptografado com a senha. */
+export async function setupPublishing(token: string, repo: { owner: string; repo: string; branch: string }, typed: string): Promise<boolean> {
+  const pw = typed || password || '';
+  if (!(await checkPassword(pw))) {
+    set({ error: 'Senha do painel incorreta.' });
+    return false;
+  }
+  const ok = await connect({ ...repo, token }, keptSession());
+  if (!ok) return false;
+  set({ busy: 'Guardando o acesso criptografado no repositório…' });
+  try {
+    await saveConfig(await buildConfig(pw, repo, token), 'Configura a publicação do painel');
+    password = pw;
+    set({ busy: undefined, notice: 'Publicação configurada. Agora qualquer pessoa da staff publica só com a senha (depois que o site atualizar, em 1 ou 2 minutos).' });
+    return true;
+  } catch (e) {
+    set({ busy: undefined, error: (e as Error).message });
+    return false;
+  }
+}
+
+export async function changePassword(current: string, next: string): Promise<boolean> {
+  if (!(await checkPassword(current))) {
+    set({ error: 'A senha atual está incorreta.' });
+    return false;
+  }
+  const token = await decryptToken(current);
+  if (!token || !state.conn) {
+    set({ error: 'Configure a publicação antes de trocar a senha: a senha nova precisa ser gravada no repositório.' });
+    return false;
+  }
+  set({ busy: 'Gravando a senha nova…', error: undefined });
+  try {
+    await saveConfig(await buildConfig(next, getConfig().repo, token), 'Troca a senha do painel');
+    password = next;
+    saveSession(keptSession());
+    set({ busy: undefined, notice: 'Senha trocada. Ela vale em todos os aparelhos assim que o site atualizar (1 ou 2 minutos).' });
+    return true;
+  } catch (e) {
+    set({ busy: undefined, error: (e as Error).message });
+    return false;
+  }
 }

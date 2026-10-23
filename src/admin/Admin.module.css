@@ -1379,3 +1379,22 @@ select.input {
     grid-template-columns: 5.5rem minmax(0, 1fr);
   }
 }
+
+.steps,
+.howto ul {
+  display: grid;
+  gap: var(--s-1);
+  padding-left: 1.3rem;
+  color: var(--bege);
+  font-size: var(--text-sm);
+}
+
+.steps strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+button.sideLink {
+  width: fit-content;
+  text-align: left;
+}
