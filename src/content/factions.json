@@ -42,7 +42,8 @@
         "label": "Equipe especial",
         "value": "Os Ultimatos (Temporada 11)"
       }
-    ]
+    ],
+    "logo": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/S.H.I.E.L.D._logo_NEW.png/revision/latest/thumbnail/width/360/height/450?cb=20190422151215"
   },
   {
     "id": "aim",
@@ -74,7 +75,8 @@
         "label": "Uniforme",
         "value": "Trajes amarelos de contenção"
       }
-    ]
+    ],
+    "logo": "https://static.wikia.nocookie.net/marveldatabase/images/4/47/A.I.M.-Marvel_Logo.png/revision/latest/scale-to-width-down/424?cb=20131117210011"
   },
   {
     "id": "hydra",
@@ -105,7 +107,8 @@
         "label": "Origem",
         "value": "Segunda Guerra Mundial"
       }
-    ]
+    ],
+    "logo": "https://media.discordapp.net/attachments/1457407026962497798/1531438669020528690/image.png?ex=6adbe967&is=6ada97e7&hm=25e6a200bfae1e00b0c75e971667bbd3b86908b1e1b165e140e3106860aa431a&=&format=webp&quality=lossless"
   },
   {
     "id": "liga-dos-assassinos",
@@ -135,6 +138,7 @@
         "label": "Líder",
         "value": "Ra's al Ghul, o Cabeça do Demônio"
       }
-    ]
+    ],
+    "logo": "https://media.discordapp.net/attachments/1260769968522526751/1562990792425865286/oktSsAAAABklEQVQDANUuz6fMDzXAAAAAElFTkSuQmCC.png?ex=6adc001b&is=6adaae9b&hm=c32bd618e9b5c8dea4eafb388f7fd08f448cab5ffd07cc0ce70b42ad3a62a7cc&=&format=webp&quality=lossless"
   }
 ]
