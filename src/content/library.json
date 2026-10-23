@@ -4,14 +4,16 @@
     "slug": "dez-aneis",
     "name": "Dez Anéis",
     "category": "artefatos",
-    "summary": "Dez anéis de origem alienígena, cada um com um poder diferente, ligados ao legado do Mandarim."
+    "summary": "Dez anéis de origem alienígena, cada um com um poder diferente, ligados ao legado do Mandarim.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517712338831147182/image.png?ex=6adb6a03&is=6ada1883&hm=9a524936cc34a3071738d42674de64910d8ad2bad0d52d747c48102116fc8e1a&=&format=webp&quality=lossless&width=1536&height=770"
   },
   {
     "id": "quantum-bands",
     "slug": "quantum-bands",
     "name": "Quantum Bands",
     "category": "artefatos",
-    "summary": "Braceletes que permitem manipular energia quântica. São o símbolo do Protetor do Universo, título carregado por Quasar."
+    "summary": "Braceletes que permitem manipular energia quântica. São o símbolo do Protetor do Universo, título carregado por Quasar.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517712287765495879/image.png?ex=6adb69f7&is=6ada1877&hm=b06b70c1de5b82a524c435288939996a2da90d66c965422f7f22e27031cce767&=&format=webp&quality=lossless&width=1280&height=911"
   },
   {
     "id": "livro-dos-vishanti",
@@ -19,7 +21,8 @@
     "name": "Livro dos Vishanti",
     "category": "artefatos",
     "summary": "Um dos grimórios de magia branca mais poderosos da Terra, reunindo o conhecimento de Agamotto, Hoggoth e Oshtur. Fica sob a guarda do Mago Supremo.",
-    "related": ["kamar-taj", "olho-de-agamotto"]
+    "related": ["kamar-taj", "olho-de-agamotto"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517712257621164072/image.png?ex=6adb69ef&is=6ada186f&hm=2082f023be711ab7950c2f6c2897445a59c28b89691cb43d2b32f869037a7996&=&format=webp&quality=lossless"
   },
   {
     "id": "caixa-materna",
@@ -27,7 +30,8 @@
     "name": "Caixa Materna",
     "category": "artefatos",
     "summary": "Computador senciente dos Novos Deuses de Nova Gênese. Abre Tubos de Explosão para viagens instantâneas, cura ferimentos e se comunica com a Fonte.",
-    "related": ["novos-deuses", "temporada-12-anti-vida"]
+    "related": ["novos-deuses", "temporada-12-anti-vida"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517712202533175406/image.png?ex=6adb69e2&is=6ada1862&hm=ba4547c054d77308c19450e241c413fa6f1991d1a2ffbfe9f9d6611abce5c660&=&format=webp&quality=lossless&width=2048&height=673"
   },
   {
     "id": "laco-da-verdade",
@@ -35,7 +39,8 @@
     "name": "Laço da Verdade",
     "category": "artefatos",
     "summary": "Laço da Mulher-Maravilha, forjado por Hefesto. Quem é amarrado por ele é obrigado a dizer a verdade.",
-    "related": ["amazonas"]
+    "related": ["amazonas"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711923867816077/image.png?ex=6adb69a0&is=6ada1820&hm=8171d060ad15428863ddea7568a5314ed192ab370cc8dc275aa35bf9e72ba3be&=&format=webp&quality=lossless&width=1536&height=864"
   },
   {
     "id": "tridente-de-netuno",
@@ -43,28 +48,32 @@
     "name": "Tridente de Netuno",
     "category": "artefatos",
     "summary": "Tridente ligado ao trono de Atlântida, capaz de comandar os mares e as criaturas que vivem neles.",
-    "related": ["atlantes"]
+    "related": ["atlantes"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517716660121763991/image.png?ex=6adb6e09&is=6ada1c89&hm=fba1736f12d029e40fd80020340e1f915387226c6fc36f015a7bbec910512ac5&=&format=webp&quality=lossless&width=1536&height=865"
   },
   {
     "id": "elmo-do-destino",
     "slug": "elmo-do-destino",
     "name": "Elmo do Destino",
     "category": "artefatos",
-    "summary": "Elmo de Nabu, Senhor da Ordem. Quem o veste se torna o Senhor Destino e divide o corpo com a consciência de Nabu."
+    "summary": "Elmo de Nabu, Senhor da Ordem. Quem o veste se torna o Senhor Destino e divide o corpo com a consciência de Nabu.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711622259474472/image.png?ex=6adb6958&is=6ada17d8&hm=e28146e94c607ef97c197bdf9b9324e40b654d1312e20339f5ceca8e900f9172&=&format=webp&quality=lossless"
   },
   {
     "id": "livro-dos-campeoes",
     "slug": "livro-dos-campeoes",
     "name": "Livro dos Campeões",
     "category": "artefatos",
-    "pending": true
+    "pending": true,
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711593104871595/shazam-novos-52-jpg.png?ex=6adb6951&is=6ada17d1&hm=57c0e3c9163e094c886f1f293763bd8df2009b3312f6e895fb77a39f52121751&=&format=webp&quality=lossless"
   },
   {
     "id": "escaravelho",
     "slug": "escaravelho",
     "name": "Escaravelho",
     "category": "artefatos",
-    "summary": "Artefato alienígena que se funde ao hospedeiro e gera uma armadura adaptável. É a origem do Besouro Azul."
+    "summary": "Artefato alienígena que se funde ao hospedeiro e gera uma armadura adaptável. É a origem do Besouro Azul.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711437915619509/image.png?ex=6adb692c&is=6ada17ac&hm=550a35f237e1a4df9f75d65d34b25f81bc7f4aea20e0ac6df4bddb5294b79874&=&format=webp&quality=lossless"
   },
   {
     "id": "olho-de-agamotto",
@@ -72,7 +81,8 @@
     "name": "Olho de Agamotto",
     "category": "artefatos",
     "summary": "Amuleto do Mago Supremo, criado por Agamotto. Sua luz revela a verdade, dissipa ilusões e enfraquece criaturas das trevas.",
-    "related": ["kamar-taj", "livro-dos-vishanti"]
+    "related": ["kamar-taj", "livro-dos-vishanti"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711407523692734/image.png?ex=6adb6925&is=6ada17a5&hm=299cfaed4a5157e92da0f66e220a49d6e45f2756e4d4f04ec02e2451d34f197a&=&format=webp&quality=lossless"
   },
   {
     "id": "manto-da-levitacao",
@@ -80,7 +90,8 @@
     "name": "Manto da Levitação",
     "category": "artefatos",
     "summary": "Capa senciente que permite ao portador levitar e voar. Escolhe a quem servir e reage por conta própria em combate.",
-    "related": ["kamar-taj"]
+    "related": ["kamar-taj"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711379870646372/image.png?ex=6adb691e&is=6ada179e&hm=e8dd964fa95b5a1cabb950545239acb285a7f3f42efb75880b4a263a12d65fa6&=&format=webp&quality=lossless"
   },
   {
     "id": "martelo-mjolnir",
@@ -88,14 +99,16 @@
     "name": "Martelo Mjolnir",
     "category": "artefatos",
     "summary": "Martelo forjado em metal uru em Nidavellir. Só quem for digno pode erguê-lo e comandar o trovão.",
-    "related": ["asgardianos", "arco-espada-de-muspelheim"]
+    "related": ["asgardianos", "arco-espada-de-muspelheim"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517711349130465372/image.png?ex=6adb6917&is=6ada1797&hm=57c9ec00ad222ec7ac9f0cd3d99189ac784029373f69f907bc528a7fdd2a5a73&=&format=webp&quality=lossless&width=1536&height=805"
   },
   {
     "id": "joia-de-cyttorak",
     "slug": "joia-de-cyttorak",
     "name": "Joia de Cyttorak",
     "category": "artefatos",
-    "summary": "Gema carmesim do templo de Cyttorak. Transforma o portador no Fanático, uma força física que nada consegue deter."
+    "summary": "Gema carmesim do templo de Cyttorak. Transforma o portador no Fanático, uma força física que nada consegue deter.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1517710787496640522/image.png?ex=6adb6891&is=6ada1711&hm=00aba08051a5e4ad27ac13aed26db136f641ccab8827e725da6ad718d3816318&=&format=webp&quality=lossless&width=1536&height=864"
   },
   {
     "id": "novos-deuses",
@@ -103,7 +116,8 @@
     "name": "Novos Deuses",
     "category": "raças",
     "summary": "Deuses nascidos da queda dos antigos deuses, divididos entre Nova Gênese e Apokolips, o mundo de Darkseid.",
-    "related": ["temporada-12-anti-vida", "historico-era-de-ouro", "caixa-materna"]
+    "related": ["temporada-12-anti-vida", "historico-era-de-ouro", "caixa-materna"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1533607831859626035/NG_06_C4_C1Z_marquee_56d79df5af1316.92075090.png?ex=6adb3bd8&is=6ad9ea58&hm=ae9dfa11e73328be848c45e01dc81c337f5d6cef532df7c5ae262771a187e4f8&=&format=webp&quality=lossless&width=1536&height=864"
   },
   {
     "id": "viltrumitas",
@@ -111,14 +125,16 @@
     "name": "Viltrumitas",
     "category": "raças",
     "summary": "Povo do Império de Viltrum: força, velocidade, voo e longevidade extremos, regidos pela lei do mais forte. No PYM, o império está enfraquecido pela miscigenação de raças.",
-    "related": ["guerra-viltrumita"]
+    "related": ["guerra-viltrumita"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122466359705720/20260319-captura-de-tela-2026-03-19-155321-1024x449.png?ex=6adbc33d&is=6ada71bd&hm=4e3393d4997da586d6c41776315cc60c6dd4f03bafdecb6e3b8f85afd5dc48d5&=&format=webp&quality=lossless"
   },
   {
     "id": "marcianos",
     "slug": "marcianos",
     "name": "Marcianos",
     "category": "raças",
-    "summary": "Povo de Marte com telepatia, metamorfose, invisibilidade e intangibilidade. O fogo é sua maior fraqueza."
+    "summary": "Povo de Marte com telepatia, metamorfose, invisibilidade e intangibilidade. O fogo é sua maior fraqueza.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122689244762202/thumb-1920-1203832.png?ex=6adbc372&is=6ada71f2&hm=d1b35758c344fc206d462650ebe534a72870341bba866df08b0cc039c7ce408a&=&format=webp&quality=lossless"
   },
   {
     "id": "skrulls",
@@ -126,7 +142,8 @@
     "name": "Skrulls",
     "category": "raças",
     "summary": "Metamorfos do Império Skrull, capazes de assumir a aparência de qualquer pessoa. Rivais históricos dos Kree.",
-    "related": ["krees"]
+    "related": ["krees"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122766483132446/3c09f45ed665696cc2d18a684d65ce4c0eb3cb0cr1-738-415v2_hq_1.png?ex=6adbc384&is=6ada7204&hm=842df0560d008e7b7d3fad29126632561f7970aba88addb43f1f289e5b30189e&=&format=webp&quality=lossless"
   },
   {
     "id": "androides",
@@ -134,14 +151,16 @@
     "name": "Andróides",
     "category": "raças",
     "summary": "Seres artificiais construídos à semelhança de seres vivos, de sintezoides a máquinas conscientes.",
-    "related": ["historico-ultron"]
+    "related": ["historico-ultron"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532123193337315520/thumb-1920-467834.png?ex=6adbc3ea&is=6ada726a&hm=ed4c321bafde3df31d3b8422c25c4e6c83983fe81dae5bf86870559d59031e1a&=&format=webp&quality=lossless"
   },
   {
     "id": "olympianos",
     "slug": "olympianos",
     "name": "Olympianos",
     "category": "raças",
-    "summary": "Deuses do Olimpo, como Zeus e Hércules, com força, resistência e longevidade divinas."
+    "summary": "Deuses do Olimpo, como Zeus e Hércules, com força, resistência e longevidade divinas.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532123054065582161/RdH7mvdwha2aHGuvXgig8C-1920-80.png?ex=6adbc3c9&is=6ada7249&hm=8d94a7b3a79127a69c1902ee1da8cb41b8749dc43e0dbeb5993b5f1695fb1507&=&format=webp&quality=lossless"
   },
   {
     "id": "asgardianos",
@@ -149,28 +168,32 @@
     "name": "Asgardianos",
     "category": "raças",
     "summary": "Povo de Asgard, um dos Nove Reinos, com força, durabilidade e longevidade muito acima das humanas. No PYM, Asgard caiu no Ragnarok.",
-    "related": ["arco-espada-de-muspelheim", "martelo-mjolnir"]
+    "related": ["arco-espada-de-muspelheim", "martelo-mjolnir"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532123020695568624/aed54cc15e91d6595483e3ae6b49de55.png?ex=6adbc3c1&is=6ada7241&hm=d30056e9db61d0b862aee03df5be29ae673a9b093f7c55eae56a8ac5ac795496&=&format=webp&quality=lossless"
   },
   {
     "id": "shi-ars",
     "slug": "shi-ars",
     "name": "Shi'ars",
     "category": "raças",
-    "summary": "Império alienígena de traços aviários, governado de Chandilar e protegido pela Guarda Imperial."
+    "summary": "Império alienígena de traços aviários, governado de Chandilar e protegido pela Guarda Imperial.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122996783841371/latest.png?ex=6adbc3bb&is=6ada723b&hm=ba4444659216e05115bbc63b840a1be73be2453e150739d3974202d7386542df&=&format=webp&quality=lossless&width=1536&height=774"
   },
   {
     "id": "czarnianos",
     "slug": "czarnianos",
     "name": "Czarnianos",
     "category": "raças",
-    "summary": "Povo do planeta Czarnia, com regeneração extrema e força sobre-humana. Lobo é o último sobrevivente conhecido."
+    "summary": "Povo do planeta Czarnia, com regeneração extrema e força sobre-humana. Lobo é o último sobrevivente conhecido.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122974109433927/image.png?ex=6adbc3b6&is=6ada7236&hm=19cad68841b38a8193ed1e422abf3f7be0be04db15b8234054cb7c6e009125a8&=&format=webp&quality=lossless"
   },
   {
     "id": "tamaraneanos",
     "slug": "tamaraneanos",
     "name": "Tamaraneanos",
     "category": "raças",
-    "summary": "Povo do planeta Tamaran. Absorvem radiação solar, voam movidos pelas emoções e disparam rajadas de energia."
+    "summary": "Povo do planeta Tamaran. Absorvem radiação solar, voam movidos pelas emoções e disparam rajadas de energia.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122946212991117/Char_Gallery_Starfire_TT_16_15_600_5f861b88e06130.png?ex=6adbc3af&is=6ada722f&hm=bf502d656dae2eff114a56997d0d9c45be6fc114f900274fe5ed6ead0139e17f&=&format=webp&quality=lossless"
   },
   {
     "id": "krees",
@@ -178,7 +201,8 @@
     "name": "Krees",
     "category": "raças",
     "summary": "Império militarista de Hala, guiado pela Inteligência Suprema. Rivais históricos dos Skrulls e criadores dos Inumanos.",
-    "related": ["skrulls", "inumanos"]
+    "related": ["skrulls", "inumanos"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122917129818194/kree_1.png?ex=6adbc3a8&is=6ada7228&hm=912867430a9af214079cd903dec5916b5d91f0824b75327d1102ec5d09902ba4&=&format=webp&quality=lossless"
   },
   {
     "id": "kryptonianos",
@@ -186,14 +210,16 @@
     "name": "Kryptonianos",
     "category": "raças",
     "summary": "Povo de Krypton. Sob um sol amarelo, ganham força, voo, visão de calor e invulnerabilidade. A kryptonita é sua maior fraqueza.",
-    "related": ["kal-el", "arco-alem-do-gene-x"]
+    "related": ["kal-el", "arco-alem-do-gene-x"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122415524479016/conteudo_35452.png?ex=6adbc331&is=6ada71b1&hm=c92682f5a9cff4995a0ff95e767a9826f9e717a60c86c5bbb4c63823a788fdb2&=&format=webp&quality=lossless"
   },
   {
     "id": "deviantes",
     "slug": "deviantes",
     "name": "Deviantes",
     "category": "raças",
-    "summary": "Criados pelos Celestiais ao lado dos Eternos, com genética instável que gera formas e poderes sempre diferentes."
+    "summary": "Criados pelos Celestiais ao lado dos Eternos, com genética instável que gera formas e poderes sempre diferentes.",
+    "image": "https://images-ext-1.discordapp.net/external/FyExQNuF2QpGwr93UU3ZzhbM_gQvAGfq8eqD0pf_vrE/https/uploads.jovemnerd.com.br/wp-content/uploads/2021/10/eternos-deviantes-marvel.jpg?format=webp"
   },
   {
     "id": "amazonas",
@@ -201,14 +227,16 @@
     "name": "Amazonas",
     "category": "raças",
     "summary": "Guerreiras imortais de Themyscira, criadas pelos deuses gregos e treinadas por milênios em combate.",
-    "related": ["laco-da-verdade"]
+    "related": ["laco-da-verdade"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122357391429883/Amazonas-1.png?ex=6adbc323&is=6ada71a3&hm=cf90e34830bf820641456a581945cd6ec54803d9f6b41c960a8eb9c70d38a7c6&=&format=webp&quality=lossless"
   },
   {
     "id": "talokanils",
     "slug": "talokanils",
     "name": "Talokanils",
     "category": "raças",
-    "summary": "Povo de Talokan, reino submarino de origem mesoamericana, com respiração aquática e força ampliada."
+    "summary": "Povo de Talokan, reino submarino de origem mesoamericana, com respiração aquática e força ampliada.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122330061340822/atlantis_card.png?ex=6adbc31c&is=6ada719c&hm=e9cfe74aa0c0746743dd6e9fcf00c30ec41ec2b3be9d8025fbd0beae67a19263&=&format=webp&quality=lossless"
   },
   {
     "id": "atlantes",
@@ -216,7 +244,8 @@
     "name": "Atlantes",
     "category": "raças",
     "summary": "Povo de Atlântida, adaptado à vida no fundo do mar, com força e resistência à pressão das profundezas.",
-    "related": ["tridente-de-netuno"]
+    "related": ["tridente-de-netuno"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122296150659122/latest.png?ex=6adbc314&is=6ada7194&hm=6a8aeeee68fecceaae6213ce120f2a6824d3b8252c50077ea7c897a5fc60638b&=&format=webp&quality=lossless"
   },
   {
     "id": "inumanos",
@@ -224,7 +253,8 @@
     "name": "Inumanos",
     "category": "raças",
     "summary": "Humanos modificados pelos Kree. Seus poderes despertam na exposição à Névoa Terrígena.",
-    "related": ["krees"]
+    "related": ["krees"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122183164367060/062inh_com_mas_dsk_02_1.png?ex=6adbc2f9&is=6ada7179&hm=c98cdd85c9a27c6df5603d6bd752674c1d8f8bc68111b42b82e3d8069628cb2b&=&format=webp&quality=lossless"
   },
   {
     "id": "mutantes",
@@ -232,7 +262,8 @@
     "name": "Mutantes",
     "category": "raças",
     "summary": "Humanos nascidos com o gene X, cujos poderes costumam despertar na adolescência. No PYM, Genosha, o Lar dos Mutantes, foi fragmentada por Loki.",
-    "related": ["arco-espada-de-muspelheim", "perdido-apocalypse"]
+    "related": ["arco-espada-de-muspelheim", "perdido-apocalypse"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122149869850784/marvels-x-men-comics-in-2024-preview-gallery_1w1m.png?ex=6adbc2f1&is=6ada7171&hm=1d52dc393ae189e69c65e2376e1fd1cda3b326a7570a88a70844a7612615238a&=&format=webp&quality=lossless"
   },
   {
     "id": "seres-humanos",
@@ -240,7 +271,8 @@
     "name": "Seres Humanos",
     "category": "raças",
     "summary": "A espécie mais numerosa da Terra. É a referência da escala de status, que começa no nível Humano.",
-    "related": ["matthew-stark"]
+    "related": ["matthew-stark"],
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532122118412701936/1297424.png?ex=6adbc2ea&is=6ada716a&hm=f791d986cfd49041157821b7bb9e2db0237fe16a7f9af27874b23728c31a13ce&=&format=webp&quality=lossless"
   },
   {
     "id": "forca-enigma",
@@ -248,7 +280,8 @@
     "name": "Força Enigma",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Energia cósmica que escolhe hospedeiros em momentos de grande necessidade e os transforma no Capitão Universo."
+    "summary": "Energia cósmica que escolhe hospedeiros em momentos de grande necessidade e os transforma no Capitão Universo.",
+    "image": "https://media.discordapp.net/attachments/1345138078326460538/1465483344052617226/image-1182.png?ex=6adb3ff8&is=6ad9ee78&hm=b30c0aa769589a60ecc790602cadf0bc6eef4972dca5c3c33e9a1736da07c5b7&=&format=webp&quality=lossless&width=768&height=366"
   },
   {
     "id": "o-carniceiro",
@@ -256,7 +289,8 @@
     "name": "O Carniceiro",
     "category": "pactos",
     "group": "Pacto",
-    "pending": true
+    "pending": true,
+    "image": "https://media.discordapp.net/attachments/1345138078326460538/1436046755769618483/gorr_capa.png?ex=6adb9b43&is=6ada49c3&hm=eec99daa82df0e7e0fb7f0be937f33e1b28d2afb92f16e8af04f6b115152691f&=&format=webp&quality=lossless&width=768&height=431"
   },
   {
     "id": "etrigan",
@@ -264,7 +298,8 @@
     "name": "Etrigan",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Demônio rimador do Inferno, preso por Merlin ao corpo do cavaleiro Jason Blood."
+    "summary": "Demônio rimador do Inferno, preso por Merlin ao corpo do cavaleiro Jason Blood.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532137843718094979/image.png?ex=6adbd18f&is=6ada800f&hm=216d6b51b5c05df7a7878f2d586ec716c800d8490c23b61a71b579686cb82e5a&=&format=webp&quality=lossless"
   },
   {
     "id": "poco-de-lazaro",
@@ -272,7 +307,8 @@
     "name": "Poço de Lázaro",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Poços místicos que curam ferimentos e devolvem a vida e a juventude, ao custo de uma loucura temporária."
+    "summary": "Poços místicos que curam ferimentos e devolvem a vida e a juventude, ao custo de uma loucura temporária.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5OJUmFwqjahvIKJk2Kw9TZ8m7MrmgEgJrTAqTuCcBrLLX3ALP0i61w9R8&s=10"
   },
   {
     "id": "forca-fenix",
@@ -281,7 +317,8 @@
     "category": "pactos",
     "group": "Pacto",
     "summary": "Entidade cósmica da vida, da morte e do renascimento. Escolhe hospedeiros como Jean Grey.",
-    "related": ["mutantes"]
+    "related": ["mutantes"],
+    "image": "https://media.discordapp.net/attachments/1345138078326460538/1355611041223938129/AVENGERS-VS-X-MEN-5-e-UNCANY-X-MEN-13_1.png?ex=6adba8aa&is=6ada572a&hm=5d56cadf2db6a2d6b79e502af54646f83c951b387be035c775d874a05d971558&=&format=webp&quality=lossless&width=768&height=416"
   },
   {
     "id": "hellspawn",
@@ -289,7 +326,8 @@
     "name": "Hellspawn",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Soldados do Inferno criados por pactos com demônios, como Malebolgia. Spawn é o mais conhecido."
+    "summary": "Soldados do Inferno criados por pactos com demônios, como Malebolgia. Spawn é o mais conhecido.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532137778324963458/image.png?ex=6adbd180&is=6ada8000&hm=4fe64daff4150bcb1dec24820e44a5b7cfffa2f2826f65043ac747fffa558822&=&format=webp&quality=lossless"
   },
   {
     "id": "espirito-da-vinganca",
@@ -297,7 +335,8 @@
     "name": "Espírito da Vingança",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Espírito que se une a um hospedeiro humano e o transforma no Motoqueiro Fantasma, punindo os culpados com o Olhar de Penitência."
+    "summary": "Espírito que se une a um hospedeiro humano e o transforma no Motoqueiro Fantasma, punindo os culpados com o Olhar de Penitência.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532137756107603988/image.png?ex=6adbd17a&is=6ada7ffa&hm=bd62b472070bdf055fe3c945432949d3d3d5ce871ee396b943720ceb83d1eeec&=&format=webp&quality=lossless"
   },
   {
     "id": "homem-coisa",
@@ -305,21 +344,24 @@
     "name": "Homem-Coisa",
     "category": "pactos",
     "group": "Pacto",
-    "summary": "Criatura do pântano que guarda o Nexo de Todas as Realidades. Quem sente medo diante dele queima ao seu toque."
+    "summary": "Criatura do pântano que guarda o Nexo de Todas as Realidades. Quem sente medo diante dele queima ao seu toque.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1532137836126666995/image.png?ex=6adbd18d&is=6ada800d&hm=abc52ea08b5a2b06d85a4f1ce8618a71cdcfe0119dd033c9f38e7b5431d9818c&=&format=webp&quality=lossless"
   },
   {
     "id": "fraternidade-dos-raptors",
     "slug": "fraternidade-dos-raptors",
     "name": "Fraternidade dos Raptors",
     "category": "tropas",
-    "pending": true
+    "pending": true,
+    "image": "https://media.discordapp.net/attachments/1371162217726349342/1436047644525854790/Christopher_Powell_28Earth-61629_from_War_of_Kings_Ascension_Vol_1_4_0001.jpg?ex=6adb9c16&is=6ada4a96&hm=4361e4aad24950f8ce7e8e0ba9bf005fafdf917b42db6f0ab622ebbe9fc0cab0&=&format=webp"
   },
   {
     "id": "tropa-nova",
     "slug": "tropa-nova",
     "name": "Tropa Nova",
     "category": "tropas",
-    "summary": "Força policial intergaláctica de Xandar. Seus centuriões são alimentados pela Força Nova."
+    "summary": "Força policial intergaláctica de Xandar. Seus centuriões são alimentados pela Força Nova.",
+    "image": "https://media.discordapp.net/attachments/1457407026962497798/1518775067104772266/image.png?ex=6adbfc01&is=6adaaa81&hm=6be21fc1ecfd8c438a9bd902fc0108b1befbc43d816b7ad3079a13f46c511677&=&format=webp&quality=lossless&width=1536&height=864"
   },
   {
     "id": "os-sith",
@@ -327,7 +369,8 @@
     "name": "Os Sith",
     "category": "tropas",
     "summary": "Ordem que domina o lado sombrio da Força, movida pela paixão, pelo ódio e pela busca de poder.",
-    "related": ["jedi"]
+    "related": ["jedi"],
+    "image": "https://media.discordapp.net/attachments/1371162217726349342/1403940343543762954/static-assets-upload12344081977374982293-1.jpg?ex=6adb7a95&is=6ada2915&hm=ccee57f77ebb2f50f6a5300fa18559ce2611877cfd50119b25dbafb29c774a00&=&format=webp"
   },
   {
     "id": "jedi",
@@ -335,7 +378,8 @@
     "name": "Jedi",
     "category": "tropas",
     "summary": "Ordem de guardiões da paz que usa o lado luminoso da Força e empunha sabres de luz.",
-    "related": ["os-sith"]
+    "related": ["os-sith"],
+    "image": "https://media.discordapp.net/attachments/1371162217726349342/1403940225780158485/12_1.jpg?ex=6adb7a79&is=6ada28f9&hm=cc6bd014749726c0b8311001cbcf8a59d9e379b8850fc7c35cec36e0178c797c&=&format=webp&width=768&height=333"
   },
   {
     "id": "venom",
@@ -343,7 +387,8 @@
     "name": "Venom",
     "category": "simbiontes",
     "summary": "Simbionte Klyntar que já foi o traje negro do Homem-Aranha. Seu hospedeiro mais famoso é Eddie Brock.",
-    "related": ["carnificina", "anti-venom", "mania"]
+    "related": ["carnificina", "anti-venom", "mania"],
+    "image": "https://media.discordapp.net/attachments/1370936729669861427/1370936730433093683/venom-1_1.png?ex=6adb6213&is=6ada1093&hm=e8873fb24b6888764805e4c189c0e4cb6af250cfef9e227e324ddc1322e7d3bd&=&format=webp&quality=lossless&width=1536&height=865"
   },
   {
     "id": "carnificina",
@@ -351,7 +396,8 @@
     "name": "Carnificina",
     "category": "simbiontes",
     "summary": "Cria de Venom, ligada ao assassino Cletus Kasady. Mais forte e mais sádica que o próprio pai.",
-    "related": ["venom", "toxina", "scorn"]
+    "related": ["venom", "toxina", "scorn"],
+    "image": "https://media.discordapp.net/attachments/1370939471670939688/1370939472824504451/imagem_2025-05-08_012220884-1.png?ex=6adb64a1&is=6ada1321&hm=f7d5ea066f3fa733bbd540435357aa70294b83f8d40e4bcf39c6e83d30dbf507&=&format=webp&quality=lossless&width=768&height=430"
   },
   {
     "id": "anti-venom",
@@ -359,7 +405,8 @@
     "name": "Anti-Venom",
     "category": "simbiontes",
     "summary": "Simbionte branco nascido da cura de Eddie Brock. Purifica toxinas e é letal para outros simbiontes.",
-    "related": ["venom"]
+    "related": ["venom"],
+    "image": "https://media.discordapp.net/attachments/1370951664798011412/1370951665880006676/antivenompym-1.png?ex=6adb6ffc&is=6ada1e7c&hm=6da4f574190d6d820c511d1c62a024986b0a0861a96fe7c2a6b54ddeeebee0dc&=&format=webp&quality=lossless&width=1536&height=805"
   },
   {
     "id": "scream",
@@ -367,7 +414,8 @@
     "name": "Scream",
     "category": "simbiontes",
     "summary": "Um dos cinco simbiontes extraídos à força de Venom pela Fundação Vida. Ataca com cabelos afiados e gritos sônicos.",
-    "related": ["riot", "phage", "lasher", "agony"]
+    "related": ["riot", "phage", "lasher", "agony"],
+    "image": "https://media.discordapp.net/attachments/1370955777937772647/1370955778827096084/20231027-scream-marvel_1.png?ex=6adb73d0&is=6ada2250&hm=76b27df1230771a915126201138dcaa72beb0d1c71a453619c4e6ea02218a781&=&format=webp&quality=lossless&width=1536&height=802"
   },
   {
     "id": "venom-2099",
@@ -375,7 +423,8 @@
     "name": "Venom 2099",
     "category": "simbiontes",
     "summary": "Versão futura do simbionte Venom, no ano de 2099.",
-    "related": ["venom"]
+    "related": ["venom"],
+    "image": "https://media.discordapp.net/attachments/1370951979333062666/1370951979638980769/Venom-Marvel-2099.png?ex=6adb7047&is=6ada1ec7&hm=05762016fd8dc014cb8a0b69b52739610d912208f8373c9c87970311d6d26be5&=&format=webp&quality=lossless"
   },
   {
     "id": "phage",
@@ -383,7 +432,8 @@
     "name": "Phage",
     "category": "simbiontes",
     "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, especialista em lâminas e espinhos.",
-    "related": ["riot", "scream", "lasher", "agony"]
+    "related": ["riot", "scream", "lasher", "agony"],
+    "image": "https://media.discordapp.net/attachments/1370953058972074151/1370953059357818880/imagem_2025-05-10_214752631.png?ex=6adb7148&is=6ada1fc8&hm=d6a43ccbe6a17db0f4518a7b3844ed78eab395a727f42683172d212e5fc79814&=&format=webp&quality=lossless"
   },
   {
     "id": "mania",
@@ -391,7 +441,8 @@
     "name": "Mania",
     "category": "simbiontes",
     "summary": "Simbionte ligado a Andi Benton, nascido de um fragmento de Venom.",
-    "related": ["venom"]
+    "related": ["venom"],
+    "image": "https://media.discordapp.net/attachments/1370954065030287471/1370954065218900019/imagem_2025-05-10_215207246.png?ex=6adb7238&is=6ada20b8&hm=1a1a9418cd9c5981fdd1f55472a46ba8acb78df652a3fabca0490557a5e5703d&=&format=webp&quality=lossless"
   },
   {
     "id": "lasher",
@@ -399,7 +450,8 @@
     "name": "Lasher",
     "category": "simbiontes",
     "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, que ataca com tentáculos em forma de chicote.",
-    "related": ["riot", "scream", "phage", "agony"]
+    "related": ["riot", "scream", "phage", "agony"],
+    "image": "https://media.discordapp.net/attachments/1370954380123308152/1370954380345479261/imagem_2025-05-10_215834501.png?ex=6adb7283&is=6ada2103&hm=87f90581c88fa545aaf4549d9b3784e020cda73d984d91e3011aa69f1a7a1a0a&=&format=webp&quality=lossless"
   },
   {
     "id": "riot",
@@ -407,7 +459,8 @@
     "name": "Riot",
     "category": "simbiontes",
     "summary": "Líder dos simbiontes extraídos de Venom pela Fundação Vida, capaz de transformar o corpo em armas pesadas.",
-    "related": ["scream", "phage", "lasher", "agony"]
+    "related": ["scream", "phage", "lasher", "agony"],
+    "image": "https://media.discordapp.net/attachments/1370954650446074016/1370954650748194857/imagem_2025-05-10_215647615.png?ex=6adb72c3&is=6ada2143&hm=05ed1808f7f7afbdd1ffa14ee384e776edd44e45bdb25766c50589a904f23555&=&format=webp&quality=lossless"
   },
   {
     "id": "scorn",
@@ -415,7 +468,8 @@
     "name": "Scorn",
     "category": "simbiontes",
     "summary": "Cria de Carnificina capaz de se fundir com máquinas e tecnologia.",
-    "related": ["carnificina"]
+    "related": ["carnificina"],
+    "image": "https://media.discordapp.net/attachments/1370954890402336768/1370954891438325780/imagem_2025-05-10_213421553-1.png?ex=6adb72fd&is=6ada217d&hm=e91811b743e93308e7bb28c5172b00eea6c51ae7bad6e3dba6f7929e4def6721&=&format=webp&quality=lossless&width=2048&height=910"
   },
   {
     "id": "agony",
@@ -423,7 +477,8 @@
     "name": "Agony",
     "category": "simbiontes",
     "summary": "Um dos simbiontes extraídos de Venom pela Fundação Vida, capaz de expelir ácido.",
-    "related": ["riot", "scream", "phage", "lasher"]
+    "related": ["riot", "scream", "phage", "lasher"],
+    "image": "https://media.discordapp.net/attachments/1370955064692183083/1370955064906350724/imagem_2025-05-10_221544346.png?ex=6adb7326&is=6ada21a6&hm=cb8aa75e9200cb44a35041459ef2d5c58da17a9c3a160090acbd13fe4629b892&=&format=webp&quality=lossless"
   },
   {
     "id": "toxina",
@@ -431,6 +486,7 @@
     "name": "Toxina",
     "category": "simbiontes",
     "summary": "Cria de Carnificina ligada a um policial. Nasceu para ser mais forte que o pai e o avô.",
-    "related": ["carnificina", "venom"]
+    "related": ["carnificina", "venom"],
+    "image": "https://media.discordapp.net/attachments/1370955447313371207/1370955448458678323/imagem_2025-05-07_214331484.png?ex=6adb7382&is=6ada2202&hm=266cd4d9e91ab7649c9cb35d4e2b909ba3de0ed303f3ae431377868eb8b31b01&=&format=webp&quality=lossless&width=1536&height=832"
   }
 ]
