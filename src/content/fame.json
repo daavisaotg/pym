@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "category": "Jornalista",
+    "reason": "O maior jornalista de toda essa cidade.",
+    "name": "B. Blake Barnett",
+    "id": "b-blake-barnett",
+    "slug": "b-blake-barnett",
+    "star": 1,
+    "description": "Com ares de cronista noir de um mundo super-heróico, Blake não assiste ao caos da segurança da redação: ele está bem no meio dele, anotando placas, nomes e furos de reportagem enquanto o teto desaba. Para ele, uma batalha entre o Capitão América, a Viúva Negra e a H.Y.D.R.A. não é apenas um milagre de sobrevivência — é uma manchete urgente que o jornalismo tradicional finge não ver. Ah, ele odeia vigilantes!",
+    "image": "https://media.discordapp.net/attachments/1345138067224395836/1389681520205369575/image.png?ex=6adbae45&is=6ada5cc5&hm=b6ab410124beb3a5868e57c6bb5c53ecee4f71f2e9cede347923ba87028912ca&=&format=webp&quality=lossless"
+  }
+]
