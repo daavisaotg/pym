@@ -329,7 +329,7 @@
     "code": "DB-0003",
     "aliases": ["O Vácuo", "O Guardião Dourado"],
     "image": "https://media.discordapp.net/attachments/1538395592407908384/1563294975196799016/image.png?ex=6add1b66&is=6adbc9e6&hm=14ff495c83485c72b281243197979c1529443dbee5cfa32b30ac30d7ff724248&=&format=webp&quality=lossless",
-    "age": "32",
+    "age": "36",
     "gender": "Masculino",
     "weight": "83",
     "height": "1.85",
@@ -342,11 +342,11 @@
     "stats": [
       {
         "attribute": "forca",
-        "tier": "super++"
+        "tier": "super+++"
       },
       {
         "attribute": "durabilidade",
-        "tier": "super++"
+        "tier": "super+++"
       },
       {
         "attribute": "velocidade",
@@ -354,7 +354,7 @@
       },
       {
         "attribute": "resistencia",
-        "tier": "super++"
+        "tier": "super+++"
       }
     ],
     "powers": [
@@ -404,10 +404,28 @@
         "name": "Teletransporte"
       },
       {
-        "name": "Telecinese"
+        "name": "Telecinese",
+        "details": [
+          {
+            "name": "Nível Mediano."
+          },
+          {
+            "name": "Telepatia",
+            "details": [
+              {
+                "name": "Nível Mediano."
+              }
+            ]
+          }
+        ]
       },
       {
-        "name": "Fator de Cura Regenerativo"
+        "name": "Fator de Cura Regenerativo",
+        "details": [
+          {
+            "name": "Nível Mediano."
+          }
+        ]
       },
       {
         "name": "Longevidade"
@@ -513,15 +531,15 @@
     "fame": [
       {
         "place": "Terra",
-        "score": 0,
+        "score": 10,
         "as": "Sentinela",
-        "note": "Ninguém mais o reconhece"
+        "note": "É um grande e um dos mais famosos heróis. Páginas e Blogs consideram-o um dos mais poderosos de todos os tempos."
       },
       {
         "place": "Terra",
-        "score": 0,
+        "score": 1,
         "as": "Bob Reynolds",
-        "note": "Ninguém mais o reconhece"
+        "note": "Um civil comum."
       }
     ],
     "weaknesses": [
@@ -531,7 +549,8 @@
       "Ataques ligados à escuridão ou forças malignas"
     ],
     "facts": [],
-    "tags": ["Pcerrer"]
+    "tags": ["Pcerrer"],
+    "rivals": ["Vácuo."]
   },
   {
     "alignment": "herói",
