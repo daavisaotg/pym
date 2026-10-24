@@ -532,5 +532,242 @@
     ],
     "facts": [],
     "tags": ["Pcerrer"]
+  },
+  {
+    "alignment": "herói",
+    "status": "ativo",
+    "earth": "terra-001",
+    "name": "Blue Marvel",
+    "id": "blue-marvel",
+    "slug": "blue-marvel",
+    "code": "DB-0004",
+    "image": "https://media.discordapp.net/attachments/1562569056693919824/1563326349806931998/image.png?ex=6add389e&is=6adbe71e&hm=5080a3cfaf95e07ad6071d660329c51c8f65aba4a3d15bd9f9eda5502959b1c9&=&format=webp&quality=lossless",
+    "gallery": [
+      {
+        "src": "https://media.discordapp.net/attachments/1345138112120225935/1461438905797840948/image.png?ex=6add040b&is=6adbb28b&hm=bbba042977e41f326d094c48690ae902989bbd35fa878040359c436abe063bcf&=&format=webp&quality=lossless",
+        "caption": "Christopher na janela."
+      },
+      {
+        "src": "https://media.discordapp.net/attachments/1345138112120225935/1461438957270077703/image-1.png?ex=6add0417&is=6adbb297&hm=61048b95e4d8080e319dd4ee9cf14521279ed9d43de555fc82ad793c79c37cc2&=&format=webp&quality=lossless&width=1536&height=810",
+        "caption": "Blue Marvel olhando a Terra."
+      },
+      {
+        "src": "https://media.discordapp.net/attachments/1345138112120225935/1461439134416506996/image-3.png?ex=6add0441&is=6adbb2c1&hm=3a71be7b66b20571e99ff005e267b45770dbf6fcc2b7c94b855a9cf94df5a119&=&format=webp&quality=lossless&width=327&height=512",
+        "caption": "Capa da HQ de estreia do Blue Marvel."
+      }
+    ],
+    "codename": "Blue Marvel",
+    "identity": "Christopher \"Bradford\"  Brashear.",
+    "player": "Chaos, Tuuys002.",
+    "history": "Nascido em Pym City, Christopher Brashear demonstrou uma inteligência extraordinária desde cedo, tornando-se um dos maiores gênios mirins de sua época. Aos 20 anos, já possuía doutorado em engenharia elétrica e foi selecionado pela Fundação Futuro para participar do Projeto Pegasus, um experimento envolvendo um reator de anti-matéria.\n\nDurante um acidente no reator, Christopher foi exposto à energia de anti-matéria e seu corpo se tornou um condutor vivo dessa força. Após o incidente, a Fundação Futuro passou a estudar sua condição, enquanto Reed Richards o ajudou a controlar sua instável energia através de braceletes especiais. Agora, Christopher precisa aprender a dominar seus poderes enquanto carrega o potencial de se tornar algo muito maior do que qualquer cientista imaginava.",
+    "description": "Christopher \"Bradford\" Brashear é um dos maiores gênios de sua geração, conhecido por sua inteligência avançada e pelo poder de controlar moléculas através da energia de anti-matéria. Após um acidente no Projeto Pegasus, tornou-se um condutor vivo de anti-matéria, ganhando habilidades capazes de alterar a estrutura da matéria e estabilizar qualquer forma de energia. Porém, seu enorme poder exige controle constante para evitar consequências catastróficas.",
+    "summary": "Um dos maiores gênios mirims do século. Agora, com antimatéria ilimitada.",
+    "aliases": ["O Doutor Azul", "A Bateria Humana"],
+    "age": "25",
+    "gender": "Masculino",
+    "sexuality": "Heterossexual",
+    "height": "1.91",
+    "race": "Humano geneticamente modificado",
+    "weight": "98kg",
+    "alignmentNote": "movido, normalmente, pela emoção.",
+    "relations": [
+      {
+        "name": "Quarteto Fantástico",
+        "kind": "pessoa",
+        "role": "Aliados e grupo de heróis que reconhecem o potencial de Christopher, auxiliando no controle e desenvolvimento de seus poderes."
+      },
+      {
+        "name": "Reed Richards",
+        "kind": "pessoa",
+        "role": "Mentor e responsável por ajudá-lo a estabilizar seus poderes. Criou os braceletes que permitem que Christopher controle sua energia de anti-matéria com mais segurança."
+      },
+      {
+        "name": "Matthew Stark",
+        "kind": "pessoa",
+        "role": "Aliado e conselheiro científico. Auxiliou Christopher a entender melhor o potencial de sua energia de anti-matéria, acreditando que seus poderes poderiam alcançar níveis nunca antes vistos."
+      }
+    ],
+    "fame": [
+      {
+        "place": "Terra",
+        "score": 2,
+        "as": "Blue Marvel",
+        "note": "Ainda em ascensão."
+      },
+      {
+        "place": "Terra",
+        "score": 7,
+        "as": "Christopher \"Bradford\" Brashear",
+        "note": "Reconhecido no meio científico. Considerado, ainda novo, uma das grandes mentes do século."
+      }
+    ],
+    "facts": [
+      {
+        "label": "Conselho",
+        "value": "Christopher também teve uma pequena ajuda de Matthew Stark na \"direção\" de seus poderes. Por ser um condutor de energia anti matéria, Matthew Stark disse que o poder de chris poderia ir além de qualquer coisa que ele conhecia."
+      }
+    ],
+    "powers": [
+      {
+        "name": "Fisiologia do Blue Marvel",
+        "details": [
+          {
+            "name": "Super Força ++",
+            "details": [
+              {
+                "name": "Super Durabilidade ++"
+              },
+              {
+                "name": "Super Velocidade +"
+              },
+              {
+                "name": "Super Agilidade +"
+              },
+              {
+                "name": "Super Velocidade +"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sentidos Sobre-Humanos",
+        "details": [
+          {
+            "name": "Sentidos Super Aguçados"
+          }
+        ]
+      },
+      {
+        "name": "Intelecto de Nivel SuperDotado",
+        "details": [
+          {
+            "name": "Entende e manipula estruturas moleculares com precisão."
+          }
+        ]
+      },
+      {
+        "name": "Controle de Energia",
+        "details": [
+          {
+            "name": "Estabilização de Poder",
+            "details": [
+              {
+                "name": "Consegue controlar e limitar sua própria energia de anti-matéria através dos braceletes criados por Reed Richards."
+              }
+            ]
+          },
+          {
+            "name": "Controle de Instabilidade",
+            "details": [
+              {
+                "name": "Mantém seu poder sob controle para evitar desastres causados pela anti-matéria."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Voo"
+      },
+      {
+        "name": "Aumento de Densidade de Objetos"
+      },
+      {
+        "name": "Diminuição de Densidade de Objetos"
+      },
+      {
+        "name": "Controle de Densidade Corporal"
+      },
+      {
+        "name": "Alteração de Densidade Molecular"
+      },
+      {
+        "name": "Invisibilidade"
+      },
+      {
+        "name": "Intangibilidade"
+      },
+      {
+        "name": "Condutor de Anti-Matéria",
+        "details": [
+          {
+            "name": "Energia de Anti-Matéria",
+            "details": [
+              {
+                "name": "- Seu corpo funciona como um reator vivo de anti-matéria estável"
+              }
+            ]
+          },
+          {}
+        ]
+      }
+    ],
+    "stats": [
+      {
+        "attribute": "forca",
+        "tier": "super++"
+      },
+      {
+        "attribute": "velocidade",
+        "tier": "super+"
+      },
+      {
+        "attribute": "durabilidade",
+        "tier": "super++"
+      },
+      {
+        "attribute": "resistencia",
+        "tier": "super++"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Intelecto de Nivel SuperDotado",
+        "details": [
+          {
+            "name": "Gênio em Engenharia Elétric",
+            "details": [
+              {
+                "name": "Raciocínio Científico"
+              },
+              {
+                "name": "Análise Molecular"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Capacidade de Estabilização Molecular",
+        "details": [
+          {
+            "name": "Reforço Molecular",
+            "details": [
+              {
+                "name": "Pode tornar objetos extremamente resistentes contra impactos, fogo, frio e explosões"
+              }
+            ]
+          },
+          {
+            "name": "Anulação Química",
+            "details": [
+              {
+                "name": "Estabiliza moléculas de diferentes formas de energia, podendo neutralizar fogo, eletricidade, energia térmica e forças cinéticas"
+              }
+            ]
+          },
+          {
+            "name": "Estabilização do Corpo Humano",
+            "details": [
+              {
+                "name": "Pode estabilizar estruturas físicas humanas, auxiliando na preservação e proteção do corpo"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "tags": ["Chaos", "Tuuys"]
   }
 ]
