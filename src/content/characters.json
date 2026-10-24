@@ -768,6 +768,17 @@
         ]
       }
     ],
-    "tags": ["Chaos", "Tuuys"]
+    "tags": ["Chaos", "Tuuys"],
+    "weaknesses": [
+      "Radiação em Larga Escala",
+      "Limitação Molecular em Seres Vivos",
+      "Resistência Mágica",
+      "Energia Cósmica",
+      "Energia Fóton",
+      "Instabilidade da Anti-Matéria"
+    ],
+    "personality": [
+      "Christopher Brashear é um homem extremamente inteligente, racional e curioso, sempre buscando compreender o funcionamento de tudo ao seu redor. Apesar de seu intelecto extraordinário, permanece humilde e acredita que a ciência deve ser utilizada para melhorar a vida das pessoas, nunca para destruí-las.\nApós o acidente do Projeto Pegasus, tornou-se muito mais cauteloso e disciplinado, carregando o peso de saber que seu corpo abriga um poder capaz de causar uma catástrofe caso perca o controle. Por isso, evita agir por impulso e costuma analisar todas as possibilidades antes de tomar uma decisão."
+    ]
   }
 ]
