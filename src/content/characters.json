@@ -550,7 +550,18 @@
     ],
     "facts": [],
     "tags": ["Pcerrer"],
-    "rivals": ["Vácuo."]
+    "rivals": ["Vácuo."],
+    "gallery": [
+      {
+        "src": "https://media.discordapp.net/attachments/1538395592407908384/1563346423523709009/Captura_de_tela_2025-06-27_225133.png?ex=6add4b50&is=6adbf9d0&hm=4997c25fd9884057e2da8f85e7a5a84114b0468e1180fc96230fa74dfaffefa6&=&format=webp&quality=lossless&width=1536&height=820"
+      },
+      {
+        "src": "https://media.discordapp.net/attachments/1538395592407908384/1563346424714760363/Captura_de_tela_2026-04-26_195356.png?ex=6add4b51&is=6adbf9d1&hm=4b9ba17c7cf3edf978e0051368282f70a74e9176bc764b4024c7326ab3b9310b&=&format=webp&quality=lossless&width=608&height=768"
+      },
+      {
+        "src": "https://media.discordapp.net/attachments/1538395592407908384/1563346424064909402/Captura_de_tela_2025-06-26_222138.png?ex=6add4b51&is=6adbf9d1&hm=2740f826bb97cd6bff678bb39c904a755fbf9442afbb5a3427f414dc5c4ae88e&=&format=webp&quality=lossless&width=1280&height=802"
+      }
+    ]
   },
   {
     "alignment": "herói",
